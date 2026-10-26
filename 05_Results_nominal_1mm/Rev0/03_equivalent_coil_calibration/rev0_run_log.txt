@@ -1,0 +1,70 @@
+[REV0 EQ_REV0_CAL    2.8s] Design solution type reported by AEDT: Magnetostatic
+[REV0 EQ_REV0_CAL    2.8s] Project EQ_REV0_CAL / design Rev0 (Magnetostatic)
+[REV0 EQ_REV0_CAL    2.8s] ASSUMPTION: Stack-up mode 'scaled' - Altium dielectric ratios scaled to 1.000 mm copper+dielectric; NOT the JLCPCB stack-up
+[REV0 EQ_REV0_CAL    2.8s] ASSUMPTION: Solder mask 0.01016 mm each face (source stack-up); board pitch 1.02032 mm
+[REV0 EQ_REV0_CAL    2.8s] ASSUMPTION: Vias = solid 0.30 mm copper (8-sided): fine for conduction/field, low for final resistance
+[REV0 EQ_REV0_CAL    2.8s] ASSUMPTION: Air gap 1.000 mm measured from PCB1 top solder-mask surface to magnet face
+[REV0 EQ_REV0_CAL    2.8s] ASSUMPTION: FR-4 and solder mask modelled as air (mu_r = 1, non-conductive either way); board geometry, pitch and air gap unchanged
+[REV0 EQ_REV0_CAL    2.8s] ASSUMPTION: Inductance matrix not computed (lab-PC freeze at 'Start Matrix')
+[REV0 EQ_REV0_CAL    2.8s] ASSUMPTION: Shaft steel_1010, 19.0 mm dia, rotating; simplified EM representation: rotor side only (band floor to 5.0 mm beyond back iron); section through the stator bore omitted; NOT the physical shaft length; shaft + back iron united as one steel body
+[REV0 EQ_REV0_CAL    2.8s] ASSUMPTION: Equivalent-coil stator (Rev0): each phase of each board = 8 closed stranded sector coils at the measured radial-current positions, split over two layers symmetric about the board mid-plane (A L1+L6, B L2+L5, C L3+L4), 0.08 mm slabs; turns calibrated against the field map FIELDMAP_REV0_P20; no eddy currents in the copper
+[REV0 EQ_REV0_CAL    9.3s] Rotor steel: disc (bore not cut) + overlapping 19 mm shaft united as RotorSteel (EM Boolean simplification; same steel volume as disc-with-bore + shaft)
+[REV0 EQ_REV0_CAL    9.3s] Rotor: 16 magnets r 18.0-38.0 mm, z 1.5102-3.5102 (gap 1.000 mm from stator surface z=0.51016); back iron OD 86.0 / ID 19.0 x 2.0 mm; shaft 19.0 mm steel_1010
+[REV0 EQ_REV0_CAL    9.6s] EQ PHASE_A: sides at 18.82 (in) / 41.10 (out) deg mod 45.0, width 6.74 deg, radial 18.62-36.62 mm, arcs 1.50 mm, geometric Ncoil 2.006 (fundamental phase error +0.05 deg vs the traces)
+[REV0 EQ_REV0_CAL    9.6s] EQ PHASE_B: sides at 33.82 (in) / 11.10 (out) deg mod 45.0, width 6.74 deg, radial 18.62-36.62 mm, arcs 1.50 mm, geometric Ncoil 2.006 (fundamental phase error +0.05 deg vs the traces)
+[REV0 EQ_REV0_CAL    9.6s] EQ PHASE_C: sides at 3.82 (in) / 26.10 (out) deg mod 45.0, width 6.74 deg, radial 18.62-36.61 mm, arcs 1.50 mm, geometric Ncoil 2.007 (fundamental phase error +0.05 deg vs the traces)
+[REV0 EQ_REV0_CAL   33.2s] EQ stator S1: 240 coils + 240 terminal sheets built (5 boards x 3 phases x 2 layers x 8)
+[REV0 EQ_REV0_CAL   34.4s] Winding PhaseA: 80 coil terminals in series (stranded), current Ncoil*Iamp
+[REV0 EQ_REV0_CAL   35.6s] Winding PhaseB: 80 coil terminals in series (stranded), current Ncoil*Iamp
+[REV0 EQ_REV0_CAL   37.0s] Winding PhaseC: 80 coil terminals in series (stranded), current Ncoil*Iamp
+[REV0 EQ_REV0_CAL   37.4s] Magnetostatic setup: 4 passes, 20% refinement, inductance matrix OFF
+[REV0 EQ_REV0_CAL   46.4s] AEDT Validation Check returned True
+[REV0 EQ_REV0_CAL   48.5s] EQ calibration: rot_angle = 0 deg ... solving
+[REV0 EQ_REV0_CAL 1820.8s] Angle 0 deg done in 29.5 min: board 1 torque +6.9846 mN.m
+[REV0 EQ_REV0_CAL 1820.9s] EQ calibration: rot_angle = 5.625 deg ... solving
+[REV0 EQ_REV0_CAL 3376.9s] Angle 5.625 deg done in 25.9 min: board 1 torque +1.2871 mN.m
+[REV0 EQ_REV0_CAL 3377.0s] EQ calibration: rot_angle = 11.25 deg ... solving
+[REV0 EQ_REV0_CAL 4820.8s] Angle 11.25 deg done in 24.1 min: board 1 torque -3.1190 mN.m
+[REV0 EQ_REV0_CAL 4820.9s] EQ calibration: rot_angle = 16.875 deg ... solving
+[REV0 EQ_REV0_CAL 6740.8s] Angle 16.875 deg done in 32.0 min: board 1 torque -8.3372 mN.m
+[REV0 EQ_REV0_CAL 6740.8s] EQ calibration: rot_angle = 22.5 deg ... solving
+[REV0 EQ_REV0_CAL 8357.7s] Angle 22.5 deg done in 27.0 min: board 1 torque -6.9854 mN.m
+[REV0 EQ_REV0_CAL 8357.8s] EQ calibration: rot_angle = 28.125 deg ... solving
+[REV0 EQ_REV0_CAL 10072.9s] Angle 28.125 deg done in 28.6 min: board 1 torque -1.2894 mN.m
+[REV0 EQ_REV0_CAL 10073.0s] EQ calibration: rot_angle = 33.75 deg ... solving
+[REV0 EQ_REV0_CAL 11537.2s] Angle 33.75 deg done in 24.4 min: board 1 torque +3.1191 mN.m
+[REV0 EQ_REV0_CAL 11537.3s] EQ calibration: rot_angle = 39.375 deg ... solving
+[REV0 EQ_REV0_CAL 13291.5s] Angle 39.375 deg done in 29.2 min: board 1 torque +8.3390 mN.m
+[REV0 EQ_REV0_CAL 13291.5s] EQUIVALENT-COIL CALIBRATION EQ_REV0_CAL (Rev0) - magnetostatic, all three phases at Ncoil = 2.0059 x 1 A DC, 8 angles
+[REV0 EQ_REV0_CAL 13291.5s] k = -T_copper/I per phase and board (Lorentz on the equivalent coils), compared with the field map /scratch/khnolw003/pcbmotor_hpc/shared_results/FIELDMAP_REV0_P20_results/fieldmap_results.json
+[REV0 EQ_REV0_CAL 13291.5s] 
+[REV0 EQ_REV0_CAL 13291.5s] PHASE_A:
+[REV0 EQ_REV0_CAL 13291.5s]   S1 board 1: K1 = 7.9983 mN.m/A, psi +149.56, H3 11.7 %  | field map 6.3697, psi  -30.14 -> ratio 1.2557, dpsi +179.70  | detailed 6.2817 -> ratio 1.2733
+[REV0 EQ_REV0_CAL 13291.5s]   S1 board 2: K1 = 5.7259 mN.m/A, psi +149.64, H3  7.4 %  | field map 4.7962, psi  -30.07 -> ratio 1.1938, dpsi +179.71  | detailed 4.5898 -> ratio 1.2475
+[REV0 EQ_REV0_CAL 13291.5s]   S1 board 3: K1 = 4.1331 mN.m/A, psi +149.65, H3  4.8 %  | field map 3.5881, psi  -29.99 -> ratio 1.1519, dpsi +179.64  | detailed 3.3637 -> ratio 1.2287
+[REV0 EQ_REV0_CAL 13291.5s]   S1 board 4: K1 = 2.9998 mN.m/A, psi +149.68, H3  3.0 %  | field map 2.7268, psi  -30.04 -> ratio 1.1001, dpsi +179.72  | detailed 2.4736 -> ratio 1.2127
+[REV0 EQ_REV0_CAL 13291.5s]   S1 board 5: K1 = 2.1875 mN.m/A, psi +149.65, H3  1.9 %  | field map 2.0154, psi  -29.94 -> ratio 1.0854, dpsi +179.59  | detailed 1.8254 -> ratio 1.1984
+[REV0 EQ_REV0_CAL 13291.5s]   STACK S1: K = 23.045 mN.m/A, psi +149.62, H3 7.3 %
+[REV0 EQ_REV0_CAL 13291.5s]   MACHINE PHASE_A: K = 23.045 mN.m/A, psi +149.62, H3 7.3 %  | field map 19.496, psi -30.06
+[REV0 EQ_REV0_CAL 13291.5s] 
+[REV0 EQ_REV0_CAL 13291.5s] PHASE_B:
+[REV0 EQ_REV0_CAL 13291.6s]   S1 board 1: K1 = 7.9454 mN.m/A, psi  -90.33, H3  9.1 %  | field map 6.3287, psi  +90.11 -> ratio 1.2554, dpsi +179.56  | detailed 6.2817 -> ratio 1.2648
+[REV0 EQ_REV0_CAL 13291.6s]   S1 board 2: K1 = 5.6895 mN.m/A, psi  -90.34, H3  6.5 %  | field map 4.7868, psi  +90.03 -> ratio 1.1886, dpsi +179.62  | detailed 4.5898 -> ratio 1.2396
+[REV0 EQ_REV0_CAL 13291.6s]   S1 board 3: K1 = 4.1063 mN.m/A, psi  -90.34, H3  4.4 %  | field map 3.5880, psi  +89.92 -> ratio 1.1444, dpsi +179.74  | detailed 3.3637 -> ratio 1.2208
+[REV0 EQ_REV0_CAL 13291.6s]   S1 board 4: K1 = 2.9810 mN.m/A, psi  -90.34, H3  2.9 %  | field map 2.7275, psi  +90.07 -> ratio 1.0929, dpsi +179.59  | detailed 2.4736 -> ratio 1.2051
+[REV0 EQ_REV0_CAL 13291.6s]   S1 board 5: K1 = 2.1745 mN.m/A, psi  -90.35, H3  1.8 %  | field map 2.0217, psi  +90.04 -> ratio 1.0756, dpsi +179.60  | detailed 1.8254 -> ratio 1.1913
+[REV0 EQ_REV0_CAL 13291.6s]   STACK S1: K = 22.897 mN.m/A, psi -90.34, H3 6.1 %
+[REV0 EQ_REV0_CAL 13291.6s]   MACHINE PHASE_B: K = 22.897 mN.m/A, psi -90.34, H3 6.1 %  | field map 19.453, psi +90.04
+[REV0 EQ_REV0_CAL 13291.6s] 
+[REV0 EQ_REV0_CAL 13291.6s] PHASE_C:
+[REV0 EQ_REV0_CAL 13291.6s]   S1 board 1: K1 = 7.9003 mN.m/A, psi  +29.73, H3 11.3 %  | field map 6.3634, psi -149.75 -> ratio 1.2415, dpsi +179.49  | detailed 6.2817 -> ratio 1.2577
+[REV0 EQ_REV0_CAL 13291.6s]   S1 board 2: K1 = 5.6612 mN.m/A, psi  +29.67, H3  7.1 %  | field map 4.8003, psi -150.01 -> ratio 1.1793, dpsi +179.68  | detailed 4.5898 -> ratio 1.2334
+[REV0 EQ_REV0_CAL 13291.6s]   S1 board 3: K1 = 4.0879 mN.m/A, psi  +29.67, H3  4.5 %  | field map 3.5861, psi -149.97 -> ratio 1.1399, dpsi +179.64  | detailed 3.3637 -> ratio 1.2153
+[REV0 EQ_REV0_CAL 13291.6s]   S1 board 4: K1 = 2.9686 mN.m/A, psi  +29.67, H3  2.9 %  | field map 2.7221, psi -149.92 -> ratio 1.0906, dpsi +179.59  | detailed 2.4736 -> ratio 1.2001
+[REV0 EQ_REV0_CAL 13291.6s]   S1 board 5: K1 = 2.1651 mN.m/A, psi  +29.66, H3  1.9 %  | field map 2.0194, psi -149.99 -> ratio 1.0722, dpsi +179.65  | detailed 1.8254 -> ratio 1.1861
+[REV0 EQ_REV0_CAL 13291.6s]   STACK S1: K = 22.783 mN.m/A, psi +29.69, H3 7.0 %
+[REV0 EQ_REV0_CAL 13291.6s]   MACHINE PHASE_C: K = 22.783 mN.m/A, psi +29.69, H3 7.0 %  | field map 19.491, psi -149.90
+[REV0 EQ_REV0_CAL 13291.6s] 
+[REV0 EQ_REV0_CAL 13291.6s] Phase balance of the equivalent winding: K spread 1.14 %, phase steps +120.0, +120.0, +119.9 deg elec (ideal +-120)
+[REV0 EQ_REV0_CAL 13291.6s] 
+[REV0 EQ_REV0_CAL 13291.6s] CALIBRATION against the detailed FEM: Ncoil 2.0059 -> 1.6229 (x 0.8091, all phases and boards together), polarity REVERSED (terminal direction; corrected in the rotating run); machine psi error A -0.32 / B -0.38 / C -0.40 deg; board-ratio spread 7.1 % over 15 board-phases; phase K spread 1.14 % -> USABLE (psi within 3 deg, boards within 15 %, phases within 3 %)

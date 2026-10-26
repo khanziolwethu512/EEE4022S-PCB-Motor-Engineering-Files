@@ -1,0 +1,26 @@
+[REV0 REV0_FINAL_BUILD    0.0s] REV0 final build REV0_FINAL_BUILD: REV0_FINAL_G100_T20, air gap 1.000 mm, back iron 2.00 mm, modules from C:\Users\Student\OneDrive - University of Cape Town\EEE4022S Ansys files\Motor run\rev0_v9, built in C:\Users\Student\Rev0_work
+[REV0 REV0_FINAL_BUILD   10.1s] Copied frozen stator C:\Users\Student\OneDrive - University of Cape Town\EEE4022S Ansys files\Motor run\frozen\REV0_STATOR_FROZEN.aedt -> C:\Users\Student\Rev0_work\REV0_FINAL_G100_T20.aedt (the frozen file is never opened)
+[REV0 REV0_FINAL_BUILD  177.2s] ASSUMPTION: Stack-up mode 'scaled' - Altium dielectric ratios scaled to 1.000 mm copper+dielectric; NOT the JLCPCB stack-up
+[REV0 REV0_FINAL_BUILD  177.2s] ASSUMPTION: Solder mask 0.01016 mm each face (source stack-up); board pitch 1.02032 mm
+[REV0 REV0_FINAL_BUILD  177.2s] ASSUMPTION: Vias = solid 0.30 mm copper (8-sided): fine for conduction/field, low for final resistance
+[REV0 REV0_FINAL_BUILD  177.2s] ASSUMPTION: Air gap 1.000 mm measured from PCB1 top solder-mask surface to magnet face
+[REV0 REV0_FINAL_BUILD  177.2s] ASSUMPTION: FR-4 and solder mask modelled as air (mu_r = 1, non-conductive either way); board geometry, pitch and air gap unchanged
+[REV0 REV0_FINAL_BUILD  177.2s] ASSUMPTION: Inductance matrix not computed (lab-PC freeze at 'Start Matrix')
+[REV0 REV0_FINAL_BUILD  177.2s] ASSUMPTION: Shaft steel_1010, 19.0 mm dia, rotating; simplified EM representation: rotor side only (band floor to 5.0 mm beyond back iron); section through the stator bore omitted; NOT the physical shaft length; shaft + back iron united as one steel body
+[REV0 REV0_FINAL_BUILD  177.2s] ASSUMPTION: 5 identical boards, same orientation, touching mask-to-mask (pitch 1.02032 mm); each phase a 5-board series string: 1 x 1 mm copper bridges at the rim terminal spanning the 0.02032 mm mask-to-mask gap and touching board k L6 Out / board k+1 L1 In pad faces (represents the edge solder joint; boards are separate touching conductors, not one united solid); external raised leads only on the string ends; star point NOT connected (six ends exposed)
+[REV0 REV0_FINAL_BUILD  177.5s] Old stator-only region deleted (recreated around the full motor below)
+[REV0 REV0_FINAL_BUILD  178.4s] S1 junction probes: 36 checked, 0 failed
+[REV0 REV0_FINAL_BUILD  279.3s] Rotor steel: disc (bore not cut) + overlapping 19 mm shaft united as RotorSteel (EM Boolean simplification; same steel volume as disc-with-bore + shaft)
+[REV0 REV0_FINAL_BUILD  279.3s] Rotor: 16 magnets r 18.0-38.0 mm, z 1.5102-3.5102 (gap 1.000 mm from stator surface z=0.51016); back iron OD 86.0 / ID 19.0 x 2.0 mm; shaft 19.0 mm steel_1010
+[REV0 REV0_FINAL_BUILD  282.2s] Rotor position: 16 magnets rotated about +Z by rot_angle (= 0 deg); back iron/shaft axisymmetric
+[REV0 REV0_FINAL_BUILD  284.9s] Region recreated: padding 5 mm, +Y face on the lead ends (all coil terminals on the boundary)
+[REV0 REV0_FINAL_BUILD  284.9s] Acceptance: S1 top mask -> R1 magnet face = 1.0000 mm (target 1.0000)
+[REV0 REV0_FINAL_BUILD  284.9s] Acceptance: rotor parts r <= 43.00 mm, terminal leads from r >= 44.50 mm
+[REV0 REV0_FINAL_BUILD  284.9s] Axial level S1_bottom_surface    z =  -4.59144 mm
+[REV0 REV0_FINAL_BUILD  284.9s] Axial level S1_top_surface       z =   0.51016 mm
+[REV0 REV0_FINAL_BUILD  284.9s] Axial level R1_magnet_face       z =   1.51016 mm
+[REV0 REV0_FINAL_BUILD  284.9s] Axial level R1_backiron_top      z =   5.51016 mm
+[REV0 REV0_FINAL_BUILD  793.6s] Design: Validation Check passed for geometry (only the expected build-only notices: Project: REV0_FINAL_G100_T20, Design: Rev0, [error] Solution)
+[REV0 REV0_FINAL_BUILD  793.6s] AEDT Validation Check returned geometry OK
+[REV0 REV0_FINAL_BUILD  812.0s] FINAL BUILD frozen: C:\Users\Student\Rev0_work\REV0_FINAL_G100_T20_FROZEN.aedt (validated; star point open; currents I_A/I_B/I_C = 0 A; rotor angle rot_angle)
+[REV0 REV0_FINAL_BUILD  821.7s] Copy of the frozen final model kept in the shared folder: C:\Users\Student\OneDrive - University of Cape Town\EEE4022S Ansys files\Motor run\frozen\REV0_FINAL_G100_T20_FROZEN.aedt

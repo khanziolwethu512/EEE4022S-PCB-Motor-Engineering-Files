@@ -1,0 +1,24 @@
+{
+ "done": {
+  "0|2": {
+   "I": 2.0, 
+   "finished": "2026-10-10 04:54:58", 
+   "minutes": 17.16, 
+   "theta": 0.0, 
+   "values_SI": {
+    "Torque_Cu.Torque": -0.010962660528886201, 
+    "Torque_Rotor.Torque": 0.010801154492234301
+   }
+  }, 
+  "11.25|2": {
+   "I": 2.0, 
+   "finished": "2026-10-10 05:12:15", 
+   "minutes": 16.64, 
+   "theta": 11.25, 
+   "values_SI": {
+    "Torque_Cu.Torque": 0.0048839595424443596, 
+    "Torque_Rotor.Torque": -0.0048125353717991997
+   }
+  }
+ }
+}

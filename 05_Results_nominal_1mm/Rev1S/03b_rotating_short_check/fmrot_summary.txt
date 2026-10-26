@@ -1,0 +1,17 @@
+FIELD-ONLY ROTATING TRANSIENT (FMROT) - FMROT_REV1S_SHORT (Rev1S), 1000 rpm, 6 steps of 0.15625 ms (SHORT run - not a full period)
+k = -T_copper/I per phase (Lorentz on the trace centre-lines, 1 A into L1), e = omega_m * k
+
+
+VALIDATION against the static field map /scratch/khnolw003/pcbmotor_hpc/shared_results/FIELDMAP_REV1S_P20_results/fieldmap_results.json
+  S1_B1_PHASE_A theta   5.625 deg: rotating k = +1.09777, static k = +1.08224 mWb/rad (+0.24 % of K1)
+  S1_B1_PHASE_B theta   5.625 deg: rotating k = +4.12578, static k = +4.09648 mWb/rad (+0.46 % of K1)
+  S1_B1_PHASE_C theta   5.625 deg: rotating k = -6.56278, static k = -6.59242 mWb/rad (+0.46 % of K1)
+  largest point difference over all 30 board-phase-angle points: 1.51 % of K1 (S1_B4_PHASE_C at 5.625 deg)
+  SHORT-RUN CHECK (all phases, all boards): largest point difference 1.51 % of K1 (limit 3 %) -> PASS
+Rotor torque at no load (cogging + reluctance, Maxwell): 0.4565 mN.m pk-pk
+Copper eddy loss estimate at 1000 rpm (thin-conductor formula on the trace pieces, vias excluded): 0.04495 W (SHORT run: not a full period - indicative only)
+  S1: B1 0.0111 W, B2 0.00488 W, B3 0.00254 W, B4 0.00141 W, B5 0.000777 W
+  S2: B1 0.0118 W, B2 0.00554 W, B3 0.00324 W, B4 0.0021 W, B5 0.00152 W
+Current density in the tracks per 1 A phase current (DC share over 0.5 mm x 35 um; file current_density_board1_per_A.csv): A max 57.1 / p95 10.3 / mean 8.6 A/mm2; B max 57.1 / p95 10.3 / mean 8.6 A/mm2; C max 57.1 / p95 10.3 / mean 8.6 A/mm2
+
+Neglected: armature reaction (no copper in the field solve), skin/proximity effects, the averaging of B over the 0.5 mm x 35 um track cross-section (centre-line sampling), via eddy currents.

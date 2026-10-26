@@ -1,0 +1,31 @@
+PCB AXIAL-FLUX MOTOR - FULL-MOTOR MAXWELL SOLVES (hpc_motor 1.0 (2026-10-11))
+Updated 2026-10-15 14:18:17. K = per-phase torque constant = mean 3-phase torque / (1.5 x Ipk), Ipk = 1 A, synchronous
+currents at the baseline current angle. Torque taken on the copper (Lorentz); rotor virtual work as a check.
+References: field map = FIELDMAP_*_P20; detailed = sum of single-board FEM runs (board-by-board).
+
+motor    angles       K mNm/A  field map     vs FM   detailed    vs det   bracket   ripple basis
+Rev0     2/2           18.534     19.496    -4.93%     18.540    -0.03%    INSIDE     0.7% mean of 2 angles over one ripple period
+Rev1S    0/1                -     41.636         -     39.502         -         -        - no solved angle yet
+Rev1D    not started
+Rev2S    not started
+
+--- Rev0 (S1-R1, 16 magnets) ---
+tasks: final done, solve_00 done, solve_01 done, stator done
+K = 18.534 mN.m/A (copper), 18.470 mN.m/A (rotor virtual work); back-EMF 1.941 V peak / 1.372 V rms per phase at 1000 rpm
+per stator: S1 18.534
+  solve_00  theta  0.000 deg  T_cu   27.893 mNm  T_rotor   27.749 mNm  dev  0.51%  OK     L2 iterative, 6 passes, 1036.18 min, 109.69 GB
+  solve_01  theta  3.750 deg  T_cu   27.710 mNm  T_rotor   27.659 mNm  dev  0.18%  OK     L2 iterative, 6 passes, 1047.2 min, 109.35 GB
+  steel |B|max over the static angles: BackIron 0.92 T
+  board    K full   field map    vs FM   detailed   vs det
+  S1_B1    6.2817     6.3697   -1.38%     6.2816   +0.00%
+  S1_B2    4.5898     4.7962   -4.30%     4.5905   -0.01%
+  S1_B3    3.3637     3.5881   -6.25%     3.3655   -0.05%
+  S1_B4    2.4736     2.7268   -9.28%     2.4755   -0.07%
+  S1_B5    1.8254     2.0154   -9.43%     1.8266   -0.06%
+
+--- Rev1-S (S1-R1-S2-R2, 32 magnets) ---
+tasks: final done, solve_00 running, stator done
+  solve_00  running
+
+Quality: OK = rotor and copper torque agree within 3 %; WARN = 3-10 % (kept, check mesh); REJECT = over 10 % or missing (excluded from K).
+bracket: INSIDE = K lies between the field map and the detailed sum (2 % tolerance). The field map exceeds the detailed sum by ~5 %; this solve decides where the truth lies.

@@ -1,0 +1,64 @@
+{
+ "done": {
+  "0|1": {
+   "I": 1.0, 
+   "fields": {
+    "gap_Bmax_T": "0.56329", 
+    "gap_mean_absBz_T": "0.16833", 
+    "steel_Bmax_T": "1.3795"
+   }, 
+   "finished": "2026-10-07 15:07:56", 
+   "minutes": 13.98, 
+   "theta": 0.0, 
+   "values_SI": {
+    "Torque_Cu.Torque": -0.0053221512050620496, 
+    "Torque_Rotor.Torque": 0.0048521379163544501
+   }
+  }, 
+  "11.25|1": {
+   "I": 1.0, 
+   "fields": {
+    "gap_Bmax_T": "0.57756", 
+    "gap_mean_absBz_T": "0.16837", 
+    "steel_Bmax_T": "1.3732"
+   }, 
+   "finished": "2026-10-07 15:37:44", 
+   "minutes": 14.51, 
+   "theta": 11.25, 
+   "values_SI": {
+    "Torque_Cu.Torque": 0.0023493744143028004, 
+    "Torque_Rotor.Torque": -0.0022133271130568601
+   }
+  }, 
+  "16.875|1": {
+   "I": 1.0, 
+   "fields": {
+    "gap_Bmax_T": "0.57999", 
+    "gap_mean_absBz_T": "0.16828", 
+    "steel_Bmax_T": "1.4133"
+   }, 
+   "finished": "2026-10-07 15:53:21", 
+   "minutes": 14.76, 
+   "theta": 16.875, 
+   "values_SI": {
+    "Torque_Cu.Torque": 0.0063641420885211797, 
+    "Torque_Rotor.Torque": -0.0062925490751716108
+   }
+  }, 
+  "5.625|1": {
+   "I": 1.0, 
+   "fields": {
+    "gap_Bmax_T": "0.56754", 
+    "gap_mean_absBz_T": "0.16838", 
+    "steel_Bmax_T": "1.3503"
+   }, 
+   "finished": "2026-10-07 15:22:47", 
+   "minutes": 13.97, 
+   "theta": 5.625, 
+   "values_SI": {
+    "Torque_Cu.Torque": -0.00101801772117222, 
+    "Torque_Rotor.Torque": 0.0011365179406119901
+   }
+  }
+ }
+}

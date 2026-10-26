@@ -1,0 +1,11 @@
+PHASE_C NET REPORT
+==================
+Electrical vias: 205
+External layer-specific pads: 4
+Via geometry: 0.5000 mm OD, 0.3000 mm drill, Top Layer to Bottom Layer, PTH
+
+External pads:
+- PHASE_C_PAD_01: X=122.750001 mm, Y=139.404156 mm, Bottom Layer, octagonal 3.000 x 2.000 mm, rotation 30.0 deg
+- PHASE_C_PAD_02: X=122.750001 mm, Y=139.404156 mm, Top Layer, octagonal 3.000 x 2.000 mm, rotation 210.0 deg
+- PHASE_C_PAD_03: X=127.080127 mm, Y=136.904158 mm, Bottom Layer, octagonal 3.000 x 2.000 mm, rotation 30.0 deg
+- PHASE_C_PAD_04: X=127.080127 mm, Y=136.904158 mm, Top Layer, octagonal 3.000 x 2.000 mm, rotation 210.0 deg

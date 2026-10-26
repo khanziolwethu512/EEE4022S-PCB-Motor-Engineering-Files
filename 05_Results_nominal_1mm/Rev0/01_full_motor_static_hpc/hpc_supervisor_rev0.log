@@ -1,0 +1,54 @@
+2026-10-14 02:14:17 [INFO] hpc_motor 1.0 (2026-10-11) | job 1470229 | node srvrochpc130.uct.ac.za | motor Rev0 | mode friday
+2026-10-14 02:14:17 [INFO] Resources: 32 cores, memory limit 243.8 GB (cgroup_v2 243.8 GB, slurm_per_cpu 243.8 GB, physical 375.9 GB), wall time left 99:59:59
+2026-10-14 02:14:17 [INFO] Work folder: /scratch/khnolw003/pcbmotor_hpc (disk budget 45.0 GB for the whole work folder; now used 1.3 GB). /scratch quota: 'quota' not readable here - the work-folder budget is used alone
+2026-10-14 02:14:17 [INFO] Source check: vias: source 617 records (615 unique) vs embedded 615 -> 0 missing, 0 extra
+2026-10-14 02:14:17 [INFO] Source check: terminal pads: source 12 vs embedded 12 -> 0 missing
+2026-10-14 02:14:17 [INFO] Source check: mounting holes: source 12 vs embedded 12 -> 0 missing
+2026-10-14 02:14:26 [INFO] AEDT temp folder (TMPDIR): /scratch/khnolw003/pcbmotor_hpc/tmp - work folder on /scratch (no job-specific temporary folder provided; counted by the disk guard)
+2026-10-14 02:14:26 [INFO] AEDT: /opt/exp_soft/ansys_inc/v252/AnsysEM/ansysedt (found via file search, version 2025.2); licence settings: none in the environment (AEDT default)
+2026-10-14 02:14:26 [INFO] [Rev0] stator attempt 1 (script): /opt/exp_soft/ansys_inc/v252/AnsysEM/ansysedt -ng -waitforlicense -features=SF159726_SCRIPTOBJECT,SF6694_NON_GRAPHICAL_COMMAND_EXECUTION -Logfile /scratch/khnolw003/pcbmotor_hpc/Rev0/tasks/stator_try01/aedt.log -RunScriptAndExit /scratch/khnolw003/pcbmotor_hpc/code_446bceb360/inner.py
+2026-10-14 02:14:26 [ERROR] [Rev0] stator: the account-wide /scratch quota cannot be read on this node ('myquota' / 'quota'), so the 50 GB limit cannot be protected - not starting it. Check SMOKE_RESULT.txt; rerun with --allow-no-quota only if the HPC team says that is fine
+2026-10-14 02:14:26 [ERROR] [Rev0] stator FAILED for good after 1 attempts (disk: account-wide scratch quota unreadable). This motor cannot continue.
+2026-10-14 02:14:26 [INFO] [Rev0] supervisor finished: failed
+2026-10-14 02:14:26 [INFO] Summary (also in /scratch/khnolw003/pcbmotor_hpc/RESULTS.txt):
+PCB AXIAL-FLUX MOTOR - FULL-MOTOR MAXWELL SOLVES (hpc_motor 1.0 (2026-10-11))
+Updated 2026-10-14 02:14:26. K = per-phase torque constant = mean 3-phase torque / (1.5 x Ipk), Ipk = 1 A, synchronous
+currents at the baseline current angle. Torque taken on the copper (Lorentz); rotor virtual work as a check.
+References: field map = FIELDMAP_*_P20; detailed = sum of single-board FEM runs (board-by-board).
+
+motor    angles       K mNm/A  field map     vs FM   detailed    vs det   bracket   ripple basis
+Rev0     0/2                -     19.496         -     18.540         -         -        - no solved angle yet
+Rev1S    not started
+Rev1D    not started
+Rev2S    not started
+
+--- Rev0 (S1-R1, 16 magnets) ---
+tasks: stator failed
+  FAILED stator: disk: account-wide scratch quota unreadable
+
+Quality: OK = rotor and copper torque agree within 3 %; WARN = 3-10 % (kept, check mesh); REJECT = over 10 % or missing (excluded from K).
+bracket: INSIDE = K lies between the field map and the detailed sum (2 % tolerance). The field map exceeds the detailed sum by ~5 %; this solve decides where the truth lies.
+2026-10-14 02:20:07 [INFO] hpc_motor 1.0 (2026-10-11) | job 1470376 | node srvrochpc126.uct.ac.za | motor Rev0 | mode friday
+2026-10-14 02:20:07 [INFO] Resources: 32 cores, memory limit 243.8 GB (cgroup_v2 243.8 GB, slurm_per_cpu 243.8 GB, physical 375.9 GB), wall time left 99:59:59
+2026-10-14 02:20:07 [INFO] Work folder: /scratch/khnolw003/pcbmotor_hpc (disk budget 45.0 GB for the whole work folder; now used 2.1 GB). /scratch quota: 'quota' not readable here - the work-folder budget is used alone
+2026-10-14 02:20:08 [INFO] Source check: vias: source 617 records (615 unique) vs embedded 615 -> 0 missing, 0 extra
+2026-10-14 02:20:08 [INFO] Source check: terminal pads: source 12 vs embedded 12 -> 0 missing
+2026-10-14 02:20:08 [INFO] Source check: mounting holes: source 12 vs embedded 12 -> 0 missing
+2026-10-14 02:20:17 [INFO] AEDT temp folder (TMPDIR): /scratch/khnolw003/pcbmotor_hpc/tmp - work folder on /scratch (no job-specific temporary folder provided; counted by the disk guard)
+2026-10-14 02:20:17 [INFO] AEDT: /opt/exp_soft/ansys_inc/v252/AnsysEM/ansysedt (found via file search, version 2025.2); licence settings: none in the environment (AEDT default)
+2026-10-14 02:20:17 [INFO] [Rev0] stator attempt 1 (script): /opt/exp_soft/ansys_inc/v252/AnsysEM/ansysedt -ng -waitforlicense -features=SF159726_SCRIPTOBJECT,SF6694_NON_GRAPHICAL_COMMAND_EXECUTION -Logfile /scratch/khnolw003/pcbmotor_hpc/Rev0/tasks/stator_try01/aedt.log -RunScriptAndExit /scratch/khnolw003/pcbmotor_hpc/code_446bceb360/inner.py
+2026-10-14 03:01:00 [WARN] [Rev0] stator CPU use: 1.0 of 32 allocated cores busy on average
+2026-10-14 03:01:00 [INFO] [Rev0] stator attempt 1 -> ok after 0:40:43, peak memory 5.7 GB
+2026-10-14 03:01:00 [INFO] [Rev0] final attempt 1 (script): /opt/exp_soft/ansys_inc/v252/AnsysEM/ansysedt -ng -waitforlicense -features=SF159726_SCRIPTOBJECT,SF6694_NON_GRAPHICAL_COMMAND_EXECUTION -Logfile /scratch/khnolw003/pcbmotor_hpc/Rev0/tasks/final_try01/aedt.log -RunScriptAndExit /scratch/khnolw003/pcbmotor_hpc/code_446bceb360/inner.py
+2026-10-14 03:12:01 [WARN] [Rev0] final CPU use: 1.0 of 32 allocated cores busy on average
+2026-10-14 03:12:01 [INFO] [Rev0] final attempt 1 -> ok after 0:11:00, peak memory 4.4 GB
+2026-10-14 03:12:01 [INFO] [Rev0] solve_00 attempt 1 (script, L2 iterative, 6 passes): /opt/exp_soft/ansys_inc/v252/AnsysEM/ansysedt -ng -waitforlicense -features=SF159726_SCRIPTOBJECT,SF6694_NON_GRAPHICAL_COMMAND_EXECUTION -Logfile /scratch/khnolw003/pcbmotor_hpc/Rev0/tasks/solve_00_try01/aedt.log -RunScriptAndExit /scratch/khnolw003/pcbmotor_hpc/code_446bceb360/inner.py
+2026-10-14 20:39:25 [WARN] [Rev0] solve_00 CPU use: 2.9 of 32 allocated cores busy on average - Maxwell is NOT using the allocation well; check the HPC settings in aedt.log
+2026-10-14 20:39:25 [INFO] [Rev0] solve_00 attempt 1 -> ok after 17:27:24, peak memory 109.7 GB
+2026-10-14 20:39:25 [INFO] [Rev0] solve_01 attempt 1 (script, L2 iterative, 6 passes): /opt/exp_soft/ansys_inc/v252/AnsysEM/ansysedt -ng -waitforlicense -features=SF159726_SCRIPTOBJECT,SF6694_NON_GRAPHICAL_COMMAND_EXECUTION -Logfile /scratch/khnolw003/pcbmotor_hpc/Rev0/tasks/solve_01_try01/aedt.log -RunScriptAndExit /scratch/khnolw003/pcbmotor_hpc/code_446bceb360/inner.py
+2026-10-15 14:18:17 [WARN] [Rev0] solve_01 CPU use: 2.8 of 32 allocated cores busy on average - Maxwell is NOT using the allocation well; check the HPC settings in aedt.log
+2026-10-15 14:18:17 [INFO] [Rev0] solve_01 attempt 1 -> ok after 17:38:51, peak memory 109.3 GB
+2026-10-15 14:18:17 [INFO] [Rev0] tprep attempt 1 (script): /opt/exp_soft/ansys_inc/v252/AnsysEM/ansysedt -ng -waitforlicense -features=SF159726_SCRIPTOBJECT,SF6694_NON_GRAPHICAL_COMMAND_EXECUTION -Logfile /scratch/khnolw003/pcbmotor_hpc/Rev0/tasks/tprep_try01/aedt.log -RunScriptAndExit /scratch/khnolw003/pcbmotor_hpc/code_446bceb360/inner.py
+2026-10-15 14:28:48 [WARN] [Rev0] tprep CPU use: 1.0 of 32 allocated cores busy on average
+2026-10-15 14:28:48 [INFO] [Rev0] tprep attempt 1 -> ok after 0:10:31, peak memory 4.4 GB
+2026-10-15 14:28:48 [INFO] [Rev0] tstep_mt0 attempt 1 (script, mesh MT0, 3 steps): /opt/exp_soft/ansys_inc/v252/AnsysEM/ansysedt -ng -waitforlicense -features=SF159726_SCRIPTOBJECT,SF6694_NON_GRAPHICAL_COMMAND_EXECUTION -Logfile /scratch/khnolw003/pcbmotor_hpc/Rev0/tasks/tstep_mt0_try01/aedt.log -RunScriptAndExit /scratch/khnolw003/pcbmotor_hpc/code_446bceb360/inner.py

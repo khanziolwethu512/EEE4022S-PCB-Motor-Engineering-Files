@@ -1,0 +1,15 @@
+DRC / CONNECTIVITY SUMMARY
+==========================
+Source report: Altium_Design_Rule_Check.drc
+Short-circuit violations: 0
+Un-routed net violations: 0
+Unassigned electrical vias: 0 (all 617 actual vias are in PHASE_A/B/C)
+Mechanical NPTH No Net holes: 12 (intentional)
+Total Altium rule violations: 382
+
+Violation categories:
+- Width constraint: 22 (intentional 2.0/2.5 mm terminal copper exceeds the generic 1 mm rule maximum)
+- Hole size constraint: 12 (intentional 3.1 mm NPTH exceeds the generic 2.54 mm rule maximum)
+- Hole-to-hole clearance: 348 (dense 0.3 mm winding-via pattern violates the generic 0.254 mm rule)
+
+These are documented source-rule mismatches; geometry was not modified to suppress them.

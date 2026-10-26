@@ -1,0 +1,157 @@
+machine,scenario,scenario_label,evidence,validity,T_amb_C,R20_basis,R20_ohm,rpm,Rth_K_per_W_per_stator,P_allow_per_stator_W,I_lim_pk_A,I_lim_rms_A,T_em_at_I_lim_mNm
+Rev0,A,"Icepak: hood fans on (1 m/s), rotor still, hypothetical acrylic housing",THERMAL-FEM,all speeds (no rotor stirring credited),25.0,measured 1.89,1.89,0,8.5641,4.0868,1.1161,0.7892,31.0294
+Rev0,A,"Icepak: hood fans on (1 m/s), rotor still, hypothetical acrylic housing",THERMAL-FEM,all speeds (no rotor stirring credited),25.0,measured 1.89,1.89,1000,8.5641,4.0868,1.1133,0.7873,30.952
+Rev0,A,"Icepak: hood fans on (1 m/s), rotor still, hypothetical acrylic housing",THERMAL-FEM,all speeds (no rotor stirring credited),25.0,measured 1.89,1.89,2000,8.5641,4.0868,1.105,0.7813,30.7188
+Rev0,A,"Icepak: hood fans on (1 m/s), rotor still, hypothetical acrylic housing",THERMAL-FEM,all speeds (no rotor stirring credited),25.0,measured 1.89,1.89,4000,8.5641,4.0868,1.0707,0.7571,29.7676
+Rev0,A,"Icepak: hood fans on (1 m/s), rotor still, hypothetical acrylic housing",THERMAL-FEM,all speeds (no rotor stirring credited),25.0,upper 1.94,1.9381,0,8.5641,4.0868,1.1022,0.7794,30.642
+Rev0,A,"Icepak: hood fans on (1 m/s), rotor still, hypothetical acrylic housing",THERMAL-FEM,all speeds (no rotor stirring credited),25.0,upper 1.94,1.9381,1000,8.5641,4.0868,1.0994,0.7774,30.5656
+Rev0,A,"Icepak: hood fans on (1 m/s), rotor still, hypothetical acrylic housing",THERMAL-FEM,all speeds (no rotor stirring credited),25.0,upper 1.94,1.9381,2000,8.5641,4.0868,1.0912,0.7716,30.3353
+Rev0,A,"Icepak: hood fans on (1 m/s), rotor still, hypothetical acrylic housing",THERMAL-FEM,all speeds (no rotor stirring credited),25.0,upper 1.94,1.9381,4000,8.5641,4.0868,1.0574,0.7477,29.3961
+Rev0,A,"Icepak: hood fans on (1 m/s), rotor still, hypothetical acrylic housing",THERMAL-FEM,all speeds (no rotor stirring credited),25.0,lower 1.80,1.7993,0,8.5641,4.0868,1.1439,0.8089,31.8019
+Rev0,A,"Icepak: hood fans on (1 m/s), rotor still, hypothetical acrylic housing",THERMAL-FEM,all speeds (no rotor stirring credited),25.0,lower 1.80,1.7993,1000,8.5641,4.0868,1.1411,0.8069,31.7226
+Rev0,A,"Icepak: hood fans on (1 m/s), rotor still, hypothetical acrylic housing",THERMAL-FEM,all speeds (no rotor stirring credited),25.0,lower 1.80,1.7993,2000,8.5641,4.0868,1.1325,0.8008,31.4836
+Rev0,A,"Icepak: hood fans on (1 m/s), rotor still, hypothetical acrylic housing",THERMAL-FEM,all speeds (no rotor stirring credited),25.0,lower 1.80,1.7993,4000,8.5641,4.0868,1.0974,0.776,30.5088
+Rev0,A,"Icepak: hood fans on (1 m/s), rotor still, hypothetical acrylic housing",THERMAL-FEM,all speeds (no rotor stirring credited),30.0,measured 1.89,1.89,0,8.6199,3.4803,1.03,0.7283,28.6344
+Rev0,A,"Icepak: hood fans on (1 m/s), rotor still, hypothetical acrylic housing",THERMAL-FEM,all speeds (no rotor stirring credited),30.0,measured 1.89,1.89,1000,8.6199,3.4803,1.027,0.7262,28.5506
+Rev0,A,"Icepak: hood fans on (1 m/s), rotor still, hypothetical acrylic housing",THERMAL-FEM,all speeds (no rotor stirring credited),30.0,measured 1.89,1.89,2000,8.6199,3.4803,1.0179,0.7197,28.2976
+Rev0,A,"Icepak: hood fans on (1 m/s), rotor still, hypothetical acrylic housing",THERMAL-FEM,all speeds (no rotor stirring credited),30.0,measured 1.89,1.89,4000,8.6199,3.4803,0.9806,0.6934,27.2621
+Rev0,A,"Icepak: hood fans on (1 m/s), rotor still, hypothetical acrylic housing",THERMAL-FEM,all speeds (no rotor stirring credited),30.0,upper 1.94,1.9381,0,8.6199,3.4803,1.0171,0.7192,28.277
+Rev0,A,"Icepak: hood fans on (1 m/s), rotor still, hypothetical acrylic housing",THERMAL-FEM,all speeds (no rotor stirring credited),30.0,upper 1.94,1.9381,1000,8.6199,3.4803,1.0141,0.7171,28.1942
+Rev0,A,"Icepak: hood fans on (1 m/s), rotor still, hypothetical acrylic housing",THERMAL-FEM,all speeds (no rotor stirring credited),30.0,upper 1.94,1.9381,2000,8.6199,3.4803,1.0052,0.7108,27.9444
+Rev0,A,"Icepak: hood fans on (1 m/s), rotor still, hypothetical acrylic housing",THERMAL-FEM,all speeds (no rotor stirring credited),30.0,upper 1.94,1.9381,4000,8.6199,3.4803,0.9684,0.6847,26.9218
+Rev0,A,"Icepak: hood fans on (1 m/s), rotor still, hypothetical acrylic housing",THERMAL-FEM,all speeds (no rotor stirring credited),30.0,lower 1.80,1.7993,0,8.6199,3.4803,1.0556,0.7464,29.3474
+Rev0,A,"Icepak: hood fans on (1 m/s), rotor still, hypothetical acrylic housing",THERMAL-FEM,all speeds (no rotor stirring credited),30.0,lower 1.80,1.7993,1000,8.6199,3.4803,1.0525,0.7443,29.2615
+Rev0,A,"Icepak: hood fans on (1 m/s), rotor still, hypothetical acrylic housing",THERMAL-FEM,all speeds (no rotor stirring credited),30.0,lower 1.80,1.7993,2000,8.6199,3.4803,1.0432,0.7377,29.0022
+Rev0,A,"Icepak: hood fans on (1 m/s), rotor still, hypothetical acrylic housing",THERMAL-FEM,all speeds (no rotor stirring credited),30.0,lower 1.80,1.7993,4000,8.6199,3.4803,1.005,0.7107,27.9409
+Rev0,B,"Icepak, fans off (natural convection), rotor still",THERMAL-FEM x inferred ratio 1.11,all speeds,25.0,measured 1.89,1.89,0,9.51,3.6803,1.0592,0.7489,29.4457
+Rev0,B,"Icepak, fans off (natural convection), rotor still",THERMAL-FEM x inferred ratio 1.11,all speeds,25.0,measured 1.89,1.89,1000,9.51,3.6803,1.0562,0.7469,29.3642
+Rev0,B,"Icepak, fans off (natural convection), rotor still",THERMAL-FEM x inferred ratio 1.11,all speeds,25.0,measured 1.89,1.89,2000,9.51,3.6803,1.0474,0.7406,29.1183
+Rev0,B,"Icepak, fans off (natural convection), rotor still",THERMAL-FEM x inferred ratio 1.11,all speeds,25.0,measured 1.89,1.89,4000,9.51,3.6803,1.0112,0.715,28.113
+Rev0,B,"Icepak, fans off (natural convection), rotor still",THERMAL-FEM x inferred ratio 1.11,all speeds,25.0,upper 1.94,1.9381,0,9.51,3.6803,1.0459,0.7396,29.0782
+Rev0,B,"Icepak, fans off (natural convection), rotor still",THERMAL-FEM x inferred ratio 1.11,all speeds,25.0,upper 1.94,1.9381,1000,9.51,3.6803,1.043,0.7375,28.9977
+Rev0,B,"Icepak, fans off (natural convection), rotor still",THERMAL-FEM x inferred ratio 1.11,all speeds,25.0,upper 1.94,1.9381,2000,9.51,3.6803,1.0343,0.7314,28.7548
+Rev0,B,"Icepak, fans off (natural convection), rotor still",THERMAL-FEM x inferred ratio 1.11,all speeds,25.0,upper 1.94,1.9381,4000,9.51,3.6803,0.9986,0.7061,27.7621
+Rev0,B,"Icepak, fans off (natural convection), rotor still",THERMAL-FEM x inferred ratio 1.11,all speeds,25.0,lower 1.80,1.7993,0,9.51,3.6803,1.0855,0.7676,30.1789
+Rev0,B,"Icepak, fans off (natural convection), rotor still",THERMAL-FEM x inferred ratio 1.11,all speeds,25.0,lower 1.80,1.7993,1000,9.51,3.6803,1.0825,0.7655,30.0953
+Rev0,B,"Icepak, fans off (natural convection), rotor still",THERMAL-FEM x inferred ratio 1.11,all speeds,25.0,lower 1.80,1.7993,2000,9.51,3.6803,1.0735,0.7591,29.8433
+Rev0,B,"Icepak, fans off (natural convection), rotor still",THERMAL-FEM x inferred ratio 1.11,all speeds,25.0,lower 1.80,1.7993,4000,9.51,3.6803,1.0364,0.7328,28.813
+Rev0,B,"Icepak, fans off (natural convection), rotor still",THERMAL-FEM x inferred ratio 1.11,all speeds,30.0,measured 1.89,1.89,0,9.572,3.1341,0.9774,0.6911,27.1731
+Rev0,B,"Icepak, fans off (natural convection), rotor still",THERMAL-FEM x inferred ratio 1.11,all speeds,30.0,measured 1.89,1.89,1000,9.572,3.1341,0.9742,0.6889,27.0847
+Rev0,B,"Icepak, fans off (natural convection), rotor still",THERMAL-FEM x inferred ratio 1.11,all speeds,30.0,measured 1.89,1.89,2000,9.572,3.1341,0.9646,0.6821,26.8179
+Rev0,B,"Icepak, fans off (natural convection), rotor still",THERMAL-FEM x inferred ratio 1.11,all speeds,30.0,measured 1.89,1.89,4000,9.572,3.1341,0.9253,0.6543,25.7229
+Rev0,B,"Icepak, fans off (natural convection), rotor still",THERMAL-FEM x inferred ratio 1.11,all speeds,30.0,upper 1.94,1.9381,0,9.572,3.1341,0.9652,0.6825,26.8339
+Rev0,B,"Icepak, fans off (natural convection), rotor still",THERMAL-FEM x inferred ratio 1.11,all speeds,30.0,upper 1.94,1.9381,1000,9.572,3.1341,0.9621,0.6803,26.7466
+Rev0,B,"Icepak, fans off (natural convection), rotor still",THERMAL-FEM x inferred ratio 1.11,all speeds,30.0,upper 1.94,1.9381,2000,9.572,3.1341,0.9526,0.6736,26.4831
+Rev0,B,"Icepak, fans off (natural convection), rotor still",THERMAL-FEM x inferred ratio 1.11,all speeds,30.0,upper 1.94,1.9381,4000,9.572,3.1341,0.9137,0.6461,25.4018
+Rev0,B,"Icepak, fans off (natural convection), rotor still",THERMAL-FEM x inferred ratio 1.11,all speeds,30.0,lower 1.80,1.7993,0,9.572,3.1341,1.0017,0.7083,27.8496
+Rev0,B,"Icepak, fans off (natural convection), rotor still",THERMAL-FEM x inferred ratio 1.11,all speeds,30.0,lower 1.80,1.7993,1000,9.572,3.1341,0.9985,0.706,27.759
+Rev0,B,"Icepak, fans off (natural convection), rotor still",THERMAL-FEM x inferred ratio 1.11,all speeds,30.0,lower 1.80,1.7993,2000,9.572,3.1341,0.9887,0.6991,27.4856
+Rev0,B,"Icepak, fans off (natural convection), rotor still",THERMAL-FEM x inferred ratio 1.11,all speeds,30.0,lower 1.80,1.7993,4000,9.572,3.1341,0.9483,0.6705,26.3633
+Rev0,C,"Lumped network, rotor turning 1000 rpm, fans on (Rev1-S scaled by the Icepak Rev1-S/Rev0 ratio)",THERMAL-LUMPED (+ inferred for Rev1-S),about 1000 rpm only; optimistic bound,25.0,measured 1.89,1.89,1000,5.07,6.9034,1.4485,1.0242,40.2688
+Rev0,C,"Lumped network, rotor turning 1000 rpm, fans on (Rev1-S scaled by the Icepak Rev1-S/Rev0 ratio)",THERMAL-LUMPED (+ inferred for Rev1-S),about 1000 rpm only; optimistic bound,25.0,upper 1.94,1.9381,1000,5.07,6.9034,1.4304,1.0114,39.7661
+Rev0,C,"Lumped network, rotor turning 1000 rpm, fans on (Rev1-S scaled by the Icepak Rev1-S/Rev0 ratio)",THERMAL-LUMPED (+ inferred for Rev1-S),about 1000 rpm only; optimistic bound,25.0,lower 1.80,1.7993,1000,5.07,6.9034,1.4845,1.0497,41.2714
+Rev0,C,"Lumped network, rotor turning 1000 rpm, fans on (Rev1-S scaled by the Icepak Rev1-S/Rev0 ratio)",THERMAL-LUMPED (+ inferred for Rev1-S),about 1000 rpm only; optimistic bound,30.0,measured 1.89,1.89,1000,5.07,5.9172,1.3407,0.948,37.2725
+Rev0,C,"Lumped network, rotor turning 1000 rpm, fans on (Rev1-S scaled by the Icepak Rev1-S/Rev0 ratio)",THERMAL-LUMPED (+ inferred for Rev1-S),about 1000 rpm only; optimistic bound,30.0,upper 1.94,1.9381,1000,5.07,5.9172,1.324,0.9362,36.8072
+Rev0,C,"Lumped network, rotor turning 1000 rpm, fans on (Rev1-S scaled by the Icepak Rev1-S/Rev0 ratio)",THERMAL-LUMPED (+ inferred for Rev1-S),about 1000 rpm only; optimistic bound,30.0,lower 1.80,1.7993,1000,5.07,5.9172,1.3741,0.9716,38.2005
+Rev0,D,Cautious planning basis (as-built open frame / unknown cooling),ASSUMED (x1.71 on Icepak),all speeds,25.0,measured 1.89,1.89,0,15.0,2.3333,0.8433,0.5963,23.446
+Rev0,D,Cautious planning basis (as-built open frame / unknown cooling),ASSUMED (x1.71 on Icepak),all speeds,25.0,measured 1.89,1.89,1000,15.0,2.3333,0.8397,0.5937,23.3435
+Rev0,D,Cautious planning basis (as-built open frame / unknown cooling),ASSUMED (x1.71 on Icepak),all speeds,25.0,measured 1.89,1.89,2000,15.0,2.3333,0.8285,0.5858,23.0334
+Rev0,D,Cautious planning basis (as-built open frame / unknown cooling),ASSUMED (x1.71 on Icepak),all speeds,25.0,measured 1.89,1.89,4000,15.0,2.3333,0.7823,0.5532,21.7487
+Rev0,D,Cautious planning basis (as-built open frame / unknown cooling),ASSUMED (x1.71 on Icepak),all speeds,25.0,upper 1.94,1.9381,0,15.0,2.3333,0.8328,0.5889,23.1533
+Rev0,D,Cautious planning basis (as-built open frame / unknown cooling),ASSUMED (x1.71 on Icepak),all speeds,25.0,upper 1.94,1.9381,1000,15.0,2.3333,0.8292,0.5863,23.0521
+Rev0,D,Cautious planning basis (as-built open frame / unknown cooling),ASSUMED (x1.71 on Icepak),all speeds,25.0,upper 1.94,1.9381,2000,15.0,2.3333,0.8182,0.5785,22.7458
+Rev0,D,Cautious planning basis (as-built open frame / unknown cooling),ASSUMED (x1.71 on Icepak),all speeds,25.0,upper 1.94,1.9381,4000,15.0,2.3333,0.7725,0.5463,21.4772
+Rev0,D,Cautious planning basis (as-built open frame / unknown cooling),ASSUMED (x1.71 on Icepak),all speeds,25.0,lower 1.80,1.7993,0,15.0,2.3333,0.8643,0.6112,24.0297
+Rev0,D,Cautious planning basis (as-built open frame / unknown cooling),ASSUMED (x1.71 on Icepak),all speeds,25.0,lower 1.80,1.7993,1000,15.0,2.3333,0.8606,0.6085,23.9247
+Rev0,D,Cautious planning basis (as-built open frame / unknown cooling),ASSUMED (x1.71 on Icepak),all speeds,25.0,lower 1.80,1.7993,2000,15.0,2.3333,0.8491,0.6004,23.6068
+Rev0,D,Cautious planning basis (as-built open frame / unknown cooling),ASSUMED (x1.71 on Icepak),all speeds,25.0,lower 1.80,1.7993,4000,15.0,2.3333,0.8018,0.5669,22.2902
+Rev0,D,Cautious planning basis (as-built open frame / unknown cooling),ASSUMED (x1.71 on Icepak),all speeds,30.0,measured 1.89,1.89,0,15.0,2.0,0.7808,0.5521,21.7067
+Rev0,D,Cautious planning basis (as-built open frame / unknown cooling),ASSUMED (x1.71 on Icepak),all speeds,30.0,measured 1.89,1.89,1000,15.0,2.0,0.7768,0.5493,21.596
+Rev0,D,Cautious planning basis (as-built open frame / unknown cooling),ASSUMED (x1.71 on Icepak),all speeds,30.0,measured 1.89,1.89,2000,15.0,2.0,0.7647,0.5407,21.2604
+Rev0,D,Cautious planning basis (as-built open frame / unknown cooling),ASSUMED (x1.71 on Icepak),all speeds,30.0,measured 1.89,1.89,4000,15.0,2.0,0.7144,0.5052,19.8614
+Rev0,D,Cautious planning basis (as-built open frame / unknown cooling),ASSUMED (x1.71 on Icepak),all speeds,30.0,upper 1.94,1.9381,0,15.0,2.0,0.771,0.5452,21.4358
+Rev0,D,Cautious planning basis (as-built open frame / unknown cooling),ASSUMED (x1.71 on Icepak),all speeds,30.0,upper 1.94,1.9381,1000,15.0,2.0,0.7671,0.5424,21.3264
+Rev0,D,Cautious planning basis (as-built open frame / unknown cooling),ASSUMED (x1.71 on Icepak),all speeds,30.0,upper 1.94,1.9381,2000,15.0,2.0,0.7552,0.534,20.995
+Rev0,D,Cautious planning basis (as-built open frame / unknown cooling),ASSUMED (x1.71 on Icepak),all speeds,30.0,upper 1.94,1.9381,4000,15.0,2.0,0.7055,0.4989,19.6134
+Rev0,D,Cautious planning basis (as-built open frame / unknown cooling),ASSUMED (x1.71 on Icepak),all speeds,30.0,lower 1.80,1.7993,0,15.0,2.0,0.8002,0.5658,22.2472
+Rev0,D,Cautious planning basis (as-built open frame / unknown cooling),ASSUMED (x1.71 on Icepak),all speeds,30.0,lower 1.80,1.7993,1000,15.0,2.0,0.7961,0.563,22.1337
+Rev0,D,Cautious planning basis (as-built open frame / unknown cooling),ASSUMED (x1.71 on Icepak),all speeds,30.0,lower 1.80,1.7993,2000,15.0,2.0,0.7838,0.5542,21.7898
+Rev0,D,Cautious planning basis (as-built open frame / unknown cooling),ASSUMED (x1.71 on Icepak),all speeds,30.0,lower 1.80,1.7993,4000,15.0,2.0,0.7322,0.5177,20.3559
+Rev1-S,A,"Icepak: hood fans on (1 m/s), rotor still, hypothetical acrylic housing",THERMAL-FEM,all speeds (no rotor stirring credited),25.0,measured 1.89,3.78,0,14.7581,2.3716,0.8502,0.6012,50.3762
+Rev1-S,A,"Icepak: hood fans on (1 m/s), rotor still, hypothetical acrylic housing",THERMAL-FEM,all speeds (no rotor stirring credited),25.0,measured 1.89,3.78,1000,14.7581,2.3716,0.8459,0.5982,50.1225
+Rev1-S,A,"Icepak: hood fans on (1 m/s), rotor still, hypothetical acrylic housing",THERMAL-FEM,all speeds (no rotor stirring credited),25.0,measured 1.89,3.78,2000,14.7581,2.3716,0.833,0.589,49.3535
+Rev1-S,A,"Icepak: hood fans on (1 m/s), rotor still, hypothetical acrylic housing",THERMAL-FEM,all speeds (no rotor stirring credited),25.0,measured 1.89,3.78,4000,14.7581,2.3716,0.7789,0.5508,46.1494
+Rev1-S,A,"Icepak: hood fans on (1 m/s), rotor still, hypothetical acrylic housing",THERMAL-FEM,all speeds (no rotor stirring credited),25.0,upper 1.94,3.8762,0,14.7581,2.3716,0.8396,0.5937,49.7474
+Rev1-S,A,"Icepak: hood fans on (1 m/s), rotor still, hypothetical acrylic housing",THERMAL-FEM,all speeds (no rotor stirring credited),25.0,upper 1.94,3.8762,1000,14.7581,2.3716,0.8354,0.5907,49.4968
+Rev1-S,A,"Icepak: hood fans on (1 m/s), rotor still, hypothetical acrylic housing",THERMAL-FEM,all speeds (no rotor stirring credited),25.0,upper 1.94,3.8762,2000,14.7581,2.3716,0.8226,0.5816,48.7374
+Rev1-S,A,"Icepak: hood fans on (1 m/s), rotor still, hypothetical acrylic housing",THERMAL-FEM,all speeds (no rotor stirring credited),25.0,upper 1.94,3.8762,4000,14.7581,2.3716,0.7692,0.5439,45.5733
+Rev1-S,A,"Icepak: hood fans on (1 m/s), rotor still, hypothetical acrylic housing",THERMAL-FEM,all speeds (no rotor stirring credited),25.0,lower 1.80,3.5986,0,14.7581,2.3716,0.8714,0.6162,51.6305
+Rev1-S,A,"Icepak: hood fans on (1 m/s), rotor still, hypothetical acrylic housing",THERMAL-FEM,all speeds (no rotor stirring credited),25.0,lower 1.80,3.5986,1000,14.7581,2.3716,0.867,0.6131,51.3704
+Rev1-S,A,"Icepak: hood fans on (1 m/s), rotor still, hypothetical acrylic housing",THERMAL-FEM,all speeds (no rotor stirring credited),25.0,lower 1.80,3.5986,2000,14.7581,2.3716,0.8537,0.6037,50.5823
+Rev1-S,A,"Icepak: hood fans on (1 m/s), rotor still, hypothetical acrylic housing",THERMAL-FEM,all speeds (no rotor stirring credited),25.0,lower 1.80,3.5986,4000,14.7581,2.3716,0.7983,0.5645,47.2984
+Rev1-S,A,"Icepak: hood fans on (1 m/s), rotor still, hypothetical acrylic housing",THERMAL-FEM,all speeds (no rotor stirring credited),30.0,measured 1.89,3.78,0,14.8529,2.0198,0.7846,0.5548,46.4904
+Rev1-S,A,"Icepak: hood fans on (1 m/s), rotor still, hypothetical acrylic housing",THERMAL-FEM,all speeds (no rotor stirring credited),30.0,measured 1.89,3.78,1000,14.8529,2.0198,0.78,0.5515,46.2153
+Rev1-S,A,"Icepak: hood fans on (1 m/s), rotor still, hypothetical acrylic housing",THERMAL-FEM,all speeds (no rotor stirring credited),30.0,measured 1.89,3.78,2000,14.8529,2.0198,0.7659,0.5416,45.3801
+Rev1-S,A,"Icepak: hood fans on (1 m/s), rotor still, hypothetical acrylic housing",THERMAL-FEM,all speeds (no rotor stirring credited),30.0,measured 1.89,3.78,4000,14.8529,2.0198,0.7067,0.4997,41.8731
+Rev1-S,A,"Icepak: hood fans on (1 m/s), rotor still, hypothetical acrylic housing",THERMAL-FEM,all speeds (no rotor stirring credited),30.0,upper 1.94,3.8762,0,14.8529,2.0198,0.7749,0.5479,45.91
+Rev1-S,A,"Icepak: hood fans on (1 m/s), rotor still, hypothetical acrylic housing",THERMAL-FEM,all speeds (no rotor stirring credited),30.0,upper 1.94,3.8762,1000,14.8529,2.0198,0.7703,0.5447,45.6384
+Rev1-S,A,"Icepak: hood fans on (1 m/s), rotor still, hypothetical acrylic housing",THERMAL-FEM,all speeds (no rotor stirring credited),30.0,upper 1.94,3.8762,2000,14.8529,2.0198,0.7563,0.5348,44.8136
+Rev1-S,A,"Icepak: hood fans on (1 m/s), rotor still, hypothetical acrylic housing",THERMAL-FEM,all speeds (no rotor stirring credited),30.0,upper 1.94,3.8762,4000,14.8529,2.0198,0.6979,0.4935,41.3504
+Rev1-S,A,"Icepak: hood fans on (1 m/s), rotor still, hypothetical acrylic housing",THERMAL-FEM,all speeds (no rotor stirring credited),30.0,lower 1.80,3.5986,0,14.8529,2.0198,0.8042,0.5686,47.6479
+Rev1-S,A,"Icepak: hood fans on (1 m/s), rotor still, hypothetical acrylic housing",THERMAL-FEM,all speeds (no rotor stirring credited),30.0,lower 1.80,3.5986,1000,14.8529,2.0198,0.7994,0.5653,47.366
+Rev1-S,A,"Icepak: hood fans on (1 m/s), rotor still, hypothetical acrylic housing",THERMAL-FEM,all speeds (no rotor stirring credited),30.0,lower 1.80,3.5986,2000,14.8529,2.0198,0.785,0.5551,46.51
+Rev1-S,A,"Icepak: hood fans on (1 m/s), rotor still, hypothetical acrylic housing",THERMAL-FEM,all speeds (no rotor stirring credited),30.0,lower 1.80,3.5986,4000,14.8529,2.0198,0.7243,0.5122,42.9156
+Rev1-S,B,"Icepak, fans off (natural convection), rotor still",THERMAL-FEM x inferred ratio 1.11,all speeds,25.0,measured 1.89,3.78,0,16.3882,2.1357,0.8068,0.5705,47.8052
+Rev1-S,B,"Icepak, fans off (natural convection), rotor still",THERMAL-FEM x inferred ratio 1.11,all speeds,25.0,measured 1.89,3.78,1000,16.3882,2.1357,0.8023,0.5673,47.5378
+Rev1-S,B,"Icepak, fans off (natural convection), rotor still",THERMAL-FEM x inferred ratio 1.11,all speeds,25.0,measured 1.89,3.78,2000,16.3882,2.1357,0.7886,0.5576,46.7262
+Rev1-S,B,"Icepak, fans off (natural convection), rotor still",THERMAL-FEM x inferred ratio 1.11,all speeds,25.0,measured 1.89,3.78,4000,16.3882,2.1357,0.7313,0.5171,43.3283
+Rev1-S,B,"Icepak, fans off (natural convection), rotor still",THERMAL-FEM x inferred ratio 1.11,all speeds,25.0,upper 1.94,3.8762,0,16.3882,2.1357,0.7968,0.5634,47.2085
+Rev1-S,B,"Icepak, fans off (natural convection), rotor still",THERMAL-FEM x inferred ratio 1.11,all speeds,25.0,upper 1.94,3.8762,1000,16.3882,2.1357,0.7923,0.5602,46.9444
+Rev1-S,B,"Icepak, fans off (natural convection), rotor still",THERMAL-FEM x inferred ratio 1.11,all speeds,25.0,upper 1.94,3.8762,2000,16.3882,2.1357,0.7788,0.5507,46.143
+Rev1-S,B,"Icepak, fans off (natural convection), rotor still",THERMAL-FEM x inferred ratio 1.11,all speeds,25.0,upper 1.94,3.8762,4000,16.3882,2.1357,0.7222,0.5106,42.7875
+Rev1-S,B,"Icepak, fans off (natural convection), rotor still",THERMAL-FEM x inferred ratio 1.11,all speeds,25.0,lower 1.80,3.5986,0,16.3882,2.1357,0.8269,0.5847,48.9955
+Rev1-S,B,"Icepak, fans off (natural convection), rotor still",THERMAL-FEM x inferred ratio 1.11,all speeds,25.0,lower 1.80,3.5986,1000,16.3882,2.1357,0.8223,0.5815,48.7214
+Rev1-S,B,"Icepak, fans off (natural convection), rotor still",THERMAL-FEM x inferred ratio 1.11,all speeds,25.0,lower 1.80,3.5986,2000,16.3882,2.1357,0.8083,0.5715,47.8896
+Rev1-S,B,"Icepak, fans off (natural convection), rotor still",THERMAL-FEM x inferred ratio 1.11,all speeds,25.0,lower 1.80,3.5986,4000,16.3882,2.1357,0.7495,0.53,44.4071
+Rev1-S,B,"Icepak, fans off (natural convection), rotor still",THERMAL-FEM x inferred ratio 1.11,all speeds,30.0,measured 1.89,3.78,0,16.4934,1.8189,0.7446,0.5265,44.1177
+Rev1-S,B,"Icepak, fans off (natural convection), rotor still",THERMAL-FEM x inferred ratio 1.11,all speeds,30.0,measured 1.89,3.78,1000,16.4934,1.8189,0.7397,0.5231,43.8277
+Rev1-S,B,"Icepak, fans off (natural convection), rotor still",THERMAL-FEM x inferred ratio 1.11,all speeds,30.0,measured 1.89,3.78,2000,16.4934,1.8189,0.7248,0.5125,42.9461
+Rev1-S,B,"Icepak, fans off (natural convection), rotor still",THERMAL-FEM x inferred ratio 1.11,all speeds,30.0,measured 1.89,3.78,4000,16.4934,1.8189,0.662,0.4681,39.2221
+Rev1-S,B,"Icepak, fans off (natural convection), rotor still",THERMAL-FEM x inferred ratio 1.11,all speeds,30.0,upper 1.94,3.8762,0,16.4934,1.8189,0.7353,0.5199,43.567
+Rev1-S,B,"Icepak, fans off (natural convection), rotor still",THERMAL-FEM x inferred ratio 1.11,all speeds,30.0,upper 1.94,3.8762,1000,16.4934,1.8189,0.7305,0.5165,43.2806
+Rev1-S,B,"Icepak, fans off (natural convection), rotor still",THERMAL-FEM x inferred ratio 1.11,all speeds,30.0,upper 1.94,3.8762,2000,16.4934,1.8189,0.7158,0.5061,42.41
+Rev1-S,B,"Icepak, fans off (natural convection), rotor still",THERMAL-FEM x inferred ratio 1.11,all speeds,30.0,upper 1.94,3.8762,4000,16.4934,1.8189,0.6537,0.4622,38.7325
+Rev1-S,B,"Icepak, fans off (natural convection), rotor still",THERMAL-FEM x inferred ratio 1.11,all speeds,30.0,lower 1.80,3.5986,0,16.4934,1.8189,0.7631,0.5396,45.2161
+Rev1-S,B,"Icepak, fans off (natural convection), rotor still",THERMAL-FEM x inferred ratio 1.11,all speeds,30.0,lower 1.80,3.5986,1000,16.4934,1.8189,0.7581,0.5361,44.9189
+Rev1-S,B,"Icepak, fans off (natural convection), rotor still",THERMAL-FEM x inferred ratio 1.11,all speeds,30.0,lower 1.80,3.5986,2000,16.4934,1.8189,0.7429,0.5253,44.0154
+Rev1-S,B,"Icepak, fans off (natural convection), rotor still",THERMAL-FEM x inferred ratio 1.11,all speeds,30.0,lower 1.80,3.5986,4000,16.4934,1.8189,0.6785,0.4797,40.1986
+Rev1-S,C,"Lumped network, rotor turning 1000 rpm, fans on (Rev1-S scaled by the Icepak Rev1-S/Rev0 ratio)",THERMAL-LUMPED (+ inferred for Rev1-S),about 1000 rpm only; optimistic bound,25.0,measured 1.89,3.78,1000,8.7369,4.006,1.1017,0.779,65.2781
+Rev1-S,C,"Lumped network, rotor turning 1000 rpm, fans on (Rev1-S scaled by the Icepak Rev1-S/Rev0 ratio)",THERMAL-LUMPED (+ inferred for Rev1-S),about 1000 rpm only; optimistic bound,25.0,upper 1.94,3.8762,1000,8.7369,4.006,1.088,0.7693,64.4632
+Rev1-S,C,"Lumped network, rotor turning 1000 rpm, fans on (Rev1-S scaled by the Icepak Rev1-S/Rev0 ratio)",THERMAL-LUMPED (+ inferred for Rev1-S),about 1000 rpm only; optimistic bound,25.0,lower 1.80,3.5986,1000,8.7369,4.006,1.1292,0.7984,66.9033
+Rev1-S,C,"Lumped network, rotor turning 1000 rpm, fans on (Rev1-S scaled by the Icepak Rev1-S/Rev0 ratio)",THERMAL-LUMPED (+ inferred for Rev1-S),about 1000 rpm only; optimistic bound,30.0,measured 1.89,3.78,1000,8.7361,3.434,1.0196,0.7209,60.4085
+Rev1-S,C,"Lumped network, rotor turning 1000 rpm, fans on (Rev1-S scaled by the Icepak Rev1-S/Rev0 ratio)",THERMAL-LUMPED (+ inferred for Rev1-S),about 1000 rpm only; optimistic bound,30.0,upper 1.94,3.8762,1000,8.7361,3.434,1.0068,0.7119,59.6545
+Rev1-S,C,"Lumped network, rotor turning 1000 rpm, fans on (Rev1-S scaled by the Icepak Rev1-S/Rev0 ratio)",THERMAL-LUMPED (+ inferred for Rev1-S),about 1000 rpm only; optimistic bound,30.0,lower 1.80,3.5986,1000,8.7361,3.434,1.0449,0.7389,61.9126
+Rev1-S,D,Cautious planning basis (as-built open frame / unknown cooling),ASSUMED (x1.71 on Icepak),all speeds,25.0,measured 1.89,3.78,0,25.3,1.3834,0.6494,0.4592,38.4752
+Rev1-S,D,Cautious planning basis (as-built open frame / unknown cooling),ASSUMED (x1.71 on Icepak),all speeds,25.0,measured 1.89,3.78,1000,25.3,1.3834,0.6438,0.4552,38.1424
+Rev1-S,D,Cautious planning basis (as-built open frame / unknown cooling),ASSUMED (x1.71 on Icepak),all speeds,25.0,measured 1.89,3.78,2000,25.3,1.3834,0.6266,0.4431,37.1261
+Rev1-S,D,Cautious planning basis (as-built open frame / unknown cooling),ASSUMED (x1.71 on Icepak),all speeds,25.0,measured 1.89,3.78,4000,25.3,1.3834,0.5527,0.3908,32.7467
+Rev1-S,D,Cautious planning basis (as-built open frame / unknown cooling),ASSUMED (x1.71 on Icepak),all speeds,25.0,upper 1.94,3.8762,0,25.3,1.3834,0.6413,0.4534,37.995
+Rev1-S,D,Cautious planning basis (as-built open frame / unknown cooling),ASSUMED (x1.71 on Icepak),all speeds,25.0,upper 1.94,3.8762,1000,25.3,1.3834,0.6357,0.4495,37.6663
+Rev1-S,D,Cautious planning basis (as-built open frame / unknown cooling),ASSUMED (x1.71 on Icepak),all speeds,25.0,upper 1.94,3.8762,2000,25.3,1.3834,0.6188,0.4375,36.6626
+Rev1-S,D,Cautious planning basis (as-built open frame / unknown cooling),ASSUMED (x1.71 on Icepak),all speeds,25.0,upper 1.94,3.8762,4000,25.3,1.3834,0.5458,0.3859,32.3379
+Rev1-S,D,Cautious planning basis (as-built open frame / unknown cooling),ASSUMED (x1.71 on Icepak),all speeds,25.0,lower 1.80,3.5986,0,25.3,1.3834,0.6655,0.4706,39.4332
+Rev1-S,D,Cautious planning basis (as-built open frame / unknown cooling),ASSUMED (x1.71 on Icepak),all speeds,25.0,lower 1.80,3.5986,1000,25.3,1.3834,0.6598,0.4665,39.0921
+Rev1-S,D,Cautious planning basis (as-built open frame / unknown cooling),ASSUMED (x1.71 on Icepak),all speeds,25.0,lower 1.80,3.5986,2000,25.3,1.3834,0.6422,0.4541,38.0504
+Rev1-S,D,Cautious planning basis (as-built open frame / unknown cooling),ASSUMED (x1.71 on Icepak),all speeds,25.0,lower 1.80,3.5986,4000,25.3,1.3834,0.5664,0.4005,33.562
+Rev1-S,D,Cautious planning basis (as-built open frame / unknown cooling),ASSUMED (x1.71 on Icepak),all speeds,30.0,measured 1.89,3.78,0,25.3,1.1858,0.6012,0.4251,35.6212
+Rev1-S,D,Cautious planning basis (as-built open frame / unknown cooling),ASSUMED (x1.71 on Icepak),all speeds,30.0,measured 1.89,3.78,1000,25.3,1.1858,0.5951,0.4208,35.2614
+Rev1-S,D,Cautious planning basis (as-built open frame / unknown cooling),ASSUMED (x1.71 on Icepak),all speeds,30.0,measured 1.89,3.78,2000,25.3,1.1858,0.5765,0.4077,34.1594
+Rev1-S,D,Cautious planning basis (as-built open frame / unknown cooling),ASSUMED (x1.71 on Icepak),all speeds,30.0,measured 1.89,3.78,4000,25.3,1.1858,0.4952,0.3502,29.3405
+Rev1-S,D,Cautious planning basis (as-built open frame / unknown cooling),ASSUMED (x1.71 on Icepak),all speeds,30.0,upper 1.94,3.8762,0,25.3,1.1858,0.5937,0.4198,35.1765
+Rev1-S,D,Cautious planning basis (as-built open frame / unknown cooling),ASSUMED (x1.71 on Icepak),all speeds,30.0,upper 1.94,3.8762,1000,25.3,1.1858,0.5877,0.4156,34.8212
+Rev1-S,D,Cautious planning basis (as-built open frame / unknown cooling),ASSUMED (x1.71 on Icepak),all speeds,30.0,upper 1.94,3.8762,2000,25.3,1.1858,0.5693,0.4026,33.733
+Rev1-S,D,Cautious planning basis (as-built open frame / unknown cooling),ASSUMED (x1.71 on Icepak),all speeds,30.0,upper 1.94,3.8762,4000,25.3,1.1858,0.489,0.3458,28.9743
+Rev1-S,D,Cautious planning basis (as-built open frame / unknown cooling),ASSUMED (x1.71 on Icepak),all speeds,30.0,lower 1.80,3.5986,0,25.3,1.1858,0.6162,0.4357,36.508
+Rev1-S,D,Cautious planning basis (as-built open frame / unknown cooling),ASSUMED (x1.71 on Icepak),all speeds,30.0,lower 1.80,3.5986,1000,25.3,1.1858,0.6099,0.4313,36.1393
+Rev1-S,D,Cautious planning basis (as-built open frame / unknown cooling),ASSUMED (x1.71 on Icepak),all speeds,30.0,lower 1.80,3.5986,2000,25.3,1.1858,0.5909,0.4178,35.0099
+Rev1-S,D,Cautious planning basis (as-built open frame / unknown cooling),ASSUMED (x1.71 on Icepak),all speeds,30.0,lower 1.80,3.5986,4000,25.3,1.1858,0.5075,0.3589,30.0711

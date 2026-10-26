@@ -1,0 +1,54 @@
+2026-10-24 23:28:47 [INFO] hpc_motor 1.0 (2026-10-11) | job 1526905 | node srvrochpc104.uct.ac.za | motor FIELDMAP_REV0_B_G400 | mode lab
+2026-10-24 23:28:47 [INFO] Resources: 16 cores, memory limit 121.9 GB (cgroup_v2 121.9 GB, slurm_per_cpu 121.9 GB, physical 375.9 GB), wall time left 23:59:59
+2026-10-24 23:28:47 [INFO] Work folder: /scratch/khnolw003/pcbmotor_hpc (disk budget 45.0 GB for the whole work folder; now used 0.9 GB). /scratch quota: 0.0 of 50 GB used (all your files)
+2026-10-24 23:28:47 [INFO] Source check: vias: source 617 records (615 unique) vs embedded 615 -> 0 missing, 0 extra
+2026-10-24 23:28:47 [INFO] Source check: terminal pads: source 12 vs embedded 12 -> 0 missing
+2026-10-24 23:28:47 [INFO] Source check: mounting holes: source 12 vs embedded 12 -> 0 missing
+2026-10-24 23:28:54 [INFO] AEDT temp folder (TMPDIR): /scratch/khnolw003/pcbmotor_hpc/tmp - work folder on /scratch (no job-specific temporary folder provided; counted by the disk guard)
+2026-10-24 23:28:54 [INFO] AEDT: /opt/exp_soft/ansys_inc/v252/AnsysEM/ansysedt (found via file search, version 2025.2); licence settings: none in the environment (AEDT default)
+2026-10-24 23:28:54 [INFO] [FIELDMAP_REV0_B_G400] lab attempt 1 (script): /opt/exp_soft/ansys_inc/v252/AnsysEM/ansysedt -ng -waitforlicense -features=SF159726_SCRIPTOBJECT,SF6694_NON_GRAPHICAL_COMMAND_EXECUTION -Logfile /scratch/khnolw003/pcbmotor_hpc/FIELDMAP_REV0_B_G400/tasks/lab_try01/aedt.log -RunScriptAndExit /scratch/khnolw003/pcbmotor_hpc/code_946d6dcedc/inner.py
+2026-10-24 23:37:36 [WARN] [FIELDMAP_REV0_B_G400] lab CPU use: 2.0 of 16 allocated cores busy on average, 3.1 at the busiest minute - Maxwell is NOT using the allocation well; check the HPC settings in aedt.log
+2026-10-24 23:37:36 [INFO] [FIELDMAP_REV0_B_G400] lab attempt 1 -> ok after 0:08:41, peak memory 3.9 GB
+2026-10-24 23:37:36 [INFO] [FIELDMAP_REV0_B_G400] finished: 32 result files in /scratch/khnolw003/pcbmotor_hpc/RESULTS_FIELDMAP_REV0_B_G400
+FIELD-ONLY FEM + TRACE-RESOLVED WINDING POST-PROCESSING - FIELDMAP_REV0_B_G400 (Rev0)
+Rotor angles (deg mech): 0, 1.875, 3.75, 5.625, 7.5, 9.375, 11.25, 13.125, 15, 16.875, 18.75, 20.625; k = dLambda/dtheta = -T_copper/I per phase, 1 A into the L1 terminal
+Gap 4.000 mm, R2 / R1 steel 2.00 / 2.00 mm, zone mesh 0.80 mm, 4 passes
+Backplate OD/ID 86.0 / 19.0 mm, inter-board gap 0.000 mm, region padding 20.0 mm
+
+Stator S1 (z offset 0.00000 mm):
+  board 1 PHASE_A: K1 = 2.7159 mN.m/A, psi = -29.99 deg, H3/H1 = 2.0 %; single-sided distance law at 4.000 mm: 2.4574 (+10.52 %)
+  board 2 PHASE_A: K1 = 2.0234 mN.m/A, psi = -30.17 deg, H3/H1 = 1.2 %; single-sided distance law at 5.020 mm: 1.8037 (+12.18 %)
+  board 3 PHASE_A: K1 = 1.5360 mN.m/A, psi = -29.93 deg, H3/H1 = 0.3 %; single-sided distance law at 6.041 mm: 1.3239 (+16.02 %)
+  board 4 PHASE_A: K1 = 1.1614 mN.m/A, psi = -29.96 deg, H3/H1 = 0.5 %; single-sided distance law at 7.061 mm: 0.9717 (+19.52 %)
+  board 5 PHASE_A: K1 = 0.8329 mN.m/A, psi = -30.06 deg, H3/H1 = 0.7 %; single-sided distance law at 8.081 mm: 0.7132 (+16.78 %)
+  STACK S1 PHASE_A: K = 8.270 mN.m/A, psi = -30.03 deg, H3/H1 = 1.1 %
+  STACK S1 PHASE_B: K = 8.260 mN.m/A, psi = +89.98 deg, H3/H1 = 1.1 %
+  STACK S1 PHASE_C: K = 8.263 mN.m/A, psi = -149.98 deg, H3/H1 = 1.1 %
+
+MACHINE PHASE_A: K = 8.270 mN.m/A, psi -30.03 deg, H3/H1 1.1 %
+MACHINE PHASE_B: K = 8.260 mN.m/A, psi +89.98 deg, H3/H1 1.1 %
+MACHINE PHASE_C: K = 8.263 mN.m/A, psi -149.98 deg, H3/H1 1.1 %
+
+Machine (phase A): T_ideal = 12.4 mN.m per A_pk (1.5 K), E1 = 0.612 V rms at 1000 rpm, R_phase = 1.389 ohm, Km = 0.0086 N.m/sqrt(W)
+
+Neglected: armature reaction, copper eddy/skin/proximity effects, B averaged over the track cross-section (centre-line sampling). R_phase uses the Gate-1 FEM value 0.2777 ohm per board-phase.
+
+BACK-EMF WAVEFORM at 1000 rpm (from k(theta) at 12 angles, second half-period by antisymmetry):
+  PHASE_A: K1 = 8.270 mN.m/A, E1 = 0.6123 V rms, THD 1.1 % (H3 1.11%, H5 0.07%, H7 0.04%, H9 0.03%, H11 0.04%)
+  PHASE_B: K1 = 8.260 mN.m/A, E1 = 0.6116 V rms, THD 1.1 % (H3 1.12%, H5 0.05%, H7 0.02%, H9 0.08%, H11 0.06%)
+  PHASE_C: K1 = 8.263 mN.m/A, E1 = 0.6119 V rms, THD 1.1 % (H3 1.11%, H5 0.05%, H7 0.10%, H9 0.04%, H11 0.01%)
+  line A-B: E1 = 1.0600 V rms, THD 0.08 %
+  sinusoidal currents at 1 A pk in phase with each back-EMF: T mean 12.396 mN.m, ripple 0.19 % pk-pk (armature reaction neglected)
+
+Copper eddy loss estimate at 1000 rpm (thin-conductor formula on the trace pieces, vias excluded; from the static field at 12 angles, dt = 0.3125 ms): 0.00339 W
+  per board: S1_B1 1.55 mW, S1_B2 0.87 mW, S1_B3 0.51 mW, S1_B4 0.29 mW, S1_B5 0.17 mW
+
+Field probes (rotor angle 0 deg; steel planes r 10-42 mm, PCB planes r 12-46 mm, 2 deg):
+  PCB_B1_mid (z 0.0000 mm): |B| max 0.117 T, p99 0.109 T, mean 0.060 T; |Bz| max 0.115 T, mean 0.036 T; 0.0 % above 1.6 T
+  PCB_B3_mid (z -2.0406 mm): |B| max 0.068 T, p99 0.061 T, mean 0.033 T; |Bz| max 0.066 T, mean 0.020 T; 0.0 % above 1.6 T
+  PCB_B5_mid (z -4.0813 mm): |B| max 0.041 T, p99 0.034 T, mean 0.018 T; |Bz| max 0.039 T, mean 0.011 T; 0.0 % above 1.6 T
+  PCB_face_plus0p25mm (z 0.7602 mm): |B| max 0.149 T, p99 0.138 T, mean 0.076 T; |Bz| max 0.142 T, mean 0.045 T; 0.0 % above 1.6 T
+  R1_BackIron (z 7.5102 mm): |B| max 0.929 T, p99 0.866 T, mean 0.410 T; |Bz| max 0.419 T, mean 0.111 T; 0.0 % above 1.6 T
+
+2026-10-24 23:37:36 [INFO] [FIELDMAP_REV0_B_G400] supervisor finished: done
+2026-10-24 23:37:36 [INFO] [FIELDMAP_REV0_B_G400] lab model run: done

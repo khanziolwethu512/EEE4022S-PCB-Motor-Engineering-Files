@@ -1,0 +1,44 @@
+2026-10-24 23:28:47 [INFO] hpc_motor 1.0 (2026-10-11) | job 1526911 | node srvrochpc115.uct.ac.za | motor FIELDMAP_REV0_C450 | mode lab
+2026-10-24 23:28:47 [INFO] Resources: 16 cores, memory limit 121.9 GB (cgroup_v2 121.9 GB, slurm_per_cpu 121.9 GB, physical 375.9 GB), wall time left 23:59:59
+2026-10-24 23:28:47 [INFO] Work folder: /scratch/khnolw003/pcbmotor_hpc (disk budget 45.0 GB for the whole work folder; now used 0.9 GB). /scratch quota: 0.0 of 50 GB used (all your files)
+2026-10-24 23:28:47 [INFO] Source check: vias: source 617 records (615 unique) vs embedded 615 -> 0 missing, 0 extra
+2026-10-24 23:28:47 [INFO] Source check: terminal pads: source 12 vs embedded 12 -> 0 missing
+2026-10-24 23:28:47 [INFO] Source check: mounting holes: source 12 vs embedded 12 -> 0 missing
+2026-10-24 23:28:55 [INFO] AEDT temp folder (TMPDIR): /scratch/khnolw003/pcbmotor_hpc/tmp - work folder on /scratch (no job-specific temporary folder provided; counted by the disk guard)
+2026-10-24 23:28:55 [INFO] AEDT: /opt/exp_soft/ansys_inc/v252/AnsysEM/ansysedt (found via file search, version 2025.2); licence settings: none in the environment (AEDT default)
+2026-10-24 23:28:55 [INFO] [FIELDMAP_REV0_C450] lab attempt 1 (script): /opt/exp_soft/ansys_inc/v252/AnsysEM/ansysedt -ng -waitforlicense -features=SF159726_SCRIPTOBJECT,SF6694_NON_GRAPHICAL_COMMAND_EXECUTION -Logfile /scratch/khnolw003/pcbmotor_hpc/FIELDMAP_REV0_C450/tasks/lab_try01/aedt.log -RunScriptAndExit /scratch/khnolw003/pcbmotor_hpc/code_946d6dcedc/inner.py
+2026-10-24 23:37:37 [WARN] [FIELDMAP_REV0_C450] lab CPU use: 2.0 of 16 allocated cores busy on average, 3.1 at the busiest minute - Maxwell is NOT using the allocation well; check the HPC settings in aedt.log
+2026-10-24 23:37:37 [INFO] [FIELDMAP_REV0_C450] lab attempt 1 -> ok after 0:08:41, peak memory 4.2 GB
+2026-10-24 23:37:37 [INFO] [FIELDMAP_REV0_C450] finished: 11 result files in /scratch/khnolw003/pcbmotor_hpc/RESULTS_FIELDMAP_REV0_C450
+FIELD-ONLY FEM + TRACE-RESOLVED WINDING POST-PROCESSING - FIELDMAP_REV0_C450 (Rev0)
+Rotor angles (deg mech): 0, 1.875, 3.75, 5.625, 7.5, 9.375, 11.25, 13.125, 15, 16.875, 18.75, 20.625; k = dLambda/dtheta = -T_copper/I per phase, 1 A into the L1 terminal
+Gap 4.500 mm, R2 / R1 steel 2.00 / 2.00 mm, zone mesh 0.80 mm, 4 passes
+Backplate OD/ID 80.0 / 25.0 mm, inter-board gap 0.000 mm, region padding 20.0 mm
+
+Stator S1 (z offset 0.00000 mm):
+  board 1 PHASE_A: K1 = 2.3488 mN.m/A, psi = -30.06 deg, H3/H1 = 1.4 %; single-sided distance law at 4.500 mm: 2.1118 (+11.22 %)
+  board 2 PHASE_A: K1 = 1.7523 mN.m/A, psi = -29.99 deg, H3/H1 = 0.5 %; single-sided distance law at 5.520 mm: 1.5500 (+13.05 %)
+  board 3 PHASE_A: K1 = 1.3313 mN.m/A, psi = -29.66 deg, H3/H1 = 1.0 %; single-sided distance law at 6.541 mm: 1.1377 (+17.01 %)
+  board 4 PHASE_A: K1 = 1.0008 mN.m/A, psi = -29.81 deg, H3/H1 = 0.9 %; single-sided distance law at 7.561 mm: 0.8351 (+19.84 %)
+  board 5 PHASE_A: K1 = 0.7219 mN.m/A, psi = -30.29 deg, H3/H1 = 0.2 %; single-sided distance law at 8.581 mm: 0.6129 (+17.78 %)
+  STACK S1 PHASE_A: K = 7.155 mN.m/A, psi = -29.96 deg, H3/H1 = 0.9 %
+  STACK S1 PHASE_B: K = 7.173 mN.m/A, psi = +89.96 deg, H3/H1 = 0.8 %
+  STACK S1 PHASE_C: K = 7.170 mN.m/A, psi = -150.00 deg, H3/H1 = 0.8 %
+
+MACHINE PHASE_A: K = 7.155 mN.m/A, psi -29.96 deg, H3/H1 0.9 %
+MACHINE PHASE_B: K = 7.173 mN.m/A, psi +89.96 deg, H3/H1 0.8 %
+MACHINE PHASE_C: K = 7.170 mN.m/A, psi -150.00 deg, H3/H1 0.8 %
+
+Machine (phase A): T_ideal = 10.7 mN.m per A_pk (1.5 K), E1 = 0.530 V rms at 1000 rpm, R_phase = 1.389 ohm, Km = 0.0074 N.m/sqrt(W)
+
+Neglected: armature reaction, copper eddy/skin/proximity effects, B averaged over the track cross-section (centre-line sampling). R_phase uses the Gate-1 FEM value 0.2777 ohm per board-phase.
+
+BACK-EMF WAVEFORM at 1000 rpm (from k(theta) at 12 angles, second half-period by antisymmetry):
+  PHASE_A: K1 = 7.155 mN.m/A, E1 = 0.5298 V rms, THD 0.9 % (H3 0.86%, H5 0.07%, H7 0.14%, H9 0.09%, H11 0.06%)
+  PHASE_B: K1 = 7.173 mN.m/A, E1 = 0.5312 V rms, THD 0.8 % (H3 0.84%, H5 0.02%, H7 0.03%, H9 0.05%, H11 0.02%)
+  PHASE_C: K1 = 7.170 mN.m/A, E1 = 0.5310 V rms, THD 0.8 % (H3 0.80%, H5 0.11%, H7 0.01%, H9 0.10%, H11 0.04%)
+  line A-B: E1 = 0.9185 V rms, THD 0.11 %
+  sinusoidal currents at 1 A pk in phase with each back-EMF: T mean 10.749 mN.m, ripple 0.49 % pk-pk (armature reaction neglected)
+
+2026-10-24 23:37:37 [INFO] [FIELDMAP_REV0_C450] supervisor finished: done
+2026-10-24 23:37:37 [INFO] [FIELDMAP_REV0_C450] lab model run: done

@@ -1,0 +1,13 @@
+pad_id,net,x_mm,y_mm,layer,shape,x_size_mm,y_size_mm,corner_chamfer_mm,rotation_deg,hole_mm,pad_type
+PHASE_A_PAD_01,PHASE_A,77.25000044,139.40415604,Bottom Layer,Octagonal rectangle,3.0,2.0,0.5,330.0,0.0,SMD/free terminal pad
+PHASE_A_PAD_02,PHASE_A,77.25000044,139.40415604,Top Layer,Octagonal rectangle,3.0,2.0,0.5,150.0,0.0,SMD/free terminal pad
+PHASE_A_PAD_03,PHASE_A,81.5801264,141.90415612,Bottom Layer,Octagonal rectangle,3.0,2.0,0.5,330.0,0.0,SMD/free terminal pad
+PHASE_A_PAD_04,PHASE_A,81.5801264,141.90415612,Top Layer,Octagonal rectangle,3.0,2.0,0.5,150.0,0.0,SMD/free terminal pad
+PHASE_B_PAD_01,PHASE_B,100.00000066,145.5000011,Bottom Layer,Octagonal rectangle,3.0,2.0,0.5,0.0,0.0,SMD/free terminal pad
+PHASE_B_PAD_02,PHASE_B,100.00000066,145.5000011,Top Layer,Octagonal rectangle,3.0,2.0,0.5,0.0,0.0,SMD/free terminal pad
+PHASE_B_PAD_03,PHASE_B,105.00000082,145.5000011,Bottom Layer,Octagonal rectangle,3.0,2.0,0.5,0.0,0.0,SMD/free terminal pad
+PHASE_B_PAD_04,PHASE_B,105.00000082,145.5000011,Top Layer,Octagonal rectangle,3.0,2.0,0.5,0.0,0.0,SMD/free terminal pad
+PHASE_C_PAD_01,PHASE_C,122.75000088,139.40415604,Bottom Layer,Octagonal rectangle,3.0,2.0,0.5,30.0,0.0,SMD/free terminal pad
+PHASE_C_PAD_02,PHASE_C,122.75000088,139.40415604,Top Layer,Octagonal rectangle,3.0,2.0,0.5,210.0,0.0,SMD/free terminal pad
+PHASE_C_PAD_03,PHASE_C,127.08012684,136.9041585,Bottom Layer,Octagonal rectangle,3.0,2.0,0.5,30.0,0.0,SMD/free terminal pad
+PHASE_C_PAD_04,PHASE_C,127.08012684,136.9041585,Top Layer,Octagonal rectangle,3.0,2.0,0.5,210.0,0.0,SMD/free terminal pad

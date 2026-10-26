@@ -1,0 +1,4 @@
+Corrected source: D:\Haram\mini_wave-bb_nets_complete.PcbDoc
+SHA256: 82394e31f1e229d65b8c353942e3ba01bee26a9ba69fc68a9732cff1eb4858bb
+The MASTER and timestamped FROZEN copies were created before generating new reports.
+No associated .PrjPcb, .OutJob, .SchDoc or library project files were found in the searched source locations.

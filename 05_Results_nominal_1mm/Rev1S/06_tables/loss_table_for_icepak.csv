@@ -1,0 +1,22 @@
+part,stator,board,P_W_at_1000rpm_1Apk,note
+PCB copper DC,S1,1,0.398400,3 phases x 1.5 Ipk^2 x 0.2656/3 ohm per board-phase
+PCB copper eddy,S1,1,0.010811,thin-conductor estimate
+PCB copper DC,S1,2,0.398400,3 phases x 1.5 Ipk^2 x 0.2656/3 ohm per board-phase
+PCB copper eddy,S1,2,0.004831,thin-conductor estimate
+PCB copper DC,S1,3,0.398400,3 phases x 1.5 Ipk^2 x 0.2656/3 ohm per board-phase
+PCB copper eddy,S1,3,0.002535,thin-conductor estimate
+PCB copper DC,S1,4,0.398400,3 phases x 1.5 Ipk^2 x 0.2656/3 ohm per board-phase
+PCB copper eddy,S1,4,0.001402,thin-conductor estimate
+PCB copper DC,S1,5,0.398400,3 phases x 1.5 Ipk^2 x 0.2656/3 ohm per board-phase
+PCB copper eddy,S1,5,0.000771,thin-conductor estimate
+PCB copper DC,S2,1,0.398400,3 phases x 1.5 Ipk^2 x 0.2656/3 ohm per board-phase
+PCB copper eddy,S2,1,0.011498,thin-conductor estimate
+PCB copper DC,S2,2,0.398400,3 phases x 1.5 Ipk^2 x 0.2656/3 ohm per board-phase
+PCB copper eddy,S2,2,0.005505,thin-conductor estimate
+PCB copper DC,S2,3,0.398400,3 phases x 1.5 Ipk^2 x 0.2656/3 ohm per board-phase
+PCB copper eddy,S2,3,0.003228,thin-conductor estimate
+PCB copper DC,S2,4,0.398400,3 phases x 1.5 Ipk^2 x 0.2656/3 ohm per board-phase
+PCB copper eddy,S2,4,0.002088,thin-conductor estimate
+PCB copper DC,S2,5,0.398400,3 phases x 1.5 Ipk^2 x 0.2656/3 ohm per board-phase
+PCB copper eddy,S2,5,0.001512,thin-conductor estimate
+Magnets (all),-,-,0.000000,Maxwell SolidLoss mean

@@ -1,0 +1,66 @@
+[REV0 STACK_JUNCTION_TEST    0.0s] REV0 pipeline, profile STACK_JUNCTION_TEST, stages project -> export, modules from C:\Users\Student\OneDrive - University of Cape Town\EEE4022S Ansys files\Motor run\rev0, solving in C:\Users\Student\Rev0_work, results copied to C:\Users\Student\OneDrive - University of Cape Town\EEE4022S Ansys files\Motor run\results
+[REV0 STACK_JUNCTION_TEST    0.4s] === STAGE project ===
+[REV0 STACK_JUNCTION_TEST    4.2s] Design solution type reported by AEDT: Magnetostatic
+[REV0 STACK_JUNCTION_TEST    4.3s] Project REV0_STACK_JUNCTION_TEST / design Rev0 (Magnetostatic)
+[REV0 STACK_JUNCTION_TEST    4.3s] ASSUMPTION: Stack-up mode 'scaled' - Altium dielectric ratios scaled to 1.000 mm copper+dielectric; NOT the JLCPCB stack-up
+[REV0 STACK_JUNCTION_TEST    4.3s] ASSUMPTION: Solder mask 0.01016 mm each face (source stack-up); board pitch 1.02032 mm
+[REV0 STACK_JUNCTION_TEST    4.3s] ASSUMPTION: Vias = solid 0.30 mm copper (8-sided): fine for conduction/field, low for final resistance
+[REV0 STACK_JUNCTION_TEST    4.3s] ASSUMPTION: Air gap 1.000 mm measured from PCB1 top solder-mask surface to magnet face
+[REV0 STACK_JUNCTION_TEST    4.3s] ASSUMPTION: FR-4 and solder mask modelled as air (mu_r = 1, non-conductive either way); board geometry, pitch and air gap unchanged
+[REV0 STACK_JUNCTION_TEST    4.3s] ASSUMPTION: Inductance matrix not computed (lab-PC freeze at 'Start Matrix')
+[REV0 STACK_JUNCTION_TEST    4.3s] ASSUMPTION: 2 identical boards, same orientation, touching mask-to-mask (pitch 1.02032 mm); each phase a 2-board series string: 1 x 1 mm copper bridges at the rim terminal spanning the 0.02032 mm mask-to-mask gap and touching board k L6 Out / board k+1 L1 In pad faces (represents the edge solder joint; boards are separate touching conductors, not one united solid); external raised leads only on the string ends; star point NOT connected (six ends exposed)
+[REV0 STACK_JUNCTION_TEST    4.7s] Checkpoint saved: C:\Users\Student\Rev0_work\REV0_STACK_JUNCTION_TEST_results\checkpoints\01_project.aedt
+[REV0 STACK_JUNCTION_TEST    4.7s] Stage project OK
+[REV0 STACK_JUNCTION_TEST    4.7s] === STAGE stator ===
+[REV0 STACK_JUNCTION_TEST    6.4s] Check: no via of one phase touches copper of another phase
+[REV0 STACK_JUNCTION_TEST    6.4s] Check PHASE_A: 148 islands form ONE network; In->Out 25 island-hops (farthest island 25)
+[REV0 STACK_JUNCTION_TEST   58.7s] PCB1 PHASE_A: 148 copper islands on 6 layers, 205 vias
+[REV0 STACK_JUNCTION_TEST   89.9s] PCB1: modelling history purged
+[REV0 STACK_JUNCTION_TEST   89.9s] PCB1 built: copper L1 top z=0.50000, top mask surface z=0.51016, bottom surface z=-0.51016
+[REV0 STACK_JUNCTION_TEST   91.1s] PCB1: Validation Check passed for geometry (only the expected build-only notices: Project: REV0_STACK_JUNCTION_TEST, Design: Rev0, [error] No  / Project: REV0_STACK_JUNCTION_TEST, Design: Rev0, [error] Sol)
+[REV0 STACK_JUNCTION_TEST   92.7s] PCB1 validated (geometry OK) and saved: C:\Users\Student\Rev0_work\REV0_STACK_JUNCTION_TEST_results\checkpoints\02_stator_board1.aedt
+[REV0 STACK_JUNCTION_TEST  158.7s] PCB2 PHASE_A: 148 copper islands on 6 layers, 205 vias
+[REV0 STACK_JUNCTION_TEST  194.0s] PCB2: modelling history purged
+[REV0 STACK_JUNCTION_TEST  194.0s] PCB2 built: copper L1 top z=-0.52032, top mask surface z=-0.51016, bottom surface z=-1.53048
+[REV0 STACK_JUNCTION_TEST  195.4s] PCB2: Validation Check passed for geometry (only the expected build-only notices: Project: REV0_STACK_JUNCTION_TEST, Design: Rev0, [error] No  / Project: REV0_STACK_JUNCTION_TEST, Design: Rev0, [error] Sol)
+[REV0 STACK_JUNCTION_TEST  198.3s] PCB2 validated (geometry OK) and saved: C:\Users\Student\Rev0_work\REV0_STACK_JUNCTION_TEST_results\checkpoints\02_stator_board2.aedt
+[REV0 STACK_JUNCTION_TEST  198.4s] Check PHASE_A bridge footprint: on own L6 Out / L1 In pad copper only
+[REV0 STACK_JUNCTION_TEST  219.2s] Phase A string: PhaseA1_Cu -> PhaseA2_Cu; 1 bridges 0.02032 mm tall touching L6 Out / L1 In pad faces; start lead on PCB1 L1, end lead on PCB2 L6
+[REV0 STACK_JUNCTION_TEST  219.2s] Stator stack: 2 boards at centres z = 0.00000, -1.02032 mm (pitch 1.02032 mm)
+[REV0 STACK_JUNCTION_TEST  222.6s] Checkpoint saved: C:\Users\Student\Rev0_work\REV0_STACK_JUNCTION_TEST_results\checkpoints\02_stator.aedt
+[REV0 STACK_JUNCTION_TEST  222.6s] Stage stator OK
+[REV0 STACK_JUNCTION_TEST  222.7s] === STAGE rotor ===
+[REV0 STACK_JUNCTION_TEST  222.7s] Rotor disabled for this profile
+[REV0 STACK_JUNCTION_TEST  225.5s] Checkpoint saved: C:\Users\Student\Rev0_work\REV0_STACK_JUNCTION_TEST_results\checkpoints\03_rotor.aedt
+[REV0 STACK_JUNCTION_TEST  225.5s] Stage rotor OK
+[REV0 STACK_JUNCTION_TEST  225.5s] === STAGE region_band ===
+[REV0 STACK_JUNCTION_TEST  225.8s] Region: padding 5 mm, +Y face on the terminal lead ends (padding 0)
+[REV0 STACK_JUNCTION_TEST  228.4s] Checkpoint saved: C:\Users\Student\Rev0_work\REV0_STACK_JUNCTION_TEST_results\checkpoints\04_region_band.aedt
+[REV0 STACK_JUNCTION_TEST  228.4s] Stage region_band OK
+[REV0 STACK_JUNCTION_TEST  228.4s] === STAGE excitation ===
+[REV0 STACK_JUNCTION_TEST  228.8s] Design variable rpm = 1000rpm
+[REV0 STACK_JUNCTION_TEST  228.8s] Design variable fe = 133.333Hz
+[REV0 STACK_JUNCTION_TEST  228.8s] Design variable Ipk = 0A
+[REV0 STACK_JUNCTION_TEST  229.9s] Winding PhaseA: terminals ['PhaseA_In', 'PhaseA_Out'], current 1A
+[REV0 STACK_JUNCTION_TEST  232.6s] Checkpoint saved: C:\Users\Student\Rev0_work\REV0_STACK_JUNCTION_TEST_results\checkpoints\05_excitation.aedt
+[REV0 STACK_JUNCTION_TEST  232.6s] Stage excitation OK
+[REV0 STACK_JUNCTION_TEST  232.7s] === STAGE solver_setup ===
+[REV0 STACK_JUNCTION_TEST  232.8s] Magnetostatic setup: 2 passes, 15% refinement, inductance matrix OFF
+[REV0 STACK_JUNCTION_TEST  235.9s] Checkpoint saved: C:\Users\Student\Rev0_work\REV0_STACK_JUNCTION_TEST_results\checkpoints\06_solver_setup.aedt
+[REV0 STACK_JUNCTION_TEST  235.9s] Stage solver_setup OK
+[REV0 STACK_JUNCTION_TEST  235.9s] === STAGE validate ===
+[REV0 STACK_JUNCTION_TEST  235.9s] Junction A 1->2: PCB1 L6 Out pad=PhaseA1_Cu; bridge 1-2=BridgeA_1_2; PCB2 L1 In pad=PhaseA2_Cu
+[REV0 STACK_JUNCTION_TEST  236.0s] Acceptance: Phase A string PhaseA1_Cu -> PhaseA2_Cu with 1 bridges
+[REV0 STACK_JUNCTION_TEST  247.0s] AEDT Validation Check returned True
+[REV0 STACK_JUNCTION_TEST  249.5s] Checkpoint saved: C:\Users\Student\Rev0_work\REV0_STACK_JUNCTION_TEST_results\checkpoints\07_validate.aedt
+[REV0 STACK_JUNCTION_TEST  249.5s] Stage validate OK
+[REV0 STACK_JUNCTION_TEST  249.5s] === STAGE analyze ===
+[REV0 STACK_JUNCTION_TEST  249.5s] Analyze Setup1 ... (this blocks until the solve ends)
+[REV0 STACK_JUNCTION_TEST  852.2s] Valid solutions: ['Setup1 : AdaptivePass', 'Setup1 : LastAdaptive']
+[REV0 STACK_JUNCTION_TEST  852.2s] Solve accepted: no error-level messages, Setup1 solution present
+[REV0 STACK_JUNCTION_TEST  855.3s] Checkpoint saved: C:\Users\Student\Rev0_work\REV0_STACK_JUNCTION_TEST_results\checkpoints\08_analyze.aedt
+[REV0 STACK_JUNCTION_TEST  855.3s] Stage analyze OK
+[REV0 STACK_JUNCTION_TEST  855.3s] === STAGE export ===
+[REV0 STACK_JUNCTION_TEST  857.6s] Checkpoint saved: C:\Users\Student\Rev0_work\REV0_STACK_JUNCTION_TEST_results\checkpoints\09_export.aedt
+[REV0 STACK_JUNCTION_TEST  857.6s] Stage export OK
+[REV0 STACK_JUNCTION_TEST  857.6s] Pipeline finished: project -> stator -> rotor -> region_band -> excitation -> solver_setup -> validate -> analyze -> export

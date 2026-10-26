@@ -1,0 +1,1 @@
+FIELDMAP_REV0 field map finished (8 angles); gate False

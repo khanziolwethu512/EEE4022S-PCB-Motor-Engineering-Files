@@ -1,0 +1,91 @@
+[REV0 REF_ROTOR_MS_DOE    0.0s] REV0 pipeline, profile REF_ROTOR_MS_DOE, stages project -> export, modules from C:\Users\Student\OneDrive - University of Cape Town\EEE4022S Ansys files\Motor run\rev0_v9, solving in C:\Users\Student\Rev0_work, results copied to C:\Users\Student\OneDrive - University of Cape Town\EEE4022S Ansys files\Motor run\results
+[REV0 REF_ROTOR_MS_DOE    0.0s] === STAGE project ===
+[REV0 REF_ROTOR_MS_DOE    0.6s] Design solution type reported by AEDT: Magnetostatic
+[REV0 REF_ROTOR_MS_DOE    0.7s] Project REV0_DOE_D508_P20 / design Rev0 (Magnetostatic)
+[REV0 REF_ROTOR_MS_DOE    0.7s] ASSUMPTION: Stack-up mode 'scaled' - Altium dielectric ratios scaled to 1.000 mm copper+dielectric; NOT the JLCPCB stack-up
+[REV0 REF_ROTOR_MS_DOE    0.7s] ASSUMPTION: Solder mask 0.01016 mm each face (source stack-up); board pitch 1.02032 mm
+[REV0 REF_ROTOR_MS_DOE    0.7s] ASSUMPTION: Vias = solid 0.30 mm copper (8-sided): fine for conduction/field, low for final resistance
+[REV0 REF_ROTOR_MS_DOE    0.8s] ASSUMPTION: Air gap 5.081 mm measured from PCB1 top solder-mask surface to magnet face
+[REV0 REF_ROTOR_MS_DOE    0.8s] ASSUMPTION: FR-4 and solder mask modelled as air (mu_r = 1, non-conductive either way); board geometry, pitch and air gap unchanged
+[REV0 REF_ROTOR_MS_DOE    0.8s] ASSUMPTION: Inductance matrix not computed (lab-PC freeze at 'Start Matrix')
+[REV0 REF_ROTOR_MS_DOE    0.8s] ASSUMPTION: Shaft steel_1010, 19.0 mm dia, rotating; simplified EM representation: rotor side only (band floor to 5.0 mm beyond back iron); section through the stator bore omitted; NOT the physical shaft length; shaft + back iron united as one steel body
+[REV0 REF_ROTOR_MS_DOE    0.8s] ASSUMPTION: Rotor-angle magnetostatic sweep: PHASE_A excited with DC +1 A; theta 0..16.875 deg step 5.625; dLam/dtheta from torque reciprocity k = (T(+I) - T(-I))/2I with T(-I) = -T(+I), i.e. cogging assumed ~0 - a central-difference estimate around zero current (exact only if the rotor steel is linear); back-EMF sign in the Maxwell terminal convention; 3-phase torque = ideal fundamental with optimum phasing; no eddy currents
+[REV0 REF_ROTOR_MS_DOE    0.9s] ASSUMPTION: Only the excited phase's copper is modelled (other phases are mu_r = 1, unexcited)
+[REV0 REF_ROTOR_MS_DOE    1.1s] Checkpoint saved: C:\Users\Student\Rev0_work\REV0_DOE_D508_P20_results\checkpoints\01_project.aedt
+[REV0 REF_ROTOR_MS_DOE    1.2s] Stage project OK
+[REV0 REF_ROTOR_MS_DOE    1.2s] === STAGE stator ===
+[REV0 REF_ROTOR_MS_DOE    2.6s] Check: no via of one phase touches copper of another phase
+[REV0 REF_ROTOR_MS_DOE    2.7s] Check PHASE_A: 148 islands form ONE network; In->Out 25 island-hops (farthest island 25)
+[REV0 REF_ROTOR_MS_DOE   61.9s] PCB1 PHASE_A: 148 copper islands on 6 layers, 205 vias
+[REV0 REF_ROTOR_MS_DOE   88.2s] PCB1 built: copper L1 top z=0.50000, top mask surface z=0.51016, bottom surface z=-0.51016
+[REV0 REF_ROTOR_MS_DOE   92.1s] Checkpoint saved: C:\Users\Student\Rev0_work\REV0_DOE_D508_P20_results\checkpoints\02_stator.aedt
+[REV0 REF_ROTOR_MS_DOE   92.1s] Stage stator OK
+[REV0 REF_ROTOR_MS_DOE   92.1s] === STAGE rotor ===
+[REV0 REF_ROTOR_MS_DOE   98.9s] Rotor steel: disc (bore not cut) + overlapping 19 mm shaft united as RotorSteel (EM Boolean simplification; same steel volume as disc-with-bore + shaft)
+[REV0 REF_ROTOR_MS_DOE   98.9s] Rotor: 16 magnets r 18.0-38.0 mm, z 5.5914-7.5914 (gap 5.081 mm from stator surface z=0.51016); back iron OD 86.0 / ID 19.0 x 2.0 mm; shaft 19.0 mm steel_1010
+[REV0 REF_ROTOR_MS_DOE   99.1s] Rotor position: 16 magnets rotated about +Z by design variable rot_angle (= 0 deg)
+[REV0 REF_ROTOR_MS_DOE  102.4s] Checkpoint saved: C:\Users\Student\Rev0_work\REV0_DOE_D508_P20_results\checkpoints\03_rotor.aedt
+[REV0 REF_ROTOR_MS_DOE  102.4s] Stage rotor OK
+[REV0 REF_ROTOR_MS_DOE  102.4s] === STAGE region_band ===
+[REV0 REF_ROTOR_MS_DOE  103.6s] Air-gap vacuum layer r 16.0-40.0 mm, z 0.51016-5.59144 (mesh op); mid-gap sheet GapMid at z 3.05080
+[REV0 REF_ROTOR_MS_DOE  103.8s] Region: padding 20 mm, +Y face on the terminal lead ends (padding 0)
+[REV0 REF_ROTOR_MS_DOE  107.1s] Checkpoint saved: C:\Users\Student\Rev0_work\REV0_DOE_D508_P20_results\checkpoints\04_region_band.aedt
+[REV0 REF_ROTOR_MS_DOE  107.1s] Stage region_band OK
+[REV0 REF_ROTOR_MS_DOE  107.1s] === STAGE excitation ===
+[REV0 REF_ROTOR_MS_DOE  107.6s] Design variable rpm = 1000rpm
+[REV0 REF_ROTOR_MS_DOE  107.6s] Design variable fe = 133.333Hz
+[REV0 REF_ROTOR_MS_DOE  107.6s] Design variable Ipk = 0A
+[REV0 REF_ROTOR_MS_DOE  107.7s] Design variable Iamp = 1A
+[REV0 REF_ROTOR_MS_DOE  107.7s] Design variable rot_angle = 0deg
+[REV0 REF_ROTOR_MS_DOE  108.7s] Winding PhaseA: terminals ['PhaseA_In', 'PhaseA_Out'], current Iamp
+[REV0 REF_ROTOR_MS_DOE  111.9s] Checkpoint saved: C:\Users\Student\Rev0_work\REV0_DOE_D508_P20_results\checkpoints\05_excitation.aedt
+[REV0 REF_ROTOR_MS_DOE  111.9s] Stage excitation OK
+[REV0 REF_ROTOR_MS_DOE  111.9s] === STAGE solver_setup ===
+[REV0 REF_ROTOR_MS_DOE  111.9s] Air-gap mesh: max element length 2.541 mm (gap 5.081 mm), at most 300000 elements added
+[REV0 REF_ROTOR_MS_DOE  112.4s] Magnetostatic setup: 4 passes, 20% refinement, inductance matrix OFF
+[REV0 REF_ROTOR_MS_DOE  112.5s] Torque_Rotor: virtual torque about +Z on 17 rotor objects (magnets + steel)
+[REV0 REF_ROTOR_MS_DOE  112.7s] Torque_Cu: Lorentz torque about +Z on ['PhaseA1_Cu'] (reaction; should equal -Torque_Rotor)
+[REV0 REF_ROTOR_MS_DOE  112.7s] Stepwise sweep: rot_angle and Iamp set per variation at the analyze stage
+[REV0 REF_ROTOR_MS_DOE  113.1s] Report Torque_Iplus: Torque_Rotor.Torque, Torque_Cu.Torque vs rot_angle at Iamp = 1A
+[REV0 REF_ROTOR_MS_DOE  116.2s] Checkpoint saved: C:\Users\Student\Rev0_work\REV0_DOE_D508_P20_results\checkpoints\06_solver_setup.aedt
+[REV0 REF_ROTOR_MS_DOE  116.2s] Stage solver_setup OK
+[REV0 REF_ROTOR_MS_DOE  116.2s] === STAGE validate ===
+[REV0 REF_ROTOR_MS_DOE  116.3s] Acceptance: air gap stator surface -> magnet face = 5.0813 mm (target 5.0813)
+[REV0 REF_ROTOR_MS_DOE  116.3s] Acceptance: magnets alternate +Z/-Z (CS_MagUp/CS_MagDown on even/odd), 16 poles
+[REV0 REF_ROTOR_MS_DOE  116.3s] Acceptance: rotor parts r <= 43.00 mm; terminal leads start at r >= 44.50 mm
+[REV0 REF_ROTOR_MS_DOE  116.3s] Acceptance: PCB1 phases PhaseA1_Cu
+[REV0 REF_ROTOR_MS_DOE  119.1s] AEDT Validation Check returned True
+[REV0 REF_ROTOR_MS_DOE  122.4s] Checkpoint saved: C:\Users\Student\Rev0_work\REV0_DOE_D508_P20_results\checkpoints\07_validate.aedt
+[REV0 REF_ROTOR_MS_DOE  122.4s] Stage validate OK
+[REV0 REF_ROTOR_MS_DOE  122.4s] === STAGE analyze ===
+[REV0 REF_ROTOR_MS_DOE  122.5s] Stepwise sweep: 4 variations, 0 already solved (C:\Users\Student\Rev0_work\REV0_DOE_D508_P20_results\sweep_progress.json)
+[REV0 REF_ROTOR_MS_DOE  123.0s] Variation 1/4: rot_angle = 0 deg, Iamp = 1 A ... solving
+[REV0 REF_ROTOR_MS_DOE  896.8s] Project closed and reopened to release memory (1 variations solved so far)
+[REV0 REF_ROTOR_MS_DOE  896.8s] Variation 1/4 done in 12.3 min: Torque_Cu.Torque -1.5816 mN.m, Torque_Rotor.Torque +2.0987 mN.m
+[REV0 REF_ROTOR_MS_DOE  897.3s] Variation 2/4: rot_angle = 5.625 deg, Iamp = 1 A ... solving
+[REV0 REF_ROTOR_MS_DOE 1648.3s] Project closed and reopened to release memory (2 variations solved so far)
+[REV0 REF_ROTOR_MS_DOE 1648.4s] Variation 2/4 done in 12.3 min: Torque_Cu.Torque -0.4471 mN.m, Torque_Rotor.Torque +0.3374 mN.m
+[REV0 REF_ROTOR_MS_DOE 1648.8s] Variation 3/4: rot_angle = 11.25 deg, Iamp = 1 A ... solving
+[REV0 REF_ROTOR_MS_DOE 2421.0s] Project closed and reopened to release memory (3 variations solved so far)
+[REV0 REF_ROTOR_MS_DOE 2421.0s] Variation 3/4 done in 12.3 min: Torque_Cu.Torque +0.8786 mN.m, Torque_Rotor.Torque -1.2588 mN.m
+[REV0 REF_ROTOR_MS_DOE 2421.5s] Variation 4/4: rot_angle = 16.875 deg, Iamp = 1 A ... solving
+[REV0 REF_ROTOR_MS_DOE 3154.4s] Variation 4/4 done in 12.2 min: Torque_Cu.Torque +1.7894 mN.m, Torque_Rotor.Torque -1.3793 mN.m
+[REV0 REF_ROTOR_MS_DOE 3154.9s] Stepwise sweep complete: all 4 variations solved
+[REV0 REF_ROTOR_MS_DOE 3154.9s] Solve accepted: every variation solved without error-level messages
+[REV0 REF_ROTOR_MS_DOE 3158.3s] Checkpoint saved: C:\Users\Student\Rev0_work\REV0_DOE_D508_P20_results\checkpoints\08_analyze.aedt
+[REV0 REF_ROTOR_MS_DOE 3158.4s] Stage analyze OK
+[REV0 REF_ROTOR_MS_DOE 3158.4s] === STAGE export ===
+[REV0 REF_ROTOR_MS_DOE 3158.8s] Exported C:\Users\Student\Rev0_work\REV0_DOE_D508_P20_results\Torque_Iplus.csv (4 data rows)
+[REV0 REF_ROTOR_MS_DOE 3158.9s] theta  0.000 deg (elec    0.0): T(+I) +2.0987 mN.m, dLam/dtheta +1.58157 mWb/rad, e +0.1656 V at 1000 rpm (Maxwell sign)
+[REV0 REF_ROTOR_MS_DOE 3158.9s] theta  5.625 deg (elec   45.0): T(+I) +0.3374 mN.m, dLam/dtheta +0.44713 mWb/rad, e +0.0468 V at 1000 rpm (Maxwell sign)
+[REV0 REF_ROTOR_MS_DOE 3158.9s] theta 11.250 deg (elec   90.0): T(+I) -1.2588 mN.m, dLam/dtheta -0.87865 mWb/rad, e -0.0920 V at 1000 rpm (Maxwell sign)
+[REV0 REF_ROTOR_MS_DOE 3158.9s] theta 16.875 deg (elec  135.0): T(+I) -1.3793 mN.m, dLam/dtheta -1.78942 mWb/rad, e -0.1874 V at 1000 rpm (Maxwell sign)
+[REV0 REF_ROTOR_MS_DOE 3159.0s] RESULT (board 1, PHASE_A): K1 = 0.00183 N.m/A (= dLam/dtheta peak), PM flux linkage peak 0.2283 mWb, |E1| = 0.1913 V peak / 0.1353 V rms at 1000 rpm, phase of k = -30.0 deg elec; ideal fundamental 3-phase Tavg at optimum current phasing = 0.0027 N.m per A peak
+[REV0 REF_ROTOR_MS_DOE 3159.0s] Polarity (Maxwell convention): +I into the _In terminal with the rotor turning +Z gives POSITIVE dLam/dtheta at theta = 0 deg
+[REV0 REF_ROTOR_MS_DOE 3159.0s] Sign convention: Maxwell winding/terminal convention (+I into _In, e = +dLam/dt); physical generator polarity (Faraday e = -dLam/dt) to be fixed by the rotor/terminal polarity check
+[REV0 REF_ROTOR_MS_DOE 3159.0s] Quality: cogging_plus_reluctance_max_abs_Nm = nan
+[REV0 REF_ROTOR_MS_DOE 3159.0s] Quality: action_reaction_mismatch_max_pct = 43.26
+[REV0 REF_ROTOR_MS_DOE 3159.1s] Quality: H3_over_H1_pct = 1.930
+[REV0 REF_ROTOR_MS_DOE 3162.2s] Checkpoint saved: C:\Users\Student\Rev0_work\REV0_DOE_D508_P20_results\checkpoints\09_export.aedt
+[REV0 REF_ROTOR_MS_DOE 3162.2s] Stage export OK
+[REV0 REF_ROTOR_MS_DOE 3162.2s] Pipeline finished: project -> stator -> rotor -> region_band -> excitation -> solver_setup -> validate -> analyze -> export

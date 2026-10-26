@@ -1,0 +1,4 @@
+Phase,CopperArea_mm2,ViaCount,GTL_regions,G1_regions,G2_regions,G3_regions,G4_regions,GBL_regions,KnownGerberNetworkR_ohm
+Phase_1,4759.819567,205,25,25,25,32,32,25,0.2652
+Phase_2,4759.823404,207,25,25,25,32,32,25,0.2652
+Phase_3,4759.810738,205,25,25,25,32,32,25,0.2654

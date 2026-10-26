@@ -1,0 +1,29 @@
+FIELD-ONLY FEM + TRACE-RESOLVED WINDING POST-PROCESSING - FIELDMAP_REV0_C350 (Rev0)
+Rotor angles (deg mech): 0, 1.875, 3.75, 5.625, 7.5, 9.375, 11.25, 13.125, 15, 16.875, 18.75, 20.625; k = dLambda/dtheta = -T_copper/I per phase, 1 A into the L1 terminal
+Gap 3.500 mm, R2 / R1 steel 2.00 / 2.00 mm, zone mesh 0.80 mm, 4 passes
+Backplate OD/ID 80.0 / 25.0 mm, inter-board gap 0.000 mm, region padding 20.0 mm
+
+Stator S1 (z offset 0.00000 mm):
+  board 1 PHASE_A: K1 = 3.1460 mN.m/A, psi = -30.03 deg, H3/H1 = 2.6 %; single-sided distance law at 3.500 mm: 2.8595 (+10.02 %)
+  board 2 PHASE_A: K1 = 2.3400 mN.m/A, psi = -30.11 deg, H3/H1 = 1.8 %; single-sided distance law at 4.520 mm: 2.0988 (+11.49 %)
+  board 3 PHASE_A: K1 = 1.7686 mN.m/A, psi = -29.95 deg, H3/H1 = 0.5 %; single-sided distance law at 5.541 mm: 1.5405 (+14.80 %)
+  board 4 PHASE_A: K1 = 1.3376 mN.m/A, psi = -29.86 deg, H3/H1 = 0.2 %; single-sided distance law at 6.561 mm: 1.1307 (+18.30 %)
+  board 5 PHASE_A: K1 = 0.9717 mN.m/A, psi = -30.19 deg, H3/H1 = 0.7 %; single-sided distance law at 7.581 mm: 0.8299 (+17.08 %)
+  STACK S1 PHASE_A: K = 9.564 mN.m/A, psi = -30.03 deg, H3/H1 = 1.4 %
+  STACK S1 PHASE_B: K = 9.568 mN.m/A, psi = +90.01 deg, H3/H1 = 1.5 %
+  STACK S1 PHASE_C: K = 9.570 mN.m/A, psi = -150.01 deg, H3/H1 = 1.4 %
+
+MACHINE PHASE_A: K = 9.564 mN.m/A, psi -30.03 deg, H3/H1 1.4 %
+MACHINE PHASE_B: K = 9.568 mN.m/A, psi +90.01 deg, H3/H1 1.5 %
+MACHINE PHASE_C: K = 9.570 mN.m/A, psi -150.01 deg, H3/H1 1.4 %
+
+Machine (phase A): T_ideal = 14.3 mN.m per A_pk (1.5 K), E1 = 0.708 V rms at 1000 rpm, R_phase = 1.389 ohm, Km = 0.0099 N.m/sqrt(W)
+
+Neglected: armature reaction, copper eddy/skin/proximity effects, B averaged over the track cross-section (centre-line sampling). R_phase uses the Gate-1 FEM value 0.2777 ohm per board-phase.
+
+BACK-EMF WAVEFORM at 1000 rpm (from k(theta) at 12 angles, second half-period by antisymmetry):
+  PHASE_A: K1 = 9.564 mN.m/A, E1 = 0.7082 V rms, THD 1.4 % (H3 1.45%, H5 0.08%, H7 0.03%, H9 0.03%, H11 0.05%)
+  PHASE_B: K1 = 9.568 mN.m/A, E1 = 0.7085 V rms, THD 1.5 % (H3 1.48%, H5 0.06%, H7 0.04%, H9 0.01%, H11 0.11%)
+  PHASE_C: K1 = 9.570 mN.m/A, E1 = 0.7086 V rms, THD 1.4 % (H3 1.37%, H5 0.05%, H7 0.03%, H9 0.05%, H11 0.04%)
+  line A-B: E1 = 1.2271 V rms, THD 0.09 %
+  sinusoidal currents at 1 A pk in phase with each back-EMF: T mean 14.351 mN.m, ripple 0.34 % pk-pk (armature reaction neglected)

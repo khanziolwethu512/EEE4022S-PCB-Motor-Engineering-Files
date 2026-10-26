@@ -1,0 +1,58 @@
+[REV0 FMROT_REV1S_SHORT    1.3s] Band geometry: Band_R1: r 43.50 mm (rotor parts to 43.00, leads from 44.50), z 1.01016..6.01016 mm
+[REV0 FMROT_REV1S_SHORT    1.3s] Band geometry: Band_R2: r 43.50 mm (rotor parts to 43.00, leads from 44.50), z 12.11176..22.61176 mm
+[REV0 FMROT_REV1S_SHORT    1.3s] Band geometry: stationary space between Band_R1 and Band_R2: 6.01016..12.11176 mm (S2 6.51016..11.61176)
+[REV0 FMROT_REV1S_SHORT    1.3s] Band geometry: shaft split: stub1 1.110..5.760 (moves with R1), stub2 12.362..21.612 (moves with R2), bore piece in S2 6.260..11.862 (stationary)
+[REV0 FMROT_REV1S_SHORT    3.4s] Design solution type reported by AEDT: Transient
+[REV0 FMROT_REV1S_SHORT    3.4s] Project FMROT_REV1S_SHORT / design Rev0 (Transient)
+[REV0 FMROT_REV1S_SHORT    3.4s] ASSUMPTION: Stack-up mode 'scaled' - Altium dielectric ratios scaled to 1.000 mm copper+dielectric; NOT the JLCPCB stack-up
+[REV0 FMROT_REV1S_SHORT    3.4s] ASSUMPTION: Solder mask 0.01016 mm each face (source stack-up); board pitch 1.02032 mm
+[REV0 FMROT_REV1S_SHORT    3.4s] ASSUMPTION: Vias = solid 0.30 mm copper (8-sided): fine for conduction/field, low for final resistance
+[REV0 FMROT_REV1S_SHORT    3.4s] ASSUMPTION: Air gap 1.000 mm measured from PCB1 top solder-mask surface to magnet face
+[REV0 FMROT_REV1S_SHORT    3.4s] ASSUMPTION: FR-4 and solder mask modelled as air (mu_r = 1, non-conductive either way); board geometry, pitch and air gap unchanged
+[REV0 FMROT_REV1S_SHORT    3.4s] ASSUMPTION: Shaft steel_1010, 19.0 mm dia, rotating; simplified EM representation: rotor side only (band floor to 5.0 mm beyond back iron); section through the stator bore omitted; NOT the physical shaft length; shaft + back iron united as one steel body
+[REV0 FMROT_REV1S_SHORT    3.4s] ASSUMPTION: Field-only ROTATING transient (Rev1S): magnets (eddy ON) + steel + air in Maxwell, rotor turning at 1000 rpm in cylindrical band(s); NO PCB copper meshed; B exported on the trace centre-lines of every board at every step; torque/back-EMF by Lorentz integration; armature reaction neglected; copper eddy loss by the thin-conductor formula
+[REV0 FMROT_REV1S_SHORT    3.4s] ASSUMPTION: Transient formulation T-Omega (supports motion/band)
+[REV0 FMROT_REV1S_SHORT    3.4s] FMROT Rev1S: field-only ROTATING transient, no PCB copper; B sampled on 10 boards x 3 phases of trace centre-lines at every time step
+[REV0 FMROT_REV1S_SHORT    9.8s] Rotor steel: disc (bore not cut) + overlapping 19 mm shaft united as RotorSteel (EM Boolean simplification; same steel volume as disc-with-bore + shaft)
+[REV0 FMROT_REV1S_SHORT    9.8s] R1_Rotor: 16 magnets r 18.0-38.0 mm, z 1.5102-3.5102 (gap 1.000 mm from stator surface z=0.51016); back iron OD 86.0 / ID 19.0 x 2.0 mm; shaft 19.0 mm steel_1010
+[REV0 FMROT_REV1S_SHORT    9.9s] R2_Rotor: 16 magnets r 18.0-38.0 mm, z 12.6118-14.6118 (gap 1.000 mm from stator surface z=11.61176); back iron OD 86.0 / ID 19.0 x 2.0 mm; shaft 19.0 mm steel_1010
+[REV0 FMROT_REV1S_SHORT    9.9s] Rotor steel split for 2 bands: R1_Steel (disc 3.510..5.510 + stub 1.110..5.760); R2_Steel (disc 14.612..16.612 + stub 12.362..21.612); stationary Shaft_S2bore 6.260..11.862 (bodies of revolution)
+[REV0 FMROT_REV1S_SHORT   10.0s] Stationary stator zone S1Zone: r 13.5-47.5 mm, z -4.89144..0.99016 (no copper; B sampled on the trace paths)
+[REV0 FMROT_REV1S_SHORT   10.0s] Stationary stator zone S2Zone: r 13.5-47.5 mm, z 6.03016..12.09176 (no copper; B sampled on the trace paths)
+[REV0 FMROT_REV1S_SHORT   10.0s] Motion: Band_R1 (144 facets, r 43.50 mm, z 1.01016..6.01016) rotates about +Z at 1000 rpm, initial position 0 deg
+[REV0 FMROT_REV1S_SHORT   10.1s] Motion: Band_R2 (144 facets, r 43.50 mm, z 12.11176..22.61176) rotates about +Z at 1000 rpm, initial position 0 deg
+[REV0 FMROT_REV1S_SHORT   10.1s] Region padding 20.0 mm on every side (the validated field map used 20 mm)
+[REV0 FMROT_REV1S_SHORT   10.1s] Eddy effect ON on magnets
+[REV0 FMROT_REV1S_SHORT   10.1s] Eddy effect OFF on rotor steel
+[REV0 FMROT_REV1S_SHORT   10.1s] Fixed transient mesh: zones 0.80 mm (at most 500000 elements), band 1.00 mm, magnets 1.00 mm, steel 2.50 mm
+[REV0 FMROT_REV1S_SHORT   10.2s] Transient setup: stop 0.937500 ms, step 0.156250 ms (6 steps), fields every 1 steps
+[REV0 FMROT_REV1S_SHORT   11.2s] AEDT Validation Check returned True
+[REV0 FMROT_REV1S_SHORT   11.3s] Transient: fe 133.333 Hz, period 7.5000 ms, 48 steps per period, 6 steps (0.9375 ms), fields saved every step
+[REV0 FMROT_REV1S_SHORT   11.3s] Solving the rotating transient (this blocks until the last step) ...
+[REV0 FMROT_REV1S_SHORT 6197.4s] Transient solved in 103.1 min (17.18 min per step)
+[REV0 FMROT_REV1S_SHORT 6197.8s] Trace sample points: 361550 (2 stator(s) x 5 boards x 3 phases)
+[REV0 FMROT_REV1S_SHORT 6214.2s] Field export: variant 1, time format %.9gms accepted (points echoed in mm, probe |B|max 0.194 T)
+[REV0 FMROT_REV1S_SHORT 6223.3s] Step 1/6 (t = 0.1563 ms, rotor 0.938 deg): S1 board 1 phase A k = +4.8929 mWb/rad (export 7.1 s)
+[REV0 FMROT_REV1S_SHORT 6248.6s] Step 2/6 (t = 0.3125 ms, rotor 1.875 deg): S1 board 1 phase A k = +4.1280 mWb/rad (export 25.3 s)
+[REV0 FMROT_REV1S_SHORT 6275.7s] Step 3/6 (t = 0.4688 ms, rotor 2.813 deg): S1 board 1 phase A k = +3.3191 mWb/rad (export 27.1 s)
+[REV0 FMROT_REV1S_SHORT 6303.6s] Step 4/6 (t = 0.6250 ms, rotor 3.750 deg): S1 board 1 phase A k = +2.5304 mWb/rad (export 27.8 s)
+[REV0 FMROT_REV1S_SHORT 6332.2s] Step 5/6 (t = 0.7813 ms, rotor 4.688 deg): S1 board 1 phase A k = +1.7808 mWb/rad (export 28.5 s)
+[REV0 FMROT_REV1S_SHORT 6361.5s] Step 6/6 (t = 0.9375 ms, rotor 5.625 deg): S1 board 1 phase A k = +1.0978 mWb/rad (export 29.2 s)
+[REV0 FMROT_REV1S_SHORT 7057.3s] Field export: 30 files (B_S1, B_S2low, B_S2up, Bsteel_R1_BackIron, Bsteel_R2_BackIron)
+[REV0 FMROT_REV1S_SHORT 7059.8s] FIELD-ONLY ROTATING TRANSIENT (FMROT) - FMROT_REV1S_SHORT (Rev1S), 1000 rpm, 6 steps of 0.15625 ms (SHORT run - not a full period)
+[REV0 FMROT_REV1S_SHORT 7059.8s] k = -T_copper/I per phase (Lorentz on the trace centre-lines, 1 A into L1), e = omega_m * k
+[REV0 FMROT_REV1S_SHORT 7059.8s] 
+[REV0 FMROT_REV1S_SHORT 7059.8s] 
+[REV0 FMROT_REV1S_SHORT 7059.8s] VALIDATION against the static field map /scratch/khnolw003/pcbmotor_hpc/shared_results/FIELDMAP_REV1S_P20_results/fieldmap_results.json
+[REV0 FMROT_REV1S_SHORT 7059.8s]   S1_B1_PHASE_A theta   5.625 deg: rotating k = +1.09777, static k = +1.08224 mWb/rad (+0.24 % of K1)
+[REV0 FMROT_REV1S_SHORT 7059.8s]   S1_B1_PHASE_B theta   5.625 deg: rotating k = +4.12578, static k = +4.09648 mWb/rad (+0.46 % of K1)
+[REV0 FMROT_REV1S_SHORT 7059.8s]   S1_B1_PHASE_C theta   5.625 deg: rotating k = -6.56278, static k = -6.59242 mWb/rad (+0.46 % of K1)
+[REV0 FMROT_REV1S_SHORT 7059.8s]   largest point difference over all 30 board-phase-angle points: 1.51 % of K1 (S1_B4_PHASE_C at 5.625 deg)
+[REV0 FMROT_REV1S_SHORT 7059.8s]   SHORT-RUN CHECK (all phases, all boards): largest point difference 1.51 % of K1 (limit 3 %) -> PASS
+[REV0 FMROT_REV1S_SHORT 7059.8s] Rotor torque at no load (cogging + reluctance, Maxwell): 0.4565 mN.m pk-pk
+[REV0 FMROT_REV1S_SHORT 7059.8s] Copper eddy loss estimate at 1000 rpm (thin-conductor formula on the trace pieces, vias excluded): 0.04495 W (SHORT run: not a full period - indicative only)
+[REV0 FMROT_REV1S_SHORT 7059.8s]   S1: B1 0.0111 W, B2 0.00488 W, B3 0.00254 W, B4 0.00141 W, B5 0.000777 W
+[REV0 FMROT_REV1S_SHORT 7059.8s]   S2: B1 0.0118 W, B2 0.00554 W, B3 0.00324 W, B4 0.0021 W, B5 0.00152 W
+[REV0 FMROT_REV1S_SHORT 7059.8s] Current density in the tracks per 1 A phase current (DC share over 0.5 mm x 35 um; file current_density_board1_per_A.csv): A max 57.1 / p95 10.3 / mean 8.6 A/mm2; B max 57.1 / p95 10.3 / mean 8.6 A/mm2; C max 57.1 / p95 10.3 / mean 8.6 A/mm2
+[REV0 FMROT_REV1S_SHORT 7059.8s] 
+[REV0 FMROT_REV1S_SHORT 7059.8s] Neglected: armature reaction (no copper in the field solve), skin/proximity effects, the averaging of B over the 0.5 mm x 35 um track cross-section (centre-line sampling), via eddy currents.

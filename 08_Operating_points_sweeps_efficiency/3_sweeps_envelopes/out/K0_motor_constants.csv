@@ -1,0 +1,3 @@
+machine,magnets,series_boards_per_phase,K_FEM_mNm_per_A,K_analytical_sheet,K_EQ_sweep,an_vs_FEM_pct,torque_per_A_pk_mNm,Ke_line_Vrms_per_krpm,E_phase_THD_pct,E_line_THD_pct,R_ph_20C_ohm,L_ph_uH_lo,L_ph_uH_hi,tau_e_us_hi,Km_mNm_per_sqrtW_25C,psi_pm_mWb,char_current_A_pk,eddy_1000rpm_mW,I_thermal_A_pk_scenA_25C,I_thermal_A_pk_scenD_25C,T_em_thermal_A_mNm,T_em_thermal_D_mNm,no_load_speed_12V_rpm,no_load_speed_24V_rpm
+Rev0,16,5,18.534,18.539,18.52,0.02698,27.801,2.37708,5.53808,0.6564,1.89,33.5,51.2,27.08995,16.35153,2.31675,45.24902,20.35,1.11334,0.83966,30.952,23.3435,3391.14568,6782.29136
+Rev1-S,32,10,39.5,39.55,39.43,0.12658,59.25,5.06607,5.21816,0.62855,3.78,74.4,112.6,29.78836,24.64173,4.9375,43.84991,44.18,0.84595,0.64375,50.12251,38.14242,1591.17707,3182.35413

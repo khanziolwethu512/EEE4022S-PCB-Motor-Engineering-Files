@@ -1,0 +1,10 @@
+COORDINATE SYSTEM REFERENCE
+===========================
+Units: millimetres in ODB++, DXF, reports and reconstruction tables.
+Altium board origin / absolute origin from Board6: X=0mil, Y=0mil.
+Native board centre from outline: X=100.00000066 mm, Y=100.00000066 mm.
++X points to the right in the normal Altium top view.
++Y points upward in the native design coordinate system.
+Top convention: view from above the Top Layer with +X right and +Y up.
+Bottom convention: bottom artwork retains the same absolute XY coordinate system; it has not been manually mirrored in this package.
+No origin offset, scaling, rotation or mirror transform was applied to Gerber, ODB++, DXF, via or pad coordinates.

@@ -1,0 +1,7 @@
+[REV0 REV0_FULL_ATTEMPT    0.0s] REV0 full-motor solve attempt: copy of REV0_FINAL_G100_T20_FROZEN.aedt, rot_angle 0 deg, 2 passes, solving in C:\Users\Student\Rev0_work
+[REV0 REV0_FULL_ATTEMPT   14.7s] Attempt 1: copied C:\Users\Student\OneDrive - University of Cape Town\EEE4022S Ansys files\Motor run\frozen\REV0_FINAL_G100_T20_FROZEN.aedt -> C:\Users\Student\Rev0_work\REV0_FULL_SOLVE_ATTEMPT.aedt (the frozen file is never opened)
+[REV0 REV0_FULL_ATTEMPT  169.0s] Model: 45 solids; copper 27 objects (15 board-phase strings + 12 bridges); 16 magnets; steel ['RotorSteel']
+[REV0 REV0_FULL_ATTEMPT  177.7s] Operating point: rot_angle 0 deg; I_A +0.8644, I_B +0.0032, I_C -0.8676 A (Ipk 1 A, phi_sync = -psi = +30.18 deg from C:\Users\Student\OneDrive - University of Cape Town\EEE4022S Ansys files\Motor run\results\REV0_REF_ROTOR_MS_SWEEP_results\rotor_sweep_summary.txt)
+[REV0 REV0_FULL_ATTEMPT  179.7s] Magnetostatic setup: 2 passes, 20% refinement, inductance matrix OFF
+[REV0 REV0_FULL_ATTEMPT  193.7s] Torques: Torque_Rotor, Torque_Cu, Torque_PCB1, Torque_PCB2, Torque_PCB3, Torque_PCB4, Torque_PCB5
+[REV0 REV0_FULL_ATTEMPT  723.6s] AEDT Validation Check returned True

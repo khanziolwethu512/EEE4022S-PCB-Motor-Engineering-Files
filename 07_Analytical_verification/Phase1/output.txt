@@ -1,0 +1,12 @@
+Geometry-only fundamental spatial-harmonic check
+pole pairs=8; mean radius=28 mm; k=p/r=0.285714 1/mm
+Does not predict absolute B or K; local planar fundamental approximation.
+board,axial_distance_mm,FEM_Rev0_K_mNm_per_A,analytic_relative_to_board1,FEM_relative_to_board1,relative_difference_pp
+1,1.000,6.2816,1.00000,1.00000,+0.00
+2,2.020,4.5905,0.74720,0.73079,+1.64
+3,3.041,3.3655,0.55814,0.53577,+2.24
+4,4.061,2.4755,0.41704,0.39409,+2.30
+5,5.081,1.8266,0.31161,0.29079,+2.08
+Stack K / board-1 K: analytical 3.0340, FEM 2.9514
+Effective FEM decay fitted endpoints: 0.30266 1/mm
+Rev1-S S2 has a different magnetic boundary condition. Do not apply the Rev0 exponential blindly.

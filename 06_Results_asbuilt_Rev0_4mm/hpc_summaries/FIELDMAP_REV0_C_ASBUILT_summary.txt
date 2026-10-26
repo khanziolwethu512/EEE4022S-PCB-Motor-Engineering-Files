@@ -1,0 +1,39 @@
+FIELD-ONLY FEM + TRACE-RESOLVED WINDING POST-PROCESSING - FIELDMAP_REV0_C_ASBUILT (Rev0)
+Rotor angles (deg mech): 0, 1.875, 3.75, 5.625, 7.5, 9.375, 11.25, 13.125, 15, 16.875, 18.75, 20.625; k = dLambda/dtheta = -T_copper/I per phase, 1 A into the L1 terminal
+Gap 4.000 mm, R2 / R1 steel 2.00 / 2.00 mm, zone mesh 0.80 mm, 4 passes
+Backplate OD/ID 80.0 / 25.0 mm, inter-board gap 0.000 mm, region padding 20.0 mm
+
+Stator S1 (z offset 0.00000 mm):
+  board 1 PHASE_A: K1 = 2.7104 mN.m/A, psi = -29.80 deg, H3/H1 = 1.5 %; single-sided distance law at 4.000 mm: 2.4574 (+10.30 %)
+  board 2 PHASE_A: K1 = 2.0283 mN.m/A, psi = -30.10 deg, H3/H1 = 1.1 %; single-sided distance law at 5.020 mm: 1.8037 (+12.45 %)
+  board 3 PHASE_A: K1 = 1.5411 mN.m/A, psi = -30.13 deg, H3/H1 = 1.3 %; single-sided distance law at 6.041 mm: 1.3239 (+16.40 %)
+  board 4 PHASE_A: K1 = 1.1634 mN.m/A, psi = -29.99 deg, H3/H1 = 0.3 %; single-sided distance law at 7.061 mm: 0.9717 (+19.72 %)
+  board 5 PHASE_A: K1 = 0.8346 mN.m/A, psi = -29.93 deg, H3/H1 = 0.4 %; single-sided distance law at 8.081 mm: 0.7132 (+17.01 %)
+  STACK S1 PHASE_A: K = 8.278 mN.m/A, psi = -29.97 deg, H3/H1 = 1.0 %
+  STACK S1 PHASE_B: K = 8.278 mN.m/A, psi = +90.01 deg, H3/H1 = 1.1 %
+  STACK S1 PHASE_C: K = 8.279 mN.m/A, psi = -150.04 deg, H3/H1 = 1.2 %
+
+MACHINE PHASE_A: K = 8.278 mN.m/A, psi -29.97 deg, H3/H1 1.0 %
+MACHINE PHASE_B: K = 8.278 mN.m/A, psi +90.01 deg, H3/H1 1.1 %
+MACHINE PHASE_C: K = 8.279 mN.m/A, psi -150.04 deg, H3/H1 1.2 %
+
+Machine (phase A): T_ideal = 12.4 mN.m per A_pk (1.5 K), E1 = 0.613 V rms at 1000 rpm, R_phase = 1.389 ohm, Km = 0.0086 N.m/sqrt(W)
+
+Neglected: armature reaction, copper eddy/skin/proximity effects, B averaged over the track cross-section (centre-line sampling). R_phase uses the Gate-1 FEM value 0.2777 ohm per board-phase.
+
+BACK-EMF WAVEFORM at 1000 rpm (from k(theta) at 12 angles, second half-period by antisymmetry):
+  PHASE_A: K1 = 8.278 mN.m/A, E1 = 0.6129 V rms, THD 1.0 % (H3 1.03%, H5 0.03%, H7 0.02%, H9 0.03%, H11 0.07%)
+  PHASE_B: K1 = 8.278 mN.m/A, E1 = 0.6130 V rms, THD 1.1 % (H3 1.10%, H5 0.05%, H7 0.04%, H9 0.04%, H11 0.08%)
+  PHASE_C: K1 = 8.279 mN.m/A, E1 = 0.6130 V rms, THD 1.2 % (H3 1.17%, H5 0.02%, H7 0.08%, H9 0.05%, H11 0.05%)
+  line A-B: E1 = 1.0616 V rms, THD 0.11 %
+  sinusoidal currents at 1 A pk in phase with each back-EMF: T mean 12.417 mN.m, ripple 0.31 % pk-pk (armature reaction neglected)
+
+Copper eddy loss estimate at 1000 rpm (thin-conductor formula on the trace pieces, vias excluded; from the static field at 12 angles, dt = 0.3125 ms): 0.00342 W
+  per board: S1_B1 1.56 mW, S1_B2 0.87 mW, S1_B3 0.51 mW, S1_B4 0.30 mW, S1_B5 0.18 mW
+
+Field probes (rotor angle 0 deg; steel planes r 10-42 mm, PCB planes r 12-46 mm, 2 deg):
+  PCB_B1_mid (z 0.0000 mm): |B| max 0.119 T, p99 0.110 T, mean 0.060 T; |Bz| max 0.116 T, mean 0.036 T; 0.0 % above 1.6 T
+  PCB_B3_mid (z -2.0406 mm): |B| max 0.068 T, p99 0.062 T, mean 0.033 T; |Bz| max 0.065 T, mean 0.020 T; 0.0 % above 1.6 T
+  PCB_B5_mid (z -4.0813 mm): |B| max 0.051 T, p99 0.035 T, mean 0.018 T; |Bz| max 0.040 T, mean 0.011 T; 0.0 % above 1.6 T
+  PCB_face_plus0p25mm (z 0.7602 mm): |B| max 0.173 T, p99 0.138 T, mean 0.076 T; |Bz| max 0.156 T, mean 0.045 T; 0.0 % above 1.6 T
+  R1_BackIron (z 7.5102 mm): |B| max 0.918 T, p99 0.868 T, mean 0.404 T; |Bz| max 0.487 T, mean 0.110 T; 0.0 % above 1.6 T

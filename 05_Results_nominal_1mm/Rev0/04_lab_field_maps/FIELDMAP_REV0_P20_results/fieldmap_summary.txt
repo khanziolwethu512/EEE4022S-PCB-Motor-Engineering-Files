@@ -1,0 +1,23 @@
+FIELD-ONLY FEM + TRACE-RESOLVED WINDING POST-PROCESSING - FIELDMAP_REV0_P20 (Rev0)
+Rotor angles (deg mech): 0, 5.625, 11.25, 16.875, 22.5, 28.125, 33.75, 39.375; k = dLambda/dtheta = -T_copper/I per phase, 1 A into the L1 terminal
+Gap 1.000 mm, R2 / R1 steel 2.00 / 2.00 mm, zone mesh 0.80 mm, 4 passes
+
+Stator S1 (z offset 0.00000 mm):
+  board 1 PHASE_A: K1 = 6.3697 mN.m/A, psi = -30.14 deg, H3/H1 = 10.8 %; single-sided distance law at 1.000 mm: 6.1006 (+4.41 %)
+  board 2 PHASE_A: K1 = 4.7962 mN.m/A, psi = -30.07 deg, H3/H1 = 5.7 %; single-sided distance law at 2.020 mm: 4.4778 (+7.11 %)
+  board 3 PHASE_A: K1 = 3.5881 mN.m/A, psi = -29.99 deg, H3/H1 = 3.2 %; single-sided distance law at 3.041 mm: 3.2867 (+9.17 %)
+  board 4 PHASE_A: K1 = 2.7268 mN.m/A, psi = -30.04 deg, H3/H1 = 2.2 %; single-sided distance law at 4.061 mm: 2.4124 (+13.04 %)
+  board 5 PHASE_A: K1 = 2.0154 mN.m/A, psi = -29.94 deg, H3/H1 = 1.1 %; single-sided distance law at 5.081 mm: 1.7707 (+13.82 %)
+  STACK S1 PHASE_A: K = 19.496 mN.m/A, psi = -30.06 deg, H3/H1 = 5.9 %
+  STACK S1 PHASE_B: K = 19.453 mN.m/A, psi = +90.04 deg, H3/H1 = 4.9 %
+  STACK S1 PHASE_C: K = 19.491 mN.m/A, psi = -149.90 deg, H3/H1 = 5.9 %
+
+MACHINE PHASE_A: K = 19.496 mN.m/A, psi -30.06 deg, H3/H1 5.9 %
+MACHINE PHASE_B: K = 19.453 mN.m/A, psi +90.04 deg, H3/H1 4.9 %
+MACHINE PHASE_C: K = 19.491 mN.m/A, psi -149.90 deg, H3/H1 5.9 %
+
+Machine (phase A): T_ideal = 29.2 mN.m per A_pk (1.5 K), E1 = 1.444 V rms at 1000 rpm, R_phase = 1.389 ohm, Km = 0.0203 N.m/sqrt(W)
+
+VALIDATION GATE (S1 board 1 vs detailed single-board FEM 6.0917 mN.m/A, -30.18 deg): FAIL (K1 +4.56 %, psi +0.04 deg; limits 2 % / 1 deg)
+
+Neglected: armature reaction, copper eddy/skin/proximity effects, B averaged over the track cross-section (centre-line sampling). R_phase uses the Gate-1 FEM value 0.2777 ohm per board-phase.

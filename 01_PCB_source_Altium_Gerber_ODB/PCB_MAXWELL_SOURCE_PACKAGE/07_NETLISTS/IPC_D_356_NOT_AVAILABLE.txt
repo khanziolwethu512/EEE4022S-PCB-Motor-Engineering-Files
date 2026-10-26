@@ -1,0 +1,2 @@
+Altium Designer Develop 26.10.1.6 returned no command for IPC-D-356/IPC-D-356A in this installation.
+No fabricated substitute is provided. ODB++ cadnet/EDA, Altium Net Status, phase reports, pad report and the 617-row via report preserve the verified connectivity.

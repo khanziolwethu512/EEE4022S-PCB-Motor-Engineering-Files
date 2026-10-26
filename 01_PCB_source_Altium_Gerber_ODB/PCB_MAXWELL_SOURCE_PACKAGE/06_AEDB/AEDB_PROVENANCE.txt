@@ -1,0 +1,3 @@
+This is the complete corrected AEDB directory associated with the via/net-corrected design.
+It was generated in Ansys Electronics Desktop before this packaging run and contains PHASE_A, PHASE_B and PHASE_C.
+The directory and its companion ZIP are included in full; no standalone edb.def substitution was made.

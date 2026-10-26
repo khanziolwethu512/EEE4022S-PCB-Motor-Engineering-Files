@@ -1,0 +1,51 @@
+[REV0 REF_ROTOR_MS_3PH    0.0s] REV0 pipeline, profile REF_ROTOR_MS_3PH, stages project -> export, modules from C:\Users\Student\OneDrive - University of Cape Town\EEE4022S Ansys files\Motor run\rev0, solving in C:\Users\Student\Rev0_work, results copied to C:\Users\Student\OneDrive - University of Cape Town\EEE4022S Ansys files\Motor run\results
+[REV0 REF_ROTOR_MS_3PH    0.3s] === STAGE project ===
+[REV0 REF_ROTOR_MS_3PH    3.4s] Design solution type reported by AEDT: Magnetostatic
+[REV0 REF_ROTOR_MS_3PH    3.5s] Project REV0_REF_ROTOR_MS_3PH / design Rev0 (Magnetostatic)
+[REV0 REF_ROTOR_MS_3PH    3.5s] ASSUMPTION: Stack-up mode 'scaled' - Altium dielectric ratios scaled to 1.000 mm copper+dielectric; NOT the JLCPCB stack-up
+[REV0 REF_ROTOR_MS_3PH    3.6s] ASSUMPTION: Solder mask 0.01016 mm each face (source stack-up); board pitch 1.02032 mm
+[REV0 REF_ROTOR_MS_3PH    3.6s] ASSUMPTION: Vias = solid 0.30 mm copper (8-sided): fine for conduction/field, low for final resistance
+[REV0 REF_ROTOR_MS_3PH    3.6s] ASSUMPTION: Air gap 1.000 mm measured from PCB1 top solder-mask surface to magnet face
+[REV0 REF_ROTOR_MS_3PH    3.6s] ASSUMPTION: FR-4 and solder mask modelled as air (mu_r = 1, non-conductive either way); board geometry, pitch and air gap unchanged
+[REV0 REF_ROTOR_MS_3PH    3.6s] ASSUMPTION: Inductance matrix not computed (lab-PC freeze at 'Start Matrix')
+[REV0 REF_ROTOR_MS_3PH    3.6s] ASSUMPTION: Shaft steel_1010, 19.0 mm dia, rotating; simplified EM representation: rotor side only (band floor to 5.0 mm beyond back iron); section through the stator bore omitted; NOT the physical shaft length; shaft + back iron united as one steel body
+[REV0 REF_ROTOR_MS_3PH    3.6s] ASSUMPTION: Three-phase synchronous magnetostatic check: I_X = 1 A * cos(8*rot_angle + phi_sync + PHASE_DEG[X]); phi_sync from the Phase-A baseline (REV0_REF_ROTOR_MS_SWEEP); prediction by superposition of the baseline dLam_A/dtheta rotated to each phase (B = A rotated -30 deg, C = -60 deg mech)
+[REV0 REF_ROTOR_MS_3PH    3.9s] Checkpoint saved: C:\Users\Student\Rev0_work\REV0_REF_ROTOR_MS_3PH_results\checkpoints\01_project.aedt
+[REV0 REF_ROTOR_MS_3PH    3.9s] Stage project OK
+[REV0 REF_ROTOR_MS_3PH    3.9s] === STAGE stator ===
+[REV0 REF_ROTOR_MS_3PH    5.5s] Check: no via of one phase touches copper of another phase
+[REV0 REF_ROTOR_MS_3PH    8.1s] Check PHASE_B = PHASE_A rotated -30 deg mech: 99.96% of L1 copper coincides
+[REV0 REF_ROTOR_MS_3PH   10.3s] Check PHASE_C = PHASE_A rotated -60 deg mech: 99.98% of L1 copper coincides
+[REV0 REF_ROTOR_MS_3PH   10.4s] Check PHASE_A: 148 islands form ONE network; In->Out 25 island-hops (farthest island 25)
+[REV0 REF_ROTOR_MS_3PH   10.4s] Check PHASE_B: 148 islands form ONE network; In->Out 25 island-hops (farthest island 25)
+[REV0 REF_ROTOR_MS_3PH   10.5s] Check PHASE_C: 148 islands form ONE network; In->Out 25 island-hops (farthest island 25)
+[REV0 REF_ROTOR_MS_3PH   61.5s] PCB1 PHASE_A: 148 copper islands on 6 layers, 205 vias
+[REV0 REF_ROTOR_MS_3PH  143.9s] PCB1 PHASE_B: 148 copper islands on 6 layers, 205 vias
+[REV0 REF_ROTOR_MS_3PH  240.5s] PCB1 PHASE_C: 148 copper islands on 6 layers, 205 vias
+[REV0 REF_ROTOR_MS_3PH  321.4s] PCB1 built: copper L1 top z=0.50000, top mask surface z=0.51016, bottom surface z=-0.51016
+[REV0 REF_ROTOR_MS_3PH  333.2s] Checkpoint saved: C:\Users\Student\Rev0_work\REV0_REF_ROTOR_MS_3PH_results\checkpoints\02_stator.aedt
+[REV0 REF_ROTOR_MS_3PH  333.2s] Stage stator OK
+[REV0 REF_ROTOR_MS_3PH  333.2s] === STAGE rotor ===
+[REV0 REF_ROTOR_MS_3PH  346.7s] Rotor steel: disc (bore not cut) + overlapping 19 mm shaft united as RotorSteel (EM Boolean simplification; same steel volume as disc-with-bore + shaft)
+[REV0 REF_ROTOR_MS_3PH  346.7s] Rotor: 16 magnets r 18.0-38.0 mm, z 1.5102-3.5102 (gap 1.000 mm from stator surface z=0.51016); back iron OD 86.0 / ID 19.0 x 2.0 mm; shaft 19.0 mm steel_1010
+[REV0 REF_ROTOR_MS_3PH  347.1s] Rotor position: 16 magnets rotated about +Z by design variable rot_angle (= 0 deg)
+[REV0 REF_ROTOR_MS_3PH  356.5s] Checkpoint saved: C:\Users\Student\Rev0_work\REV0_REF_ROTOR_MS_3PH_results\checkpoints\03_rotor.aedt
+[REV0 REF_ROTOR_MS_3PH  356.5s] Stage rotor OK
+[REV0 REF_ROTOR_MS_3PH  356.5s] === STAGE region_band ===
+[REV0 REF_ROTOR_MS_3PH  358.8s] Air-gap vacuum layer r 16.0-40.0 mm, z 0.51016-1.51016 (mesh op); mid-gap sheet GapMid at z 1.01016
+[REV0 REF_ROTOR_MS_3PH  359.2s] Region: padding 5 mm, +Y face on the terminal lead ends (padding 0)
+[REV0 REF_ROTOR_MS_3PH  368.8s] Checkpoint saved: C:\Users\Student\Rev0_work\REV0_REF_ROTOR_MS_3PH_results\checkpoints\04_region_band.aedt
+[REV0 REF_ROTOR_MS_3PH  368.8s] Stage region_band OK
+[REV0 REF_ROTOR_MS_3PH  368.9s] === STAGE excitation ===
+[REV0 REF_ROTOR_MS_3PH  370.2s] STAGE excitation FAILED: Baseline summary has no fit_coeffs - re-run its export stage with v6.5
+[REV0 REF_ROTOR_MS_3PH  370.3s] The project was NOT saved after the failure (partial objects discarded on resume). Fix the cause, then set START_AT = 'excitation'; it restores the checkpoint of the previous stage first.
+[REV0 REF_ROTOR_MS_3PH    0.0s] REV0 pipeline, profile REF_ROTOR_MS_3PH, stages excitation -> export, modules from C:\Users\Student\OneDrive - University of Cape Town\EEE4022S Ansys files\Motor run\rev0_v9, solving in C:\Users\Student\Rev0_work, results copied to C:\Users\Student\OneDrive - University of Cape Town\EEE4022S Ansys files\Motor run\results
+[REV0 REF_ROTOR_MS_3PH   19.8s] Restored checkpoint after stage 'region_band'; stages done: project, stator, rotor, region_band
+[REV0 REF_ROTOR_MS_3PH   19.9s] === STAGE excitation ===
+[REV0 REF_ROTOR_MS_3PH   21.5s] STAGE excitation FAILED: Baseline summary has no fit_coeffs - re-run its export stage with v6.5
+[REV0 REF_ROTOR_MS_3PH   21.5s] The project was NOT saved after the failure (partial objects discarded on resume). Fix the cause, then set START_AT = 'excitation'; it restores the checkpoint of the previous stage first.
+[REV0 REF_ROTOR_MS_3PH    0.0s] REV0 pipeline, profile REF_ROTOR_MS_3PH, stages excitation -> export, modules from C:\Users\Student\OneDrive - University of Cape Town\EEE4022S Ansys files\Motor run\rev0_v9, solving in C:\Users\Student\Rev0_work, results copied to C:\Users\Student\OneDrive - University of Cape Town\EEE4022S Ansys files\Motor run\results
+[REV0 REF_ROTOR_MS_3PH   23.9s] Restored checkpoint after stage 'region_band'; stages done: project, stator, rotor, region_band
+[REV0 REF_ROTOR_MS_3PH   24.0s] === STAGE excitation ===
+[REV0 REF_ROTOR_MS_3PH   25.6s] STAGE excitation FAILED: Baseline summary has no fit_coeffs - re-run its export stage with v6.5
+[REV0 REF_ROTOR_MS_3PH   25.6s] The project was NOT saved after the failure (partial objects discarded on resume). Fix the cause, then set START_AT = 'excitation'; it restores the checkpoint of the previous stage first.

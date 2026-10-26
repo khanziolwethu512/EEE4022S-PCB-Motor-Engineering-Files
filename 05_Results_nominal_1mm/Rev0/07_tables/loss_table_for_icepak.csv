@@ -1,0 +1,12 @@
+part,stator,board,P_W_at_1000rpm_1Apk,note
+PCB copper DC,S1,1,0.398400,3 phases x 1.5 Ipk^2 x 0.2656/3 ohm per board-phase
+PCB copper eddy,S1,1,0.010822,thin-conductor estimate
+PCB copper DC,S1,2,0.398400,3 phases x 1.5 Ipk^2 x 0.2656/3 ohm per board-phase
+PCB copper eddy,S1,2,0.004798,thin-conductor estimate
+PCB copper DC,S1,3,0.398400,3 phases x 1.5 Ipk^2 x 0.2656/3 ohm per board-phase
+PCB copper eddy,S1,3,0.002502,thin-conductor estimate
+PCB copper DC,S1,4,0.398400,3 phases x 1.5 Ipk^2 x 0.2656/3 ohm per board-phase
+PCB copper eddy,S1,4,0.001458,thin-conductor estimate
+PCB copper DC,S1,5,0.398400,3 phases x 1.5 Ipk^2 x 0.2656/3 ohm per board-phase
+PCB copper eddy,S1,5,0.000774,thin-conductor estimate
+Magnets (all),-,-,0.000000,Maxwell SolidLoss mean

@@ -1,0 +1,9 @@
+quantity,object,value,unit,method
+OhmicLoss,BridgeA_1_2,3.64444e-06,W,integral of OhmicLoss
+R=P/I^2,BridgeA_1_2,3.64444e-06,ohm,I = 1 A
+OhmicLoss,PhaseA1_Cu,0.276537,W,integral of OhmicLoss
+R=P/I^2,PhaseA1_Cu,0.276537,ohm,I = 1 A
+OhmicLoss,PhaseA2_Cu,0.276591,W,integral of OhmicLoss
+R=P/I^2,PhaseA2_Cu,0.276591,ohm,I = 1 A
+R_string=sum(P)/I^2,PhaseA,0.553132,ohm,2 boards + bridge
+MagneticEnergy,AllObjects,3.11322e-06,J,0.5 * integral of B.H

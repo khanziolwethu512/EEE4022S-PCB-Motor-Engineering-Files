@@ -1,0 +1,590 @@
+{
+ "_note": "K1 = peak dLam/dtheta per phase in mN.m/A (= ideal 3-phase torque / (1.5 Ipk)). Board 1 of each stator is the board nearest its own rotor face (S1 board 1 faces R1; S2 board 1 faces R2, S2 board 5 faces R1).",
+ "baseline": {
+  "K1_mNm_per_A": 6.09167,
+  "psi_deg": -30.181,
+  "source": "REV0_REF_ROTOR_MS_SWEEP"
+ },
+ "Rev0": {
+  "fieldmap": {
+   "source": "FIELDMAP_REV0_P20 (field-only FEM + trace-resolved winding, 20 mm padding, 0.8 mm zone mesh)",
+   "machine": {
+    "PHASE_C": {
+     "K1_mNm_per_A": 19.4912,
+     "psi_deg": -149.905
+    },
+    "PHASE_B": {
+     "K1_mNm_per_A": 19.4527,
+     "psi_deg": 90.044
+    },
+    "PHASE_A": {
+     "K1_mNm_per_A": 19.4962,
+     "psi_deg": -30.059
+    }
+   },
+   "stators": {
+    "S1_PHASE_A": {
+     "K1_mNm_per_A": 19.4962,
+     "psi_deg": -30.059
+    },
+    "S1_PHASE_B": {
+     "K1_mNm_per_A": 19.4527,
+     "psi_deg": 90.044
+    },
+    "S1_PHASE_C": {
+     "K1_mNm_per_A": 19.4912,
+     "psi_deg": -149.905
+    }
+   },
+   "boards": {
+    "S1_B1_PHASE_A": {
+     "K1_mNm_per_A": 6.3697,
+     "psi_deg": -30.141
+    },
+    "S1_B1_PHASE_B": {
+     "K1_mNm_per_A": 6.3287,
+     "psi_deg": 90.109
+    },
+    "S1_B1_PHASE_C": {
+     "K1_mNm_per_A": 6.3634,
+     "psi_deg": -149.755
+    },
+    "S1_B2_PHASE_A": {
+     "K1_mNm_per_A": 4.7962,
+     "psi_deg": -30.066
+    },
+    "S1_B2_PHASE_B": {
+     "K1_mNm_per_A": 4.7868,
+     "psi_deg": 90.035
+    },
+    "S1_B2_PHASE_C": {
+     "K1_mNm_per_A": 4.8003,
+     "psi_deg": -150.013
+    },
+    "S1_B3_PHASE_A": {
+     "K1_mNm_per_A": 3.5881,
+     "psi_deg": -29.987
+    },
+    "S1_B3_PHASE_B": {
+     "K1_mNm_per_A": 3.588,
+     "psi_deg": 89.921
+    },
+    "S1_B3_PHASE_C": {
+     "K1_mNm_per_A": 3.5861,
+     "psi_deg": -149.966
+    },
+    "S1_B4_PHASE_A": {
+     "K1_mNm_per_A": 2.7268,
+     "psi_deg": -30.044
+    },
+    "S1_B4_PHASE_B": {
+     "K1_mNm_per_A": 2.7275,
+     "psi_deg": 90.074
+    },
+    "S1_B4_PHASE_C": {
+     "K1_mNm_per_A": 2.7221,
+     "psi_deg": -149.923
+    },
+    "S1_B5_PHASE_A": {
+     "K1_mNm_per_A": 2.0154,
+     "psi_deg": -29.937
+    },
+    "S1_B5_PHASE_B": {
+     "K1_mNm_per_A": 2.0217,
+     "psi_deg": 90.041
+    },
+    "S1_B5_PHASE_C": {
+     "K1_mNm_per_A": 2.0194,
+     "psi_deg": -149.988
+    }
+   }
+  },
+  "detailed": {
+   "note": "detailed single-board FEM (copper modelled, Phase A only), 20 mm padding",
+   "boards": {
+    "S1_B1": {
+     "K1_mNm_per_A": 6.2816,
+     "psi_deg": -30.179,
+     "source": "REV0_DOE_D100_P20"
+    },
+    "S1_B2": {
+     "K1_mNm_per_A": 4.59052,
+     "psi_deg": -30.038,
+     "source": "REV0_DOE_D202_P20"
+    },
+    "S1_B3": {
+     "K1_mNm_per_A": 3.36547,
+     "psi_deg": -30.012,
+     "source": "REV0_DOE_D304_P20"
+    },
+    "S1_B4": {
+     "K1_mNm_per_A": 2.47547,
+     "psi_deg": -30.017,
+     "source": "REV0_DOE_D406_P20"
+    },
+    "S1_B5": {
+     "K1_mNm_per_A": 1.82659,
+     "psi_deg": -30.022,
+     "source": "REV0_DOE_D508_P20"
+    }
+   },
+   "machine_phaseA_K1_mNm_per_A": 18.5397
+  }
+ },
+ "Rev1S": {
+  "fieldmap": {
+   "source": "FIELDMAP_REV1S_P20 (field-only FEM + trace-resolved winding, 20 mm padding, 0.8 mm zone mesh)",
+   "machine": {
+    "PHASE_C": {
+     "K1_mNm_per_A": 41.6418,
+     "psi_deg": -149.929
+    },
+    "PHASE_B": {
+     "K1_mNm_per_A": 41.5481,
+     "psi_deg": 90.003
+    },
+    "PHASE_A": {
+     "K1_mNm_per_A": 41.6358,
+     "psi_deg": -30.079
+    }
+   },
+   "stators": {
+    "S2_PHASE_A": {
+     "K1_mNm_per_A": 22.1351,
+     "psi_deg": -30.088
+    },
+    "S1_PHASE_C": {
+     "K1_mNm_per_A": 19.5024,
+     "psi_deg": -149.903
+    },
+    "S2_PHASE_B": {
+     "K1_mNm_per_A": 22.0961,
+     "psi_deg": 89.991
+    },
+    "S1_PHASE_B": {
+     "K1_mNm_per_A": 19.452,
+     "psi_deg": 90.016
+    },
+    "S2_PHASE_C": {
+     "K1_mNm_per_A": 22.1395,
+     "psi_deg": -149.952
+    },
+    "S1_PHASE_A": {
+     "K1_mNm_per_A": 19.5007,
+     "psi_deg": -30.068
+    }
+   },
+   "boards": {
+    "S1_B1_PHASE_A": {
+     "K1_mNm_per_A": 6.3713,
+     "psi_deg": -30.208
+    },
+    "S1_B1_PHASE_B": {
+     "K1_mNm_per_A": 6.3242,
+     "psi_deg": 90.009
+    },
+    "S1_B1_PHASE_C": {
+     "K1_mNm_per_A": 6.3809,
+     "psi_deg": -149.804
+    },
+    "S1_B2_PHASE_A": {
+     "K1_mNm_per_A": 4.8006,
+     "psi_deg": -30.02
+    },
+    "S1_B2_PHASE_B": {
+     "K1_mNm_per_A": 4.7944,
+     "psi_deg": 89.986
+    },
+    "S1_B2_PHASE_C": {
+     "K1_mNm_per_A": 4.7898,
+     "psi_deg": -149.866
+    },
+    "S1_B3_PHASE_A": {
+     "K1_mNm_per_A": 3.5886,
+     "psi_deg": -29.945
+    },
+    "S1_B3_PHASE_B": {
+     "K1_mNm_per_A": 3.5864,
+     "psi_deg": 90.082
+    },
+    "S1_B3_PHASE_C": {
+     "K1_mNm_per_A": 3.5919,
+     "psi_deg": -150.11
+    },
+    "S1_B4_PHASE_A": {
+     "K1_mNm_per_A": 2.7244,
+     "psi_deg": -30.029
+    },
+    "S1_B4_PHASE_B": {
+     "K1_mNm_per_A": 2.7293,
+     "psi_deg": 90.116
+    },
+    "S1_B4_PHASE_C": {
+     "K1_mNm_per_A": 2.7241,
+     "psi_deg": -149.897
+    },
+    "S1_B5_PHASE_A": {
+     "K1_mNm_per_A": 2.0159,
+     "psi_deg": -30.012
+    },
+    "S1_B5_PHASE_B": {
+     "K1_mNm_per_A": 2.0177,
+     "psi_deg": 89.859
+    },
+    "S1_B5_PHASE_C": {
+     "K1_mNm_per_A": 2.0157,
+     "psi_deg": -149.942
+    },
+    "S2_B1_PHASE_A": {
+     "K1_mNm_per_A": 6.6506,
+     "psi_deg": -30.209
+    },
+    "S2_B1_PHASE_B": {
+     "K1_mNm_per_A": 6.623,
+     "psi_deg": 89.973
+    },
+    "S2_B1_PHASE_C": {
+     "K1_mNm_per_A": 6.6599,
+     "psi_deg": -149.902
+    },
+    "S2_B2_PHASE_A": {
+     "K1_mNm_per_A": 5.1866,
+     "psi_deg": -30.1
+    },
+    "S2_B2_PHASE_B": {
+     "K1_mNm_per_A": 5.1794,
+     "psi_deg": 90.015
+    },
+    "S2_B2_PHASE_C": {
+     "K1_mNm_per_A": 5.1799,
+     "psi_deg": -149.91
+    },
+    "S2_B3_PHASE_A": {
+     "K1_mNm_per_A": 4.0853,
+     "psi_deg": -30.01
+    },
+    "S2_B3_PHASE_B": {
+     "K1_mNm_per_A": 4.0867,
+     "psi_deg": 89.967
+    },
+    "S2_B3_PHASE_C": {
+     "K1_mNm_per_A": 4.0878,
+     "psi_deg": -149.995
+    },
+    "S2_B4_PHASE_A": {
+     "K1_mNm_per_A": 3.3286,
+     "psi_deg": -29.938
+    },
+    "S2_B4_PHASE_B": {
+     "K1_mNm_per_A": 3.3292,
+     "psi_deg": 89.975
+    },
+    "S2_B4_PHASE_C": {
+     "K1_mNm_per_A": 3.3313,
+     "psi_deg": -149.98
+    },
+    "S2_B5_PHASE_A": {
+     "K1_mNm_per_A": 2.8842,
+     "psi_deg": -30.072
+    },
+    "S2_B5_PHASE_B": {
+     "K1_mNm_per_A": 2.8777,
+     "psi_deg": 90.043
+    },
+    "S2_B5_PHASE_C": {
+     "K1_mNm_per_A": 2.8806,
+     "psi_deg": -150.054
+    }
+   }
+  },
+  "detailed": {
+   "note": "S1 boards = Rev0 single-board runs (20 mm padding); S2 boards = REV1S_S2_J* (20 mm padding)",
+   "boards": {
+    "S1_B1": {
+     "K1_mNm_per_A": 6.2816,
+     "psi_deg": -30.179,
+     "source": "REV0_DOE_D100_P20"
+    },
+    "S1_B2": {
+     "K1_mNm_per_A": 4.59052,
+     "psi_deg": -30.038,
+     "source": "REV0_DOE_D202_P20"
+    },
+    "S1_B3": {
+     "K1_mNm_per_A": 3.36547,
+     "psi_deg": -30.012,
+     "source": "REV0_DOE_D304_P20"
+    },
+    "S1_B4": {
+     "K1_mNm_per_A": 2.47547,
+     "psi_deg": -30.017,
+     "source": "REV0_DOE_D406_P20"
+    },
+    "S1_B5": {
+     "K1_mNm_per_A": 1.82659,
+     "psi_deg": -30.022,
+     "source": "REV0_DOE_D508_P20"
+    },
+    "S2_B5": {
+     "K1_mNm_per_A": 2.59647,
+     "psi_deg": -30.051,
+     "source": "REV1S_S2_J1_P20"
+    },
+    "S2_B4": {
+     "K1_mNm_per_A": 3.05724,
+     "psi_deg": -30.04,
+     "source": "REV1S_S2_J2_P20"
+    },
+    "S2_B3": {
+     "K1_mNm_per_A": 3.81153,
+     "psi_deg": -30.031,
+     "source": "REV1S_S2_J3_P20"
+    },
+    "S2_B2": {
+     "K1_mNm_per_A": 4.93819,
+     "psi_deg": -30.047,
+     "source": "REV1S_S2_J4_P20"
+    },
+    "S2_B1": {
+     "K1_mNm_per_A": 6.5593,
+     "psi_deg": -30.182,
+     "source": "REV1S_S2_J5_P20"
+    }
+   },
+   "machine_phaseA_K1_mNm_per_A": 39.5024
+  }
+ },
+ "Rev1D": {
+  "fieldmap": {
+   "source": "FIELDMAP_REV1D_P20 (field-only FEM + trace-resolved winding, 20 mm padding, 0.8 mm zone mesh)",
+   "machine": {
+    "PHASE_C": {
+     "K1_mNm_per_A": 60.2762,
+     "psi_deg": -149.924
+    },
+    "PHASE_B": {
+     "K1_mNm_per_A": 60.146,
+     "psi_deg": 90.007
+    },
+    "PHASE_A": {
+     "K1_mNm_per_A": 60.284,
+     "psi_deg": -30.08
+    }
+   },
+   "stators": {
+    "S2_PHASE_A": {
+     "K1_mNm_per_A": 40.761,
+     "psi_deg": -30.084
+    },
+    "S1_PHASE_C": {
+     "K1_mNm_per_A": 19.5238,
+     "psi_deg": -149.917
+    },
+    "S2_PHASE_B": {
+     "K1_mNm_per_A": 40.6716,
+     "psi_deg": 89.991
+    },
+    "S1_PHASE_B": {
+     "K1_mNm_per_A": 19.4745,
+     "psi_deg": 90.04
+    },
+    "S2_PHASE_C": {
+     "K1_mNm_per_A": 40.7523,
+     "psi_deg": -149.927
+    },
+    "S1_PHASE_A": {
+     "K1_mNm_per_A": 19.5229,
+     "psi_deg": -30.07
+    }
+   },
+   "boards": {
+    "S1_B1_PHASE_A": {
+     "K1_mNm_per_A": 6.3803,
+     "psi_deg": -30.199
+    },
+    "S1_B1_PHASE_B": {
+     "K1_mNm_per_A": 6.3379,
+     "psi_deg": 90.093
+    },
+    "S1_B1_PHASE_C": {
+     "K1_mNm_per_A": 6.3819,
+     "psi_deg": -149.761
+    },
+    "S1_B2_PHASE_A": {
+     "K1_mNm_per_A": 4.8016,
+     "psi_deg": -29.949
+    },
+    "S1_B2_PHASE_B": {
+     "K1_mNm_per_A": 4.7952,
+     "psi_deg": 90.039
+    },
+    "S1_B2_PHASE_C": {
+     "K1_mNm_per_A": 4.8064,
+     "psi_deg": -149.965
+    },
+    "S1_B3_PHASE_A": {
+     "K1_mNm_per_A": 3.5937,
+     "psi_deg": -30.066
+    },
+    "S1_B3_PHASE_B": {
+     "K1_mNm_per_A": 3.5935,
+     "psi_deg": 90.013
+    },
+    "S1_B3_PHASE_C": {
+     "K1_mNm_per_A": 3.5896,
+     "psi_deg": -149.909
+    },
+    "S1_B4_PHASE_A": {
+     "K1_mNm_per_A": 2.7251,
+     "psi_deg": -30.061
+    },
+    "S1_B4_PHASE_B": {
+     "K1_mNm_per_A": 2.7337,
+     "psi_deg": 89.926
+    },
+    "S1_B4_PHASE_C": {
+     "K1_mNm_per_A": 2.7261,
+     "psi_deg": -149.995
+    },
+    "S1_B5_PHASE_A": {
+     "K1_mNm_per_A": 2.0222,
+     "psi_deg": -29.968
+    },
+    "S1_B5_PHASE_B": {
+     "K1_mNm_per_A": 2.0143,
+     "psi_deg": 90.082
+    },
+    "S1_B5_PHASE_C": {
+     "K1_mNm_per_A": 2.0199,
+     "psi_deg": -150.205
+    },
+    "S2_B1_PHASE_A": {
+     "K1_mNm_per_A": 8.7587,
+     "psi_deg": -30.139
+    },
+    "S2_B1_PHASE_B": {
+     "K1_mNm_per_A": 8.7096,
+     "psi_deg": 90.042
+    },
+    "S2_B1_PHASE_C": {
+     "K1_mNm_per_A": 8.7406,
+     "psi_deg": -149.876
+    },
+    "S2_B2_PHASE_A": {
+     "K1_mNm_per_A": 7.8497,
+     "psi_deg": -30.017
+    },
+    "S2_B2_PHASE_B": {
+     "K1_mNm_per_A": 7.8543,
+     "psi_deg": 90.017
+    },
+    "S2_B2_PHASE_C": {
+     "K1_mNm_per_A": 7.8617,
+     "psi_deg": -149.943
+    },
+    "S2_B3_PHASE_A": {
+     "K1_mNm_per_A": 7.5412,
+     "psi_deg": -30.047
+    },
+    "S2_B3_PHASE_B": {
+     "K1_mNm_per_A": 7.5338,
+     "psi_deg": 89.963
+    },
+    "S2_B3_PHASE_C": {
+     "K1_mNm_per_A": 7.5392,
+     "psi_deg": -149.978
+    },
+    "S2_B4_PHASE_A": {
+     "K1_mNm_per_A": 7.8575,
+     "psi_deg": -30.046
+    },
+    "S2_B4_PHASE_B": {
+     "K1_mNm_per_A": 7.8545,
+     "psi_deg": 90.009
+    },
+    "S2_B4_PHASE_C": {
+     "K1_mNm_per_A": 7.8596,
+     "psi_deg": -149.99
+    },
+    "S2_B5_PHASE_A": {
+     "K1_mNm_per_A": 8.7539,
+     "psi_deg": -30.156
+    },
+    "S2_B5_PHASE_B": {
+     "K1_mNm_per_A": 8.7194,
+     "psi_deg": 89.925
+    },
+    "S2_B5_PHASE_C": {
+     "K1_mNm_per_A": 8.7514,
+     "psi_deg": -149.863
+    }
+   }
+  },
+  "detailed": {
+   "note": "S1 boards = Rev0 single-board runs (20 mm padding); S2 boards = REV1D_S2_* with 5 mm padding (about 3 % low against 20 mm, from the Rev0 board-1 padding study)",
+   "boards": {
+    "S1_B1": {
+     "K1_mNm_per_A": 6.2816,
+     "psi_deg": -30.179,
+     "source": "REV0_DOE_D100_P20"
+    },
+    "S1_B2": {
+     "K1_mNm_per_A": 4.59052,
+     "psi_deg": -30.038,
+     "source": "REV0_DOE_D202_P20"
+    },
+    "S1_B3": {
+     "K1_mNm_per_A": 3.36547,
+     "psi_deg": -30.012,
+     "source": "REV0_DOE_D304_P20"
+    },
+    "S1_B4": {
+     "K1_mNm_per_A": 2.47547,
+     "psi_deg": -30.017,
+     "source": "REV0_DOE_D406_P20"
+    },
+    "S1_B5": {
+     "K1_mNm_per_A": 1.82659,
+     "psi_deg": -30.022,
+     "source": "REV0_DOE_D508_P20"
+    },
+    "S2_B5": {
+     "K1_mNm_per_A": 8.48598,
+     "psi_deg": -30.162,
+     "source": "REV1D_S2_K1_G100_T20"
+    },
+    "S2_B4": {
+     "K1_mNm_per_A": 7.40075,
+     "psi_deg": -30.053,
+     "source": "REV1D_S2_J2_P05"
+    },
+    "S2_B3": {
+     "K1_mNm_per_A": 7.0504,
+     "psi_deg": -30.037,
+     "source": "REV1D_S2_K3_G100_T20"
+    },
+    "S2_B2": {
+     "K1_mNm_per_A": 7.39746,
+     "psi_deg": -30.049,
+     "source": "REV1D_S2_J4_P05"
+    },
+    "S2_B1": {
+     "K1_mNm_per_A": 8.47907,
+     "psi_deg": -30.154,
+     "source": "REV1D_S2_J5_P05"
+    }
+   },
+   "machine_phaseA_K1_mNm_per_A": 57.3533
+  }
+ },
+ "lab_full_attempt": {
+  "project": "REV0_FULL_SOLVE_ATTEMPT",
+  "solids": 45,
+  "copper_objects": 27,
+  "magnets": 16,
+  "pc_ram_GB": 15.81,
+  "free_GB_at_solve_start": 4.03,
+  "validation_check_s": 530,
+  "outcome": "stopped during the solve (2 passes, 20 % refinement)"
+ }
+}

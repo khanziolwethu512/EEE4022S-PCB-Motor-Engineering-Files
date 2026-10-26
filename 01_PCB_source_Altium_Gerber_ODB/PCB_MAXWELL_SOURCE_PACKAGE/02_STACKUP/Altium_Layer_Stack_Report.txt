@@ -1,0 +1,19 @@
+ALTIUM LAYER STACK MANAGER REPORT
+=================================
+Source: mini_wave-bb_nets_complete.PcbDoc
+Total thickness including solder masks: 0.6159246 mm
+
+Order (top to bottom):
+- Top Solder: 0.0101600 mm; type=mask; material=Solder Resist; Dk=3.500
+- Top Layer: 0.0355600 mm; type=copper; material=copper; Dk=n/a
+- Dielectric 2: 0.0711200 mm; type=dielectric; material=PP-006; Dk=4.100
+- Layer 1: 0.0350012 mm; type=copper; material=copper; Dk=n/a
+- Dielectric 5: 0.0711200 mm; type=dielectric; material=PP-006; Dk=4.100
+- Layer 2: 0.0350012 mm; type=copper; material=copper; Dk=n/a
+- Dielectric 1: 0.0999998 mm; type=dielectric; material=FR-4; Dk=4.800
+- Layer 3: 0.0350012 mm; type=copper; material=copper; Dk=n/a
+- Dielectric 6: 0.0711200 mm; type=dielectric; material=PP-006; Dk=4.100
+- Layer 4: 0.0350012 mm; type=copper; material=copper; Dk=n/a
+- Dielectric 9: 0.0711200 mm; type=dielectric; material=PP-006; Dk=4.100
+- Bottom Layer: 0.0355600 mm; type=copper; material=copper; Dk=n/a
+- Bottom Solder: 0.0101600 mm; type=mask; material=Solder Resist; Dk=3.500

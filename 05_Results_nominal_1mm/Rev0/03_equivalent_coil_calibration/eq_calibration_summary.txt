@@ -1,0 +1,33 @@
+EQUIVALENT-COIL CALIBRATION EQ_REV0_CAL (Rev0) - magnetostatic, all three phases at Ncoil = 2.0059 x 1 A DC, 8 angles
+k = -T_copper/I per phase and board (Lorentz on the equivalent coils), compared with the field map /scratch/khnolw003/pcbmotor_hpc/shared_results/FIELDMAP_REV0_P20_results/fieldmap_results.json
+
+PHASE_A:
+  S1 board 1: K1 = 7.9983 mN.m/A, psi +149.56, H3 11.7 %  | field map 6.3697, psi  -30.14 -> ratio 1.2557, dpsi +179.70  | detailed 6.2817 -> ratio 1.2733
+  S1 board 2: K1 = 5.7259 mN.m/A, psi +149.64, H3  7.4 %  | field map 4.7962, psi  -30.07 -> ratio 1.1938, dpsi +179.71  | detailed 4.5898 -> ratio 1.2475
+  S1 board 3: K1 = 4.1331 mN.m/A, psi +149.65, H3  4.8 %  | field map 3.5881, psi  -29.99 -> ratio 1.1519, dpsi +179.64  | detailed 3.3637 -> ratio 1.2287
+  S1 board 4: K1 = 2.9998 mN.m/A, psi +149.68, H3  3.0 %  | field map 2.7268, psi  -30.04 -> ratio 1.1001, dpsi +179.72  | detailed 2.4736 -> ratio 1.2127
+  S1 board 5: K1 = 2.1875 mN.m/A, psi +149.65, H3  1.9 %  | field map 2.0154, psi  -29.94 -> ratio 1.0854, dpsi +179.59  | detailed 1.8254 -> ratio 1.1984
+  STACK S1: K = 23.045 mN.m/A, psi +149.62, H3 7.3 %
+  MACHINE PHASE_A: K = 23.045 mN.m/A, psi +149.62, H3 7.3 %  | field map 19.496, psi -30.06
+
+PHASE_B:
+  S1 board 1: K1 = 7.9454 mN.m/A, psi  -90.33, H3  9.1 %  | field map 6.3287, psi  +90.11 -> ratio 1.2554, dpsi +179.56  | detailed 6.2817 -> ratio 1.2648
+  S1 board 2: K1 = 5.6895 mN.m/A, psi  -90.34, H3  6.5 %  | field map 4.7868, psi  +90.03 -> ratio 1.1886, dpsi +179.62  | detailed 4.5898 -> ratio 1.2396
+  S1 board 3: K1 = 4.1063 mN.m/A, psi  -90.34, H3  4.4 %  | field map 3.5880, psi  +89.92 -> ratio 1.1444, dpsi +179.74  | detailed 3.3637 -> ratio 1.2208
+  S1 board 4: K1 = 2.9810 mN.m/A, psi  -90.34, H3  2.9 %  | field map 2.7275, psi  +90.07 -> ratio 1.0929, dpsi +179.59  | detailed 2.4736 -> ratio 1.2051
+  S1 board 5: K1 = 2.1745 mN.m/A, psi  -90.35, H3  1.8 %  | field map 2.0217, psi  +90.04 -> ratio 1.0756, dpsi +179.60  | detailed 1.8254 -> ratio 1.1913
+  STACK S1: K = 22.897 mN.m/A, psi -90.34, H3 6.1 %
+  MACHINE PHASE_B: K = 22.897 mN.m/A, psi -90.34, H3 6.1 %  | field map 19.453, psi +90.04
+
+PHASE_C:
+  S1 board 1: K1 = 7.9003 mN.m/A, psi  +29.73, H3 11.3 %  | field map 6.3634, psi -149.75 -> ratio 1.2415, dpsi +179.49  | detailed 6.2817 -> ratio 1.2577
+  S1 board 2: K1 = 5.6612 mN.m/A, psi  +29.67, H3  7.1 %  | field map 4.8003, psi -150.01 -> ratio 1.1793, dpsi +179.68  | detailed 4.5898 -> ratio 1.2334
+  S1 board 3: K1 = 4.0879 mN.m/A, psi  +29.67, H3  4.5 %  | field map 3.5861, psi -149.97 -> ratio 1.1399, dpsi +179.64  | detailed 3.3637 -> ratio 1.2153
+  S1 board 4: K1 = 2.9686 mN.m/A, psi  +29.67, H3  2.9 %  | field map 2.7221, psi -149.92 -> ratio 1.0906, dpsi +179.59  | detailed 2.4736 -> ratio 1.2001
+  S1 board 5: K1 = 2.1651 mN.m/A, psi  +29.66, H3  1.9 %  | field map 2.0194, psi -149.99 -> ratio 1.0722, dpsi +179.65  | detailed 1.8254 -> ratio 1.1861
+  STACK S1: K = 22.783 mN.m/A, psi +29.69, H3 7.0 %
+  MACHINE PHASE_C: K = 22.783 mN.m/A, psi +29.69, H3 7.0 %  | field map 19.491, psi -149.90
+
+Phase balance of the equivalent winding: K spread 1.14 %, phase steps +120.0, +120.0, +119.9 deg elec (ideal +-120)
+
+CALIBRATION against the detailed FEM: Ncoil 2.0059 -> 1.6229 (x 0.8091, all phases and boards together), polarity REVERSED (terminal direction; corrected in the rotating run); machine psi error A -0.32 / B -0.38 / C -0.40 deg; board-ratio spread 7.1 % over 15 board-phases; phase K spread 1.14 % -> USABLE (psi within 3 deg, boards within 15 %, phases within 3 %)

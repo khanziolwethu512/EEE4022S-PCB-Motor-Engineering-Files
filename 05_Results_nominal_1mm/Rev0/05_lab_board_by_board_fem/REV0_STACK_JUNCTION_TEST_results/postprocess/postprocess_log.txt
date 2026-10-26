@@ -1,0 +1,13 @@
+Opened REV0_STACK_JUNCTION_TEST / Rev0
+Valid solutions: ['Setup1 : AdaptivePass', 'Setup1 : LastAdaptive']
+convergence -> NOT available (right-click Setup1 > Convergence / Profile and screenshot)
+profile -> NOT available (right-click Setup1 > Convergence / Profile and screenshot)
+Phase conductors: ['BridgeA_1_2', 'PhaseA1_Cu', 'PhaseA2_Cu']
+BridgeA_1_2: P = 3.6444e-06 W (integral of OhmicLoss), I = 1 A -> R = 0.00000 ohm
+PhaseA1_Cu: P = 0.27654 W (integral of OhmicLoss), I = 1 A -> R = 0.27654 ohm
+PhaseA2_Cu: P = 0.27659 W (integral of OhmicLoss), I = 1 A -> R = 0.27659 ohm
+JUNCTION TEST Phase A: total R = 0.55313 ohm for 2 boards + bridge (expected ~0.5554 ohm = 2 x 0.2777) -> PASS (within 5%)
+  Equivalent terminal voltage at 1 A: 0.5531 V
+Total magnetic energy: 3.1132e-06 J  (= 0.5 * I^T L I for I = {'A': 1.0})
+Summary written: C:\Users\Student\Rev0_work\REV0_STACK_JUNCTION_TEST_results\postprocess\ms_summary.csv
+Done. Project NOT saved - close it with 'No' if AEDT asks.

@@ -1,0 +1,13 @@
+HUMAN-READABLE PCB DIMENSIONS
+=============================
+Units: millimetres
+Board extents: X=53.37262122 to 146.62738010; Y=53.37262122 to 146.62738010
+Board bounding / flat-to-flat size: 93.25475888 x 93.25475888 mm
+Maximum corner-to-corner diameter from native profile vertices: 96.25535957 mm
+Board centre: X=100.00000066, Y=100.00000066 mm
+Centre opening: 25.0000 mm diameter (12.5000 mm radius), centred at X=100.0000, Y=100.0000 mm
+Mechanical holes: 12 x 3.1000 mm NPTH; exact positions in NPTH_MECHANICAL_HOLE_POSITIONS.csv
+External terminal pads: octagonal 3.0000 x 2.0000 mm, 0.5000 mm corner chamfer; exact positions/layers in ALL_EXTERNAL_PHASE_PADS.csv
+Electrical vias: 0.5000 mm OD, 0.3000 mm drill, full span Top Layer to Bottom Layer
+Track widths present: 0.2540 mm, 0.5000 mm, 2.0000 mm, 2.5000 mm
+Arc line widths present: 0.2540 mm, 0.5000 mm, 2.0000 mm, 2.5000 mm

@@ -1,0 +1,20 @@
+Profile REF_ROTOR_MS_DOE  project REV0_LIN_D100_P20_2A
+Geometry: air gap 1.000 mm, back iron 2.00 mm, magnet centre radius 28.00 mm
+cogging_plus_reluctance_max_abs_Nm = nan
+k_source = Lorentz torque on the copper (+I only; linear in I)
+Tavg_ideal_fundamental_3ph_optimum_phasing_Nm_per_Apk = 0.00900103077484
+polarity_maxwell_convention = +I into the _In terminal with the rotor turning +Z gives POSITIVE dLam/dtheta at theta = 0 deg
+emf_sign_convention = Maxwell winding/terminal convention (+I into _In, e = +dLam/dt); physical generator polarity (Faraday e = -dLam/dt) to be fixed by the rotor/terminal polarity check
+harmonics_fitted = [1]
+action_reaction_mismatch_max_pct = 1.47323759799
+currents_solved = +I only
+E1_rms_V_at_rpm = 0.444339178393
+phase_of_k_elec_deg = -24.0133832991
+pole_pairs = 8
+E1_peak_V_at_rpm = 0.628390492377
+fit_coeffs = {1: [0.0054813302644431006, -0.0024419797712221807]}
+Lam1_PM_flux_linkage_peak_Wb = 0.000750085897904
+K1_dLam_dtheta_peak_Wb_per_rad = 0.00600068718323
+kt_peak_Nm_per_A_one_phase = 0.00600068718323
+angles = 2
+rpm = 1000.0

@@ -1,0 +1,3 @@
+task,status,theta_deg,T_copper_mNm,T_rotor_mNm,rotor_vs_copper_pct,quality,level,solve_min,peak_rss_GB,mesh_elements
+solve_00,done,0.0,27.8928363361312,27.7493465089617,0.5144325426081858,OK,L2 iterative, 6 passes,1036.18,109.69,
+solve_01,done,3.75,27.7100164073636,27.6592899142351,0.18306193826366998,OK,L2 iterative, 6 passes,1047.2,109.35,

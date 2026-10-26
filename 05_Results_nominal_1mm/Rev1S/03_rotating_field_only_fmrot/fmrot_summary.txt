@@ -1,0 +1,78 @@
+FIELD-ONLY ROTATING TRANSIENT (FMROT) - FMROT_REV1S (Rev1S), 1000 rpm, 24 steps of 0.31250 ms (one full electrical period)
+k = -T_copper/I per phase (Lorentz on the trace centre-lines, 1 A into L1), e = omega_m * k
+
+MACHINE (all stators in series):
+  PHASE_A: K1 = 41.570 mN.m/A, psi = -29.99 deg elec, E1 = 3.0782 V rms at 1000 rpm, THD 5.2 % (H3 5.2%, H5 0.6%, H7 0.0%, H9 0.1%, H11 0.0%)
+  PHASE_B: K1 = 41.562 mN.m/A, psi = +90.01 deg elec, E1 = 3.0776 V rms at 1000 rpm, THD 5.2 % (H3 5.2%, H5 0.6%, H7 0.0%, H9 0.1%, H11 0.0%)
+  PHASE_C: K1 = 41.561 mN.m/A, psi = -149.99 deg elec, E1 = 3.0775 V rms at 1000 rpm, THD 5.2 % (H3 5.2%, H5 0.6%, H7 0.0%, H9 0.1%, H11 0.0%)
+  balance: K spread 0.02 %, phase steps +120.0, +120.0, +120.0 deg elec (ideal +-120)
+  synchronous load 1.00 A pk: T mean 62.347 mN.m (K = 41.564 mN.m/A), ripple 1.16 % pk-pk (armature reaction neglected)
+  copper DC loss at 1.00 A pk: 3.9840 W (R = 2.656 ohm per phase, 0.2656 ohm per board-phase, trace model)
+
+Stators (series sum of the 5 boards):
+  S1 PHASE_A: K1 = 19.477 mN.m/A, psi = -29.98 deg
+  S1 PHASE_B: K1 = 19.466 mN.m/A, psi = +90.01 deg
+  S1 PHASE_C: K1 = 19.464 mN.m/A, psi = -149.98 deg
+  S2 PHASE_A: K1 = 22.093 mN.m/A, psi = -30.00 deg
+  S2 PHASE_B: K1 = 22.095 mN.m/A, psi = +90.00 deg
+  S2 PHASE_C: K1 = 22.097 mN.m/A, psi = -150.00 deg
+Phase A per board (S1): B1 6.3561, B2 4.7982, B3 3.5929, B4 2.7112, B5 2.0189
+
+VALIDATION against the static field map /scratch/khnolw003/pcbmotor_hpc/shared_results/FIELDMAP_REV1S_P20_results/fieldmap_results.json
+  S1_B1_PHASE_A theta   5.625 deg: rotating k = +1.09777, static k = +1.08224 mWb/rad (+0.24 % of K1)
+  S1_B1_PHASE_A theta  11.250 deg: rotating k = -2.52019, static k = -2.53110 mWb/rad (+0.17 % of K1)
+  S1_B1_PHASE_A theta  16.875 deg: rotating k = -6.56031, static k = -6.56951 mWb/rad (+0.14 % of K1)
+  S1_B1_PHASE_A theta  22.500 deg: rotating k = -5.58909, static k = -5.59884 mWb/rad (+0.15 % of K1)
+  S1_B1_PHASE_A theta  28.125 deg: rotating k = -1.09768, static k = -1.06580 mWb/rad (-0.50 % of K1)
+  S1_B1_PHASE_A theta  33.750 deg: rotating k = +2.51983, static k = +2.51153 mWb/rad (+0.13 % of K1)
+  S1_B1_PHASE_A theta  39.375 deg: rotating k = +6.56149, static k = +6.58107 mWb/rad (-0.31 % of K1)
+  S1_B1_PHASE_A theta  45.000 deg: rotating k = +5.58929, static k = +5.60764 mWb/rad (-0.29 % of K1)
+  S1_B1_PHASE_B theta   5.625 deg: rotating k = +4.12578, static k = +4.09648 mWb/rad (+0.46 % of K1)
+  S1_B1_PHASE_B theta  11.250 deg: rotating k = +6.86000, static k = +6.84992 mWb/rad (+0.16 % of K1)
+  S1_B1_PHASE_B theta  16.875 deg: rotating k = +4.11029, static k = +4.09985 mWb/rad (+0.17 % of K1)
+  S1_B1_PHASE_B theta  22.500 deg: rotating k = +0.00413, static k = -0.00795 mWb/rad (+0.19 % of K1)
+  S1_B1_PHASE_B theta  28.125 deg: rotating k = -4.12523, static k = -4.09498 mWb/rad (-0.48 % of K1)
+  S1_B1_PHASE_B theta  33.750 deg: rotating k = -6.85817, static k = -6.85009 mWb/rad (-0.13 % of K1)
+  S1_B1_PHASE_B theta  39.375 deg: rotating k = -4.10935, static k = -4.10884 mWb/rad (-0.01 % of K1)
+  S1_B1_PHASE_B theta  45.000 deg: rotating k = -0.00420, static k = +0.00004 mWb/rad (-0.07 % of K1)
+  S1_B1_PHASE_C theta   5.625 deg: rotating k = -6.56278, static k = -6.59242 mWb/rad (+0.46 % of K1)
+  S1_B1_PHASE_C theta  11.250 deg: rotating k = -2.52481, static k = -2.53234 mWb/rad (+0.12 % of K1)
+  S1_B1_PHASE_C theta  16.875 deg: rotating k = +1.07908, static k = +1.07410 mWb/rad (+0.08 % of K1)
+  S1_B1_PHASE_C theta  22.500 deg: rotating k = +5.58328, static k = +5.59800 mWb/rad (-0.23 % of K1)
+  S1_B1_PHASE_C theta  28.125 deg: rotating k = +6.56196, static k = +6.58371 mWb/rad (-0.34 % of K1)
+  S1_B1_PHASE_C theta  33.750 deg: rotating k = +2.52432, static k = +2.53001 mWb/rad (-0.09 % of K1)
+  S1_B1_PHASE_C theta  39.375 deg: rotating k = -1.07908, static k = -1.10663 mWb/rad (+0.43 % of K1)
+  S1_B1_PHASE_C theta  45.000 deg: rotating k = -5.58391, static k = -5.60342 mWb/rad (+0.31 % of K1)
+  largest point difference over all 240 board-phase-angle points: 1.59 % of K1 (S2_B5_PHASE_A at 16.875 deg)
+  per board (all phases): rotating / static K1 ratio and psi difference
+    PHASE_A: S1B1 0.9976/+0.27, S1B2 0.9995/+0.02, S1B3 1.0012/+0.05, S1B4 0.9951/-0.15, S1B5 1.0015/+0.02, S2B1 0.9987/+0.22, S2B2 0.9976/+0.12, S2B3 1.0013/-0.01, S2B4 1.0013/-0.05, S2B5 0.9893/+0.05
+    PHASE_B: S1B1 1.0042/+0.01, S1B2 1.0015/+0.03, S1B3 1.0003/-0.14, S1B4 0.9916/-0.03, S1B5 1.0009/+0.12, S2B1 1.0027/+0.03, S2B2 0.9999/+0.04, S2B3 1.0003/+0.00, S2B4 1.0022/+0.01, S2B5 0.9908/-0.08
+    PHASE_C: S1B1 0.9958/-0.17, S1B2 1.0010/+0.01, S1B3 1.0020/+0.02, S1B4 0.9927/-0.17, S1B5 0.9981/-0.04, S2B1 0.9981/-0.07, S2B2 0.9979/-0.07, S2B3 1.0021/+0.00, S2B4 0.9992/-0.07, S2B5 0.9916/-0.01
+  GATE: board 1 PHASE_A -0.24 % / +0.27 deg; PHASE_B +0.42 % / +0.01 deg; PHASE_C -0.42 % / -0.17 deg; machine K A -0.16 %, B +0.03 %, C -0.19 % (limits 2 % / 1 deg / 2 %); worst board S2_B5_PHASE_A -1.07 % -> PASS
+Rotor torque at no load (cogging + reluctance, Maxwell): 0.7790 mN.m pk-pk
+Copper eddy loss estimate at 1000 rpm (thin-conductor formula on the trace pieces, vias excluded): 0.04418 W
+  S1: B1 0.0108 W, B2 0.00483 W, B3 0.00254 W, B4 0.0014 W, B5 0.000771 W
+  S2: B1 0.0115 W, B2 0.0055 W, B3 0.00323 W, B4 0.00209 W, B5 0.00151 W
+
+Magnetic field distribution (8 instants per period, point files B_*.fld / Bsteel_*.fld for plots):
+  Bsteel_R1_BackIron: |B| max 0.835 T, p99 0.795 T, mean 0.287 T, 0.0 % above 1.6 T
+  Bsteel_R2_BackIron: |B| max 0.931 T, p99 0.872 T, mean 0.336 T, 0.0 % above 1.6 T
+  B_S1 (0.25 mm off the stator face): |B| max 0.445 T, mean 0.226 T
+  B_S2low (0.25 mm off the stator face): |B| max 0.108 T, mean 0.041 T
+  B_S2up (0.25 mm off the stator face): |B| max 0.444 T, mean 0.226 T
+Current density in the tracks per 1 A phase current (DC share over 0.5 mm x 35 um; file current_density_board1_per_A.csv): A max 57.1 / p95 10.3 / mean 8.6 A/mm2; B max 57.1 / p95 10.3 / mean 8.6 A/mm2; C max 57.1 / p95 10.3 / mean 8.6 A/mm2
+
+EFFICIENCY (EM only, no bearing/windage; copper eddy and magnet eddy scale with speed^2, copper DC with current^2, torque = 1.5 K I):
+     rpm  Ipk A    T mN.m    Pout W     Pcu W   Peddy W     Pin W   eta %
+     500   0.50    31.173    1.6322    0.9960    0.0110    2.6393    61.8
+     500   1.00    62.347    3.2645    3.9840    0.0110    7.2595    45.0
+     500   2.00   124.693    6.5289   15.9360    0.0110   22.4760    29.0
+    1000   0.50    31.173    3.2645    0.9960    0.0442    4.3046    75.8
+    1000   1.00    62.347    6.5289    3.9840    0.0442   10.5571    61.8
+    1000   2.00   124.693   13.0578   15.9360    0.0442   29.0380    45.0
+    2000   0.50    31.173    6.5289    0.9960    0.1767    7.7016    84.8
+    2000   1.00    62.347   13.0578    3.9840    0.1767   17.2186    75.8
+    2000   2.00   124.693   26.1157   15.9360    0.1767   42.2284    61.8
+  per-board loss table for the thermal model: loss_table_for_icepak.csv
+
+Neglected: armature reaction (no copper in the field solve), skin/proximity effects, the averaging of B over the 0.5 mm x 35 um track cross-section (centre-line sampling), via eddy currents.

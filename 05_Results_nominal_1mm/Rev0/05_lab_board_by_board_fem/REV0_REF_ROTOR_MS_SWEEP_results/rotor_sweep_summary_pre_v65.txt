@@ -1,0 +1,25 @@
+Profile REF_ROTOR_MS_SWEEP  project REV0_REF_ROTOR_MS_SWEEP
+Geometry: air gap 1.000 mm, back iron 2.00 mm, magnet centre radius 28.00 mm
+cogging_plus_reluctance_max_abs_Nm = 0.00046832790005
+E1_rms_V_at_rpm = 0.451076117837
+half_wave_antisymmetry_pairs_checked = 5
+E1_peak_V_at_rpm = 0.637917963508
+harmonics_fitted = [1, 3]
+emf_sign_convention = Maxwell winding/terminal convention (+I into _In, e = +dLam/dt); physical generator polarity (Faraday e = -dLam/dt) to be fixed by the rotor/terminal polarity check
+polarity_maxwell_convention = +I into the _In terminal with the rotor turning +Z gives POSITIVE dLam/dtheta at theta = 0 deg
+Tavg_ideal_fundamental_3ph_optimum_phasing_Nm_per_Apk = 0.00913750174614
+action_reaction_mismatch_max_pct = 0.11637397131
+angles = 9
+phase_of_k_elec_deg = -30.1810243597
+pole_pairs = 8
+k_source = rotor virtual torque, (T(+I) - T(-I))/2I
+copper_torque_nonlinearity_max_pct = 0.0049640963591
+full_period_repeat_error_pct = 0.018855831872
+half_wave_antisymmetry_error_pct = 0.0505319988752
+kt_peak_Nm_per_A_one_phase = 0.00609166783076
+currents_solved = +I and -I
+rpm = 1000.0
+K1_dLam_dtheta_peak_Wb_per_rad = 0.00609166783076
+H3_over_H1_pct = 11.7536672008
+Lam1_PM_flux_linkage_peak_Wb = 0.000761458478845
+fit_coeffs = {1: [0.0052658895537509723, -0.0030624865988341855], 3: [5.0818701525252196e-05, -0.00071418862254822948]}

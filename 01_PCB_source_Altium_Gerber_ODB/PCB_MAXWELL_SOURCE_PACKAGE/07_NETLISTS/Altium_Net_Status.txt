@@ -1,0 +1,11 @@
+Net Status Report
+Filename     : D:\Haram\mini_wave-bb_nets_complete.PcbDoc
+Date         : 2026/10/02
+Time         : 23:17:39
+Time Elapsed : 00:00:00
+
+Nets, Layer, Length
+    PHASE_A, Signal Layers Only, -1048.8191mm
+    PHASE_B, Signal Layers Only, -1060.258mm
+    PHASE_C, Signal Layers Only, -1050.7072mm
+count : 3

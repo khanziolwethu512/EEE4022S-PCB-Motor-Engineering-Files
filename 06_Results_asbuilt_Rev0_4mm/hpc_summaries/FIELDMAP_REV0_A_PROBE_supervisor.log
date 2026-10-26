@@ -1,0 +1,45 @@
+2026-10-24 23:28:47 [INFO] hpc_motor 1.0 (2026-10-11) | job 1526909 | node srvrochpc110.uct.ac.za | motor FIELDMAP_REV0_A_PROBE | mode lab
+2026-10-24 23:28:47 [INFO] Resources: 16 cores, memory limit 121.9 GB (cgroup_v2 121.9 GB, slurm_per_cpu 121.9 GB, physical 375.9 GB), wall time left 5:59:59
+2026-10-24 23:28:47 [INFO] Work folder: /scratch/khnolw003/pcbmotor_hpc (disk budget 45.0 GB for the whole work folder; now used 0.9 GB). /scratch quota: 0.0 of 50 GB used (all your files)
+2026-10-24 23:28:47 [INFO] Source check: vias: source 617 records (615 unique) vs embedded 615 -> 0 missing, 0 extra
+2026-10-24 23:28:47 [INFO] Source check: terminal pads: source 12 vs embedded 12 -> 0 missing
+2026-10-24 23:28:47 [INFO] Source check: mounting holes: source 12 vs embedded 12 -> 0 missing
+2026-10-24 23:28:54 [INFO] AEDT temp folder (TMPDIR): /scratch/khnolw003/pcbmotor_hpc/tmp - work folder on /scratch (no job-specific temporary folder provided; counted by the disk guard)
+2026-10-24 23:28:54 [INFO] AEDT: /opt/exp_soft/ansys_inc/v252/AnsysEM/ansysedt (found via file search, version 2025.2); licence settings: none in the environment (AEDT default)
+2026-10-24 23:28:54 [INFO] [FIELDMAP_REV0_A_PROBE] lab attempt 1 (script): /opt/exp_soft/ansys_inc/v252/AnsysEM/ansysedt -ng -waitforlicense -features=SF159726_SCRIPTOBJECT,SF6694_NON_GRAPHICAL_COMMAND_EXECUTION -Logfile /scratch/khnolw003/pcbmotor_hpc/FIELDMAP_REV0_A_PROBE/tasks/lab_try01/aedt.log -RunScriptAndExit /scratch/khnolw003/pcbmotor_hpc/code_946d6dcedc/inner.py
+2026-10-24 23:30:24 [INFO] [FIELDMAP_REV0_A_PROBE] lab attempt 1 -> ok after 0:01:30, peak memory 3.2 GB
+2026-10-24 23:30:24 [INFO] [FIELDMAP_REV0_A_PROBE] finished: 21 result files in /scratch/khnolw003/pcbmotor_hpc/RESULTS_FIELDMAP_REV0_A_PROBE
+FIELD-ONLY FEM + TRACE-RESOLVED WINDING POST-PROCESSING - FIELDMAP_REV0_A_PROBE (Rev0)
+Rotor angles (deg mech): 0; k = dLambda/dtheta = -T_copper/I per phase, 1 A into the L1 terminal
+Gap 1.000 mm, R2 / R1 steel 2.00 / 2.00 mm, zone mesh 0.80 mm, 4 passes
+Backplate OD/ID 86.0 / 19.0 mm, inter-board gap 0.000 mm, region padding 20.0 mm
+
+Stator S1 (z offset 0.00000 mm):
+  board 1 PHASE_A: K1 = 11.1634 mN.m/A, psi = 0.00 deg, H3/H1 = 100.0 %; single-sided distance law at 1.000 mm: 6.1006 (+82.99 %)
+  board 2 PHASE_A: K1 = 8.3481 mN.m/A, psi = 0.00 deg, H3/H1 = 100.0 %; single-sided distance law at 2.020 mm: 4.4778 (+86.43 %)
+  board 3 PHASE_A: K1 = 6.2271 mN.m/A, psi = 0.00 deg, H3/H1 = 100.0 %; single-sided distance law at 3.041 mm: 3.2867 (+89.47 %)
+  board 4 PHASE_A: K1 = 4.7065 mN.m/A, psi = 0.00 deg, H3/H1 = 100.0 %; single-sided distance law at 4.061 mm: 2.4124 (+95.10 %)
+  board 5 PHASE_A: K1 = 3.4832 mN.m/A, psi = 0.00 deg, H3/H1 = 100.0 %; single-sided distance law at 5.081 mm: 1.7707 (+96.72 %)
+  STACK S1 PHASE_A: K = 33.928 mN.m/A, psi = 0.00 deg, H3/H1 = 100.0 %
+  STACK S1 PHASE_B: K = 0.041 mN.m/A, psi = -180.00 deg, H3/H1 = 100.0 %
+  STACK S1 PHASE_C: K = 34.006 mN.m/A, psi = -180.00 deg, H3/H1 = 100.0 %
+
+MACHINE PHASE_A: K = 33.928 mN.m/A, psi 0.00 deg, H3/H1 100.0 %
+MACHINE PHASE_B: K = 0.041 mN.m/A, psi -180.00 deg, H3/H1 100.0 %
+MACHINE PHASE_C: K = 34.006 mN.m/A, psi -180.00 deg, H3/H1 100.0 %
+
+Machine (phase A): T_ideal = 50.9 mN.m per A_pk (1.5 K), E1 = 2.512 V rms at 1000 rpm, R_phase = 1.389 ohm, Km = 0.0353 N.m/sqrt(W)
+
+VALIDATION GATE (S1 board 1 vs detailed single-board FEM 6.0917 mN.m/A, -30.18 deg): FAIL (K1 +83.26 %, psi +30.18 deg; limits 2 % / 1 deg)
+
+Neglected: armature reaction, copper eddy/skin/proximity effects, B averaged over the track cross-section (centre-line sampling). R_phase uses the Gate-1 FEM value 0.2777 ohm per board-phase.
+
+Field probes (rotor angle 0 deg; steel planes r 10-42 mm, PCB planes r 12-46 mm, 2 deg):
+  PCB_B1_mid (z 0.0000 mm): |B| max 0.340 T, p99 0.295 T, mean 0.155 T; |Bz| max 0.290 T, mean 0.088 T; 0.0 % above 1.6 T
+  PCB_B3_mid (z -2.0406 mm): |B| max 0.154 T, p99 0.146 T, mean 0.081 T; |Bz| max 0.151 T, mean 0.047 T; 0.0 % above 1.6 T
+  PCB_B5_mid (z -4.0813 mm): |B| max 0.089 T, p99 0.080 T, mean 0.043 T; |Bz| max 0.084 T, mean 0.026 T; 0.0 % above 1.6 T
+  PCB_face_plus0p25mm (z 0.7602 mm): |B| max 0.487 T, p99 0.421 T, mean 0.202 T; |Bz| max 0.376 T, mean 0.113 T; 0.0 % above 1.6 T
+  R1_BackIron (z 4.5102 mm): |B| max 0.950 T, p99 0.865 T, mean 0.409 T; |Bz| max 0.407 T, mean 0.111 T; 0.0 % above 1.6 T
+
+2026-10-24 23:30:24 [INFO] [FIELDMAP_REV0_A_PROBE] supervisor finished: done
+2026-10-24 23:30:24 [INFO] [FIELDMAP_REV0_A_PROBE] lab model run: done

@@ -1,0 +1,16 @@
+TARGETED FEM DIAGNOSTIC - DIAG_REV0_C_B5: one detailed board, phase A, 8.08128 mm from the magnets
+Same settings as the archived detailed board models: padding 20 mm, 4 passes / 20 %, gap mesh 4.041 mm; rotor angles 0, 5.625, 11.25, 16.875 deg
+
+Route | K1 (mN.m/A) | psi (deg elec) | k at each angle (mWb/rad)
+copper Lorentz, +I only (archived method) | 0.7643 | -30.05 | +0.6613, +0.1945, -0.3785, -0.7417
+copper Lorentz, (+I - -I)/2 | 0.7643 | -30.04 | +0.6613, +0.1945, -0.3786, -0.7415
+rotor virtual work, (+I - -I)/2 | 0.7741 | -30.46 | +0.6773, +0.1881, -0.3936, -0.7414
+filament on the detailed model's MAGNET field (Iamp = 0) | 0.8360 | -30.02 | +0.7236, +0.2144, -0.4156, -0.8097
+filament on the detailed model's TOTAL field (Iamp = +1 A) | 0.8362 | -30.02 | +0.7236, +0.2144, -0.4156, -0.8100
+
+Rotor torque with no net current effect, (T(+I) + T(-I))/2 (numerical 'cogging'): -0.0653, -0.1313, +0.0301, -0.5679 mN.m
+
+Comparison values (not solved here):
+  independent analytical model (centre-lines): 0.8346 mN.m/A
+  independent analytical field + 2D sheet currents: 0.7607 mN.m/A
+  copper (+I - -I)/2 vs analytical sheet-current K: +0.48 %; rotor (+I - -I)/2 vs copper (+I - -I)/2: +1.28 %

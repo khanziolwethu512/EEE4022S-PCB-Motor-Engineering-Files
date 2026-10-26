@@ -1,0 +1,142 @@
+[REV0 FMROT_REV1S    2.0s] Band geometry: Band_R1: r 43.50 mm (rotor parts to 43.00, leads from 44.50), z 1.01016..6.01016 mm
+[REV0 FMROT_REV1S    2.0s] Band geometry: Band_R2: r 43.50 mm (rotor parts to 43.00, leads from 44.50), z 12.11176..22.61176 mm
+[REV0 FMROT_REV1S    2.0s] Band geometry: stationary space between Band_R1 and Band_R2: 6.01016..12.11176 mm (S2 6.51016..11.61176)
+[REV0 FMROT_REV1S    2.0s] Band geometry: shaft split: stub1 1.110..5.760 (moves with R1), stub2 12.362..21.612 (moves with R2), bore piece in S2 6.260..11.862 (stationary)
+[REV0 FMROT_REV1S    4.4s] Design solution type reported by AEDT: Transient
+[REV0 FMROT_REV1S    4.4s] Project FMROT_REV1S / design Rev0 (Transient)
+[REV0 FMROT_REV1S    4.4s] ASSUMPTION: Stack-up mode 'scaled' - Altium dielectric ratios scaled to 1.000 mm copper+dielectric; NOT the JLCPCB stack-up
+[REV0 FMROT_REV1S    4.4s] ASSUMPTION: Solder mask 0.01016 mm each face (source stack-up); board pitch 1.02032 mm
+[REV0 FMROT_REV1S    4.4s] ASSUMPTION: Vias = solid 0.30 mm copper (8-sided): fine for conduction/field, low for final resistance
+[REV0 FMROT_REV1S    4.4s] ASSUMPTION: Air gap 1.000 mm measured from PCB1 top solder-mask surface to magnet face
+[REV0 FMROT_REV1S    4.4s] ASSUMPTION: FR-4 and solder mask modelled as air (mu_r = 1, non-conductive either way); board geometry, pitch and air gap unchanged
+[REV0 FMROT_REV1S    4.4s] ASSUMPTION: Shaft steel_1010, 19.0 mm dia, rotating; simplified EM representation: rotor side only (band floor to 5.0 mm beyond back iron); section through the stator bore omitted; NOT the physical shaft length; shaft + back iron united as one steel body
+[REV0 FMROT_REV1S    4.4s] ASSUMPTION: Field-only ROTATING transient (Rev1S): magnets (eddy ON) + steel + air in Maxwell, rotor turning at 1000 rpm in cylindrical band(s); NO PCB copper meshed; B exported on the trace centre-lines of every board at every step; torque/back-EMF by Lorentz integration; armature reaction neglected; copper eddy loss by the thin-conductor formula
+[REV0 FMROT_REV1S    4.4s] ASSUMPTION: Transient formulation T-Omega (supports motion/band)
+[REV0 FMROT_REV1S    4.4s] FMROT Rev1S: field-only ROTATING transient, no PCB copper; B sampled on 10 boards x 3 phases of trace centre-lines at every time step
+[REV0 FMROT_REV1S   17.8s] Rotor steel: disc (bore not cut) + overlapping 19 mm shaft united as RotorSteel (EM Boolean simplification; same steel volume as disc-with-bore + shaft)
+[REV0 FMROT_REV1S   17.8s] R1_Rotor: 16 magnets r 18.0-38.0 mm, z 1.5102-3.5102 (gap 1.000 mm from stator surface z=0.51016); back iron OD 86.0 / ID 19.0 x 2.0 mm; shaft 19.0 mm steel_1010
+[REV0 FMROT_REV1S   18.0s] R2_Rotor: 16 magnets r 18.0-38.0 mm, z 12.6118-14.6118 (gap 1.000 mm from stator surface z=11.61176); back iron OD 86.0 / ID 19.0 x 2.0 mm; shaft 19.0 mm steel_1010
+[REV0 FMROT_REV1S   18.0s] Rotor steel split for 2 bands: R1_Steel (disc 3.510..5.510 + stub 1.110..5.760); R2_Steel (disc 14.612..16.612 + stub 12.362..21.612); stationary Shaft_S2bore 6.260..11.862 (bodies of revolution)
+[REV0 FMROT_REV1S   18.1s] Stationary stator zone S1Zone: r 13.5-47.5 mm, z -4.89144..0.99016 (no copper; B sampled on the trace paths)
+[REV0 FMROT_REV1S   18.1s] Stationary stator zone S2Zone: r 13.5-47.5 mm, z 6.03016..12.09176 (no copper; B sampled on the trace paths)
+[REV0 FMROT_REV1S   18.2s] Motion: Band_R1 (144 facets, r 43.50 mm, z 1.01016..6.01016) rotates about +Z at 1000 rpm, initial position 0 deg
+[REV0 FMROT_REV1S   18.3s] Motion: Band_R2 (144 facets, r 43.50 mm, z 12.11176..22.61176) rotates about +Z at 1000 rpm, initial position 0 deg
+[REV0 FMROT_REV1S   18.3s] Region padding 20.0 mm on every side (the validated field map used 20 mm)
+[REV0 FMROT_REV1S   18.3s] Eddy effect ON on magnets
+[REV0 FMROT_REV1S   18.3s] Eddy effect OFF on rotor steel
+[REV0 FMROT_REV1S   18.4s] Fixed transient mesh: zones 0.80 mm (at most 500000 elements), band 1.00 mm, magnets 1.00 mm, steel 2.50 mm
+[REV0 FMROT_REV1S   18.4s] Transient setup: stop 7.500000 ms, step 0.312500 ms (24 steps), fields every 1 steps
+[REV0 FMROT_REV1S   20.1s] AEDT Validation Check returned True
+[REV0 FMROT_REV1S   20.4s] Transient: fe 133.333 Hz, period 7.5000 ms, 24 steps per period, 24 steps (7.5000 ms), fields saved every step
+[REV0 FMROT_REV1S   20.4s] Solving the rotating transient (this blocks until the last step) ...
+[REV0 FMROT_REV1S 25042.1s] Transient solved in 417.0 min (17.38 min per step)
+[REV0 FMROT_REV1S 25042.9s] Trace sample points: 361550 (2 stator(s) x 5 boards x 3 phases)
+[REV0 FMROT_REV1S 25068.0s] Field export: variant 1, time format %.9gms accepted (points echoed in mm, probe |B|max 0.197 T)
+[REV0 FMROT_REV1S 25084.7s] Step 1/24 (t = 0.3125 ms, rotor 1.875 deg): S1 board 1 phase A k = +4.1280 mWb/rad (export 12.8 s)
+[REV0 FMROT_REV1S 25123.9s] Step 2/24 (t = 0.6250 ms, rotor 3.750 deg): S1 board 1 phase A k = +2.5304 mWb/rad (export 39.2 s)
+[REV0 FMROT_REV1S 25165.7s] Step 3/24 (t = 0.9375 ms, rotor 5.625 deg): S1 board 1 phase A k = +1.0978 mWb/rad (export 41.8 s)
+[REV0 FMROT_REV1S 25208.0s] Step 4/24 (t = 1.2500 ms, rotor 7.500 deg): S1 board 1 phase A k = +0.0061 mWb/rad (export 42.3 s)
+[REV0 FMROT_REV1S 25251.3s] Step 5/24 (t = 1.5625 ms, rotor 9.375 deg): S1 board 1 phase A k = -1.0834 mWb/rad (export 43.2 s)
+[REV0 FMROT_REV1S 25294.5s] Step 6/24 (t = 1.8750 ms, rotor 11.250 deg): S1 board 1 phase A k = -2.5202 mWb/rad (export 43.1 s)
+[REV0 FMROT_REV1S 25338.3s] Step 7/24 (t = 2.1875 ms, rotor 13.125 deg): S1 board 1 phase A k = -4.1198 mWb/rad (export 43.7 s)
+[REV0 FMROT_REV1S 25382.1s] Step 8/24 (t = 2.5000 ms, rotor 15.000 deg): S1 board 1 phase A k = -5.5766 mWb/rad (export 43.7 s)
+[REV0 FMROT_REV1S 25428.5s] Step 9/24 (t = 2.8125 ms, rotor 16.875 deg): S1 board 1 phase A k = -6.5603 mWb/rad (export 46.2 s)
+[REV0 FMROT_REV1S 25477.5s] Step 10/24 (t = 3.1250 ms, rotor 18.750 deg): S1 board 1 phase A k = -6.8676 mWb/rad (export 48.7 s)
+[REV0 FMROT_REV1S 25526.9s] Step 11/24 (t = 3.4375 ms, rotor 20.625 deg): S1 board 1 phase A k = -6.5667 mWb/rad (export 49.4 s)
+[REV0 FMROT_REV1S 25573.6s] Step 12/24 (t = 3.7500 ms, rotor 22.500 deg): S1 board 1 phase A k = -5.5891 mWb/rad (export 46.2 s)
+[REV0 FMROT_REV1S 25620.0s] Step 13/24 (t = 4.0625 ms, rotor 24.375 deg): S1 board 1 phase A k = -4.1268 mWb/rad (export 46.1 s)
+[REV0 FMROT_REV1S 25667.9s] Step 14/24 (t = 4.3750 ms, rotor 26.250 deg): S1 board 1 phase A k = -2.5303 mWb/rad (export 47.7 s)
+[REV0 FMROT_REV1S 25715.9s] Step 15/24 (t = 4.6875 ms, rotor 28.125 deg): S1 board 1 phase A k = -1.0977 mWb/rad (export 47.8 s)
+[REV0 FMROT_REV1S 25763.3s] Step 16/24 (t = 5.0000 ms, rotor 30.000 deg): S1 board 1 phase A k = -0.0061 mWb/rad (export 47.1 s)
+[REV0 FMROT_REV1S 25810.7s] Step 17/24 (t = 5.3125 ms, rotor 31.875 deg): S1 board 1 phase A k = +1.0841 mWb/rad (export 47.1 s)
+[REV0 FMROT_REV1S 25857.8s] Step 18/24 (t = 5.6250 ms, rotor 33.750 deg): S1 board 1 phase A k = +2.5198 mWb/rad (export 46.9 s)
+[REV0 FMROT_REV1S 25906.1s] Step 19/24 (t = 5.9375 ms, rotor 35.625 deg): S1 board 1 phase A k = +4.1189 mWb/rad (export 47.9 s)
+[REV0 FMROT_REV1S 25953.2s] Step 20/24 (t = 6.2500 ms, rotor 37.500 deg): S1 board 1 phase A k = +5.5758 mWb/rad (export 46.9 s)
+[REV0 FMROT_REV1S 26000.7s] Step 21/24 (t = 6.5625 ms, rotor 39.375 deg): S1 board 1 phase A k = +6.5615 mWb/rad (export 47.4 s)
+[REV0 FMROT_REV1S 26048.4s] Step 22/24 (t = 6.8750 ms, rotor 41.250 deg): S1 board 1 phase A k = +6.8643 mWb/rad (export 47.5 s)
+[REV0 FMROT_REV1S 26096.5s] Step 23/24 (t = 7.1875 ms, rotor 43.125 deg): S1 board 1 phase A k = +6.5660 mWb/rad (export 47.8 s)
+[REV0 FMROT_REV1S 26147.1s] Step 24/24 (t = 7.5000 ms, rotor 45.000 deg): S1 board 1 phase A k = +5.5893 mWb/rad (export 50.4 s)
+[REV0 FMROT_REV1S 27527.8s] Field export: 40 files (B_S1, B_S2low, B_S2up, Bsteel_R1_BackIron, Bsteel_R2_BackIron)
+[REV0 FMROT_REV1S 27532.3s] Steel Bsteel_R1_BackIron: |B| max 0.835 T, 99th percentile 0.795 T, mean 0.287 T, 0.0 % of points above 1.6 T
+[REV0 FMROT_REV1S 27532.3s] Steel Bsteel_R2_BackIron: |B| max 0.931 T, 99th percentile 0.872 T, mean 0.336 T, 0.0 % of points above 1.6 T
+[REV0 FMROT_REV1S 27532.3s] Field map B_S1: |B| max 0.445 T, mean 0.226 T
+[REV0 FMROT_REV1S 27532.3s] Field map B_S2low: |B| max 0.108 T, mean 0.041 T
+[REV0 FMROT_REV1S 27532.3s] Field map B_S2up: |B| max 0.444 T, mean 0.226 T
+[REV0 FMROT_REV1S 27533.3s] FIELD-ONLY ROTATING TRANSIENT (FMROT) - FMROT_REV1S (Rev1S), 1000 rpm, 24 steps of 0.31250 ms (one full electrical period)
+[REV0 FMROT_REV1S 27533.3s] k = -T_copper/I per phase (Lorentz on the trace centre-lines, 1 A into L1), e = omega_m * k
+[REV0 FMROT_REV1S 27533.3s] 
+[REV0 FMROT_REV1S 27533.3s] MACHINE (all stators in series):
+[REV0 FMROT_REV1S 27533.3s]   PHASE_A: K1 = 41.570 mN.m/A, psi = -29.99 deg elec, E1 = 3.0782 V rms at 1000 rpm, THD 5.2 % (H3 5.2%, H5 0.6%, H7 0.0%, H9 0.1%, H11 0.0%)
+[REV0 FMROT_REV1S 27533.3s]   PHASE_B: K1 = 41.562 mN.m/A, psi = +90.01 deg elec, E1 = 3.0776 V rms at 1000 rpm, THD 5.2 % (H3 5.2%, H5 0.6%, H7 0.0%, H9 0.1%, H11 0.0%)
+[REV0 FMROT_REV1S 27533.3s]   PHASE_C: K1 = 41.561 mN.m/A, psi = -149.99 deg elec, E1 = 3.0775 V rms at 1000 rpm, THD 5.2 % (H3 5.2%, H5 0.6%, H7 0.0%, H9 0.1%, H11 0.0%)
+[REV0 FMROT_REV1S 27533.3s]   balance: K spread 0.02 %, phase steps +120.0, +120.0, +120.0 deg elec (ideal +-120)
+[REV0 FMROT_REV1S 27533.3s]   synchronous load 1.00 A pk: T mean 62.347 mN.m (K = 41.564 mN.m/A), ripple 1.16 % pk-pk (armature reaction neglected)
+[REV0 FMROT_REV1S 27533.3s]   copper DC loss at 1.00 A pk: 3.9840 W (R = 2.656 ohm per phase, 0.2656 ohm per board-phase, trace model)
+[REV0 FMROT_REV1S 27533.3s] 
+[REV0 FMROT_REV1S 27533.3s] Stators (series sum of the 5 boards):
+[REV0 FMROT_REV1S 27533.3s]   S1 PHASE_A: K1 = 19.477 mN.m/A, psi = -29.98 deg
+[REV0 FMROT_REV1S 27533.3s]   S1 PHASE_B: K1 = 19.466 mN.m/A, psi = +90.01 deg
+[REV0 FMROT_REV1S 27533.3s]   S1 PHASE_C: K1 = 19.464 mN.m/A, psi = -149.98 deg
+[REV0 FMROT_REV1S 27533.3s]   S2 PHASE_A: K1 = 22.093 mN.m/A, psi = -30.00 deg
+[REV0 FMROT_REV1S 27533.3s]   S2 PHASE_B: K1 = 22.095 mN.m/A, psi = +90.00 deg
+[REV0 FMROT_REV1S 27533.3s]   S2 PHASE_C: K1 = 22.097 mN.m/A, psi = -150.00 deg
+[REV0 FMROT_REV1S 27533.3s] Phase A per board (S1): B1 6.3561, B2 4.7982, B3 3.5929, B4 2.7112, B5 2.0189
+[REV0 FMROT_REV1S 27533.3s] 
+[REV0 FMROT_REV1S 27533.3s] VALIDATION against the static field map /scratch/khnolw003/pcbmotor_hpc/shared_results/FIELDMAP_REV1S_P20_results/fieldmap_results.json
+[REV0 FMROT_REV1S 27533.3s]   S1_B1_PHASE_A theta   5.625 deg: rotating k = +1.09777, static k = +1.08224 mWb/rad (+0.24 % of K1)
+[REV0 FMROT_REV1S 27533.3s]   S1_B1_PHASE_A theta  11.250 deg: rotating k = -2.52019, static k = -2.53110 mWb/rad (+0.17 % of K1)
+[REV0 FMROT_REV1S 27533.4s]   S1_B1_PHASE_A theta  16.875 deg: rotating k = -6.56031, static k = -6.56951 mWb/rad (+0.14 % of K1)
+[REV0 FMROT_REV1S 27533.4s]   S1_B1_PHASE_A theta  22.500 deg: rotating k = -5.58909, static k = -5.59884 mWb/rad (+0.15 % of K1)
+[REV0 FMROT_REV1S 27533.4s]   S1_B1_PHASE_A theta  28.125 deg: rotating k = -1.09768, static k = -1.06580 mWb/rad (-0.50 % of K1)
+[REV0 FMROT_REV1S 27533.4s]   S1_B1_PHASE_A theta  33.750 deg: rotating k = +2.51983, static k = +2.51153 mWb/rad (+0.13 % of K1)
+[REV0 FMROT_REV1S 27533.4s]   S1_B1_PHASE_A theta  39.375 deg: rotating k = +6.56149, static k = +6.58107 mWb/rad (-0.31 % of K1)
+[REV0 FMROT_REV1S 27533.4s]   S1_B1_PHASE_A theta  45.000 deg: rotating k = +5.58929, static k = +5.60764 mWb/rad (-0.29 % of K1)
+[REV0 FMROT_REV1S 27533.4s]   S1_B1_PHASE_B theta   5.625 deg: rotating k = +4.12578, static k = +4.09648 mWb/rad (+0.46 % of K1)
+[REV0 FMROT_REV1S 27533.4s]   S1_B1_PHASE_B theta  11.250 deg: rotating k = +6.86000, static k = +6.84992 mWb/rad (+0.16 % of K1)
+[REV0 FMROT_REV1S 27533.4s]   S1_B1_PHASE_B theta  16.875 deg: rotating k = +4.11029, static k = +4.09985 mWb/rad (+0.17 % of K1)
+[REV0 FMROT_REV1S 27533.4s]   S1_B1_PHASE_B theta  22.500 deg: rotating k = +0.00413, static k = -0.00795 mWb/rad (+0.19 % of K1)
+[REV0 FMROT_REV1S 27533.4s]   S1_B1_PHASE_B theta  28.125 deg: rotating k = -4.12523, static k = -4.09498 mWb/rad (-0.48 % of K1)
+[REV0 FMROT_REV1S 27533.4s]   S1_B1_PHASE_B theta  33.750 deg: rotating k = -6.85817, static k = -6.85009 mWb/rad (-0.13 % of K1)
+[REV0 FMROT_REV1S 27533.4s]   S1_B1_PHASE_B theta  39.375 deg: rotating k = -4.10935, static k = -4.10884 mWb/rad (-0.01 % of K1)
+[REV0 FMROT_REV1S 27533.4s]   S1_B1_PHASE_B theta  45.000 deg: rotating k = -0.00420, static k = +0.00004 mWb/rad (-0.07 % of K1)
+[REV0 FMROT_REV1S 27533.4s]   S1_B1_PHASE_C theta   5.625 deg: rotating k = -6.56278, static k = -6.59242 mWb/rad (+0.46 % of K1)
+[REV0 FMROT_REV1S 27533.4s]   S1_B1_PHASE_C theta  11.250 deg: rotating k = -2.52481, static k = -2.53234 mWb/rad (+0.12 % of K1)
+[REV0 FMROT_REV1S 27533.4s]   S1_B1_PHASE_C theta  16.875 deg: rotating k = +1.07908, static k = +1.07410 mWb/rad (+0.08 % of K1)
+[REV0 FMROT_REV1S 27533.4s]   S1_B1_PHASE_C theta  22.500 deg: rotating k = +5.58328, static k = +5.59800 mWb/rad (-0.23 % of K1)
+[REV0 FMROT_REV1S 27533.4s]   S1_B1_PHASE_C theta  28.125 deg: rotating k = +6.56196, static k = +6.58371 mWb/rad (-0.34 % of K1)
+[REV0 FMROT_REV1S 27533.4s]   S1_B1_PHASE_C theta  33.750 deg: rotating k = +2.52432, static k = +2.53001 mWb/rad (-0.09 % of K1)
+[REV0 FMROT_REV1S 27533.4s]   S1_B1_PHASE_C theta  39.375 deg: rotating k = -1.07908, static k = -1.10663 mWb/rad (+0.43 % of K1)
+[REV0 FMROT_REV1S 27533.4s]   S1_B1_PHASE_C theta  45.000 deg: rotating k = -5.58391, static k = -5.60342 mWb/rad (+0.31 % of K1)
+[REV0 FMROT_REV1S 27533.4s]   largest point difference over all 240 board-phase-angle points: 1.59 % of K1 (S2_B5_PHASE_A at 16.875 deg)
+[REV0 FMROT_REV1S 27533.4s]   per board (all phases): rotating / static K1 ratio and psi difference
+[REV0 FMROT_REV1S 27533.4s]     PHASE_A: S1B1 0.9976/+0.27, S1B2 0.9995/+0.02, S1B3 1.0012/+0.05, S1B4 0.9951/-0.15, S1B5 1.0015/+0.02, S2B1 0.9987/+0.22, S2B2 0.9976/+0.12, S2B3 1.0013/-0.01, S2B4 1.0013/-0.05, S2B5 0.9893/+0.05
+[REV0 FMROT_REV1S 27533.4s]     PHASE_B: S1B1 1.0042/+0.01, S1B2 1.0015/+0.03, S1B3 1.0003/-0.14, S1B4 0.9916/-0.03, S1B5 1.0009/+0.12, S2B1 1.0027/+0.03, S2B2 0.9999/+0.04, S2B3 1.0003/+0.00, S2B4 1.0022/+0.01, S2B5 0.9908/-0.08
+[REV0 FMROT_REV1S 27533.4s]     PHASE_C: S1B1 0.9958/-0.17, S1B2 1.0010/+0.01, S1B3 1.0020/+0.02, S1B4 0.9927/-0.17, S1B5 0.9981/-0.04, S2B1 0.9981/-0.07, S2B2 0.9979/-0.07, S2B3 1.0021/+0.00, S2B4 0.9992/-0.07, S2B5 0.9916/-0.01
+[REV0 FMROT_REV1S 27533.4s]   GATE: board 1 PHASE_A -0.24 % / +0.27 deg; PHASE_B +0.42 % / +0.01 deg; PHASE_C -0.42 % / -0.17 deg; machine K A -0.16 %, B +0.03 %, C -0.19 % (limits 2 % / 1 deg / 2 %); worst board S2_B5_PHASE_A -1.07 % -> PASS
+[REV0 FMROT_REV1S 27533.4s] Rotor torque at no load (cogging + reluctance, Maxwell): 0.7790 mN.m pk-pk
+[REV0 FMROT_REV1S 27533.4s] Copper eddy loss estimate at 1000 rpm (thin-conductor formula on the trace pieces, vias excluded): 0.04418 W
+[REV0 FMROT_REV1S 27533.4s]   S1: B1 0.0108 W, B2 0.00483 W, B3 0.00254 W, B4 0.0014 W, B5 0.000771 W
+[REV0 FMROT_REV1S 27533.4s]   S2: B1 0.0115 W, B2 0.0055 W, B3 0.00323 W, B4 0.00209 W, B5 0.00151 W
+[REV0 FMROT_REV1S 27533.4s] 
+[REV0 FMROT_REV1S 27533.5s] Magnetic field distribution (8 instants per period, point files B_*.fld / Bsteel_*.fld for plots):
+[REV0 FMROT_REV1S 27533.5s]   Bsteel_R1_BackIron: |B| max 0.835 T, p99 0.795 T, mean 0.287 T, 0.0 % above 1.6 T
+[REV0 FMROT_REV1S 27533.5s]   Bsteel_R2_BackIron: |B| max 0.931 T, p99 0.872 T, mean 0.336 T, 0.0 % above 1.6 T
+[REV0 FMROT_REV1S 27533.5s]   B_S1 (0.25 mm off the stator face): |B| max 0.445 T, mean 0.226 T
+[REV0 FMROT_REV1S 27533.5s]   B_S2low (0.25 mm off the stator face): |B| max 0.108 T, mean 0.041 T
+[REV0 FMROT_REV1S 27533.5s]   B_S2up (0.25 mm off the stator face): |B| max 0.444 T, mean 0.226 T
+[REV0 FMROT_REV1S 27533.5s] Current density in the tracks per 1 A phase current (DC share over 0.5 mm x 35 um; file current_density_board1_per_A.csv): A max 57.1 / p95 10.3 / mean 8.6 A/mm2; B max 57.1 / p95 10.3 / mean 8.6 A/mm2; C max 57.1 / p95 10.3 / mean 8.6 A/mm2
+[REV0 FMROT_REV1S 27533.5s] 
+[REV0 FMROT_REV1S 27533.5s] EFFICIENCY (EM only, no bearing/windage; copper eddy and magnet eddy scale with speed^2, copper DC with current^2, torque = 1.5 K I):
+[REV0 FMROT_REV1S 27533.5s]      rpm  Ipk A    T mN.m    Pout W     Pcu W   Peddy W     Pin W   eta %
+[REV0 FMROT_REV1S 27533.5s]      500   0.50    31.173    1.6322    0.9960    0.0110    2.6393    61.8
+[REV0 FMROT_REV1S 27533.5s]      500   1.00    62.347    3.2645    3.9840    0.0110    7.2595    45.0
+[REV0 FMROT_REV1S 27533.5s]      500   2.00   124.693    6.5289   15.9360    0.0110   22.4760    29.0
+[REV0 FMROT_REV1S 27533.5s]     1000   0.50    31.173    3.2645    0.9960    0.0442    4.3046    75.8
+[REV0 FMROT_REV1S 27533.5s]     1000   1.00    62.347    6.5289    3.9840    0.0442   10.5571    61.8
+[REV0 FMROT_REV1S 27533.5s]     1000   2.00   124.693   13.0578   15.9360    0.0442   29.0380    45.0
+[REV0 FMROT_REV1S 27533.5s]     2000   0.50    31.173    6.5289    0.9960    0.1767    7.7016    84.8
+[REV0 FMROT_REV1S 27533.5s]     2000   1.00    62.347   13.0578    3.9840    0.1767   17.2186    75.8
+[REV0 FMROT_REV1S 27533.5s]     2000   2.00   124.693   26.1157   15.9360    0.1767   42.2284    61.8
+[REV0 FMROT_REV1S 27533.5s]   per-board loss table for the thermal model: loss_table_for_icepak.csv
+[REV0 FMROT_REV1S 27533.5s] 
+[REV0 FMROT_REV1S 27533.5s] Neglected: armature reaction (no copper in the field solve), skin/proximity effects, the averaging of B over the 0.5 mm x 35 um track cross-section (centre-line sampling), via eddy currents.

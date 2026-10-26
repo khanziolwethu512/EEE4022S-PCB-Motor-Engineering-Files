@@ -1,0 +1,38 @@
+[REV0 EQ_REV1S_CAL    2.7s] Design solution type reported by AEDT: Magnetostatic
+[REV0 EQ_REV1S_CAL    2.7s] Project EQ_REV1S_CAL / design Rev0 (Magnetostatic)
+[REV0 EQ_REV1S_CAL    2.7s] ASSUMPTION: Stack-up mode 'scaled' - Altium dielectric ratios scaled to 1.000 mm copper+dielectric; NOT the JLCPCB stack-up
+[REV0 EQ_REV1S_CAL    2.7s] ASSUMPTION: Solder mask 0.01016 mm each face (source stack-up); board pitch 1.02032 mm
+[REV0 EQ_REV1S_CAL    2.7s] ASSUMPTION: Vias = solid 0.30 mm copper (8-sided): fine for conduction/field, low for final resistance
+[REV0 EQ_REV1S_CAL    2.7s] ASSUMPTION: Air gap 1.000 mm measured from PCB1 top solder-mask surface to magnet face
+[REV0 EQ_REV1S_CAL    2.7s] ASSUMPTION: FR-4 and solder mask modelled as air (mu_r = 1, non-conductive either way); board geometry, pitch and air gap unchanged
+[REV0 EQ_REV1S_CAL    2.7s] ASSUMPTION: Inductance matrix not computed (lab-PC freeze at 'Start Matrix')
+[REV0 EQ_REV1S_CAL    2.7s] ASSUMPTION: Shaft steel_1010, 19.0 mm dia, rotating; simplified EM representation: rotor side only (band floor to 5.0 mm beyond back iron); section through the stator bore omitted; NOT the physical shaft length; shaft + back iron united as one steel body
+[REV0 EQ_REV1S_CAL    2.7s] ASSUMPTION: Equivalent-coil stator (Rev1S): each phase of each board = 8 closed stranded sector coils at the measured radial-current positions, split over two layers symmetric about the board mid-plane (A L1+L6, B L2+L5, C L3+L4), 0.08 mm slabs; turns calibrated against the field map FIELDMAP_REV1S_P20; no eddy currents in the copper
+[REV0 EQ_REV1S_CAL    8.8s] Rotor steel: disc (bore not cut) + overlapping 19 mm shaft united as RotorSteel (EM Boolean simplification; same steel volume as disc-with-bore + shaft)
+[REV0 EQ_REV1S_CAL    8.8s] R1_Rotor: 16 magnets r 18.0-38.0 mm, z 1.5102-3.5102 (gap 1.000 mm from stator surface z=0.51016); back iron OD 86.0 / ID 19.0 x 2.0 mm; shaft 19.0 mm steel_1010
+[REV0 EQ_REV1S_CAL    9.0s] R2_Rotor: 16 magnets r 18.0-38.0 mm, z 12.6118-14.6118 (gap 1.000 mm from stator surface z=11.61176); back iron OD 86.0 / ID 19.0 x 2.0 mm; shaft 19.0 mm steel_1010
+[REV0 EQ_REV1S_CAL    9.2s] EQ PHASE_A: sides at 18.82 (in) / 41.10 (out) deg mod 45.0, width 6.74 deg, radial 18.62-36.62 mm, arcs 1.50 mm, geometric Ncoil 2.006 (fundamental phase error +0.05 deg vs the traces)
+[REV0 EQ_REV1S_CAL    9.2s] EQ PHASE_B: sides at 33.82 (in) / 11.10 (out) deg mod 45.0, width 6.74 deg, radial 18.62-36.62 mm, arcs 1.50 mm, geometric Ncoil 2.006 (fundamental phase error +0.05 deg vs the traces)
+[REV0 EQ_REV1S_CAL    9.2s] EQ PHASE_C: sides at 3.82 (in) / 26.10 (out) deg mod 45.0, width 6.74 deg, radial 18.62-36.61 mm, arcs 1.50 mm, geometric Ncoil 2.007 (fundamental phase error +0.05 deg vs the traces)
+[REV0 EQ_REV1S_CAL   29.9s] EQ stator S1: 240 coils + 240 terminal sheets built (5 boards x 3 phases x 2 layers x 8)
+[REV0 EQ_REV1S_CAL   61.0s] EQ stator S2: 240 coils + 240 terminal sheets built (5 boards x 3 phases x 2 layers x 8)
+[REV0 EQ_REV1S_CAL   64.9s] Winding PhaseA: 160 coil terminals in series (stranded), current Ncoil*Iamp
+[REV0 EQ_REV1S_CAL   69.2s] Winding PhaseB: 160 coil terminals in series (stranded), current Ncoil*Iamp
+[REV0 EQ_REV1S_CAL   74.6s] Winding PhaseC: 160 coil terminals in series (stranded), current Ncoil*Iamp
+[REV0 EQ_REV1S_CAL   75.9s] Magnetostatic setup: 4 passes, 20% refinement, inductance matrix OFF
+[REV0 EQ_REV1S_CAL  102.3s] AEDT Validation Check returned True
+[REV0 EQ_REV1S_CAL  106.4s] EQ calibration: rot_angle = 0 deg ... solving
+[REV0 EQ_REV1S_CAL 4523.0s] Angle 0 deg done in 73.6 min: board 1 torque +6.9905 mN.m
+[REV0 EQ_REV1S_CAL 4523.1s] EQ calibration: rot_angle = 5.625 deg ... solving
+[REV0 EQ_REV1S_CAL 8838.4s] Angle 5.625 deg done in 71.9 min: board 1 torque +1.2909 mN.m
+[REV0 EQ_REV1S_CAL 8838.6s] EQ calibration: rot_angle = 11.25 deg ... solving
+[REV0 EQ_REV1S_CAL 13418.3s] Angle 11.25 deg done in 76.3 min: board 1 torque -3.1195 mN.m
+[REV0 EQ_REV1S_CAL 13418.5s] EQ calibration: rot_angle = 16.875 deg ... solving
+[REV0 EQ_REV1S_CAL 17383.3s] Angle 16.875 deg done in 66.1 min: board 1 torque -8.3393 mN.m
+[REV0 EQ_REV1S_CAL 17383.4s] EQ calibration: rot_angle = 22.5 deg ... solving
+[REV0 EQ_REV1S_CAL 21348.7s] Angle 22.5 deg done in 66.1 min: board 1 torque -6.9908 mN.m
+[REV0 EQ_REV1S_CAL 21348.8s] EQ calibration: rot_angle = 28.125 deg ... solving
+[REV0 EQ_REV1S_CAL 25681.8s] Angle 28.125 deg done in 72.2 min: board 1 torque -1.2901 mN.m
+[REV0 EQ_REV1S_CAL 25682.0s] EQ calibration: rot_angle = 33.75 deg ... solving
+[REV0 EQ_REV1S_CAL 29563.0s] Angle 33.75 deg done in 64.7 min: board 1 torque +3.1214 mN.m
+[REV0 EQ_REV1S_CAL 29563.2s] EQ calibration: rot_angle = 39.375 deg ... solving

@@ -1,0 +1,130 @@
+{
+ "E1_peak_V_at_1000rpm": 1.9409057077510927,
+ "E1_rms_V_at_1000rpm": 1.372427587594473,
+ "K_from_rotor_mNm_per_A": 18.46954547439893,
+ "K_mNm_per_A": 18.5342842478316,
+ "T_mean_mNm_at_Ipk": 27.8014263717474,
+ "angles_ok": 2,
+ "angles_planned": 2,
+ "basis": "mean of 2 angles over one ripple period",
+ "boards": {
+  "S1_B1": {
+   "K_mNm_per_A": 6.281657035463867,
+   "detailed": 6.2816,
+   "fieldmap": 6.3697,
+   "vs_detailed_pct": 0.00090797669169973,
+   "vs_fieldmap_pct": -1.382215246183227
+  },
+  "S1_B2": {
+   "K_mNm_per_A": 4.5898454417193,
+   "detailed": 4.59052,
+   "fieldmap": 4.7962,
+   "vs_detailed_pct": -0.014694594091735347,
+   "vs_fieldmap_pct": -4.302459411215132
+  },
+  "S1_B3": {
+   "K_mNm_per_A": 3.3637088762877596,
+   "detailed": 3.36547,
+   "fieldmap": 3.5881,
+   "vs_detailed_pct": -0.05232920549702591,
+   "vs_fieldmap_pct": -6.253758917316688
+  },
+  "S1_B4": {
+   "K_mNm_per_A": 2.473636995814663,
+   "detailed": 2.47547,
+   "fieldmap": 2.7268,
+   "vs_detailed_pct": -0.07404671376898264,
+   "vs_fieldmap_pct": -9.284252757273615
+  },
+  "S1_B5": {
+   "K_mNm_per_A": 1.8254356946779933,
+   "detailed": 1.82659,
+   "fieldmap": 2.0154,
+   "vs_detailed_pct": -0.06319454951613235,
+   "vs_fieldmap_pct": -9.425637854619772
+  }
+ },
+ "bracket": "INSIDE",
+ "complete": true,
+ "motor": "Rev0",
+ "pilot": null,
+ "ref_detailed": 18.5397,
+ "ref_fieldmap": 19.4962,
+ "ripple_pkpk_pct": 0.6575919031024495,
+ "rows": [
+  {
+   "T_cu_mNm": 27.8928363361312,
+   "T_rotor_mNm": 27.7493465089617,
+   "attempts": 1,
+   "boards": {
+    "S1_PCB1": 9.48943921471798,
+    "S1_PCB2": 6.902535156709559,
+    "S1_PCB3": 5.05048550810388,
+    "S1_PCB4": 3.7118527040791,
+    "S1_PCB5": 2.73852443923534
+   },
+   "level": "L2 iterative, 6 passes",
+   "peak_rss_GB": 109.69,
+   "quality": "OK",
+   "rotor_vs_copper_pct": 0.5144325426081858,
+   "solve_min": 1036.18,
+   "stators": {},
+   "status": "done",
+   "task": "solve_00",
+   "theta_deg": 0.0,
+   "why": null
+  },
+  {
+   "T_cu_mNm": 27.7100164073636,
+   "T_rotor_mNm": 27.6592899142351,
+   "attempts": 1,
+   "boards": {
+    "S1_PCB1": 9.355531891673621,
+    "S1_PCB2": 6.86700116844834,
+    "S1_PCB3": 5.0406411207594,
+    "S1_PCB4": 3.70905828336489,
+    "S1_PCB5": 2.73778264479864
+   },
+   "level": "L2 iterative, 6 passes",
+   "peak_rss_GB": 109.35,
+   "quality": "OK",
+   "rotor_vs_copper_pct": 0.18306193826366998,
+   "solve_min": 1047.2,
+   "stators": {},
+   "status": "done",
+   "task": "solve_01",
+   "theta_deg": 3.75,
+   "why": null
+  }
+ ],
+ "stators": {
+  "S1": 18.53428404396358
+ },
+ "steel_Bmax_static_T": {
+  "BackIron": 0.9179455553244356
+ },
+ "tasks": {
+  "final": {
+   "attempts": 1,
+   "status": "done",
+   "why": null
+  },
+  "solve_00": {
+   "attempts": 1,
+   "status": "done",
+   "why": null
+  },
+  "solve_01": {
+   "attempts": 1,
+   "status": "done",
+   "why": null
+  },
+  "stator": {
+   "attempts": 1,
+   "status": "done",
+   "why": "disk: account-wide scratch quota unreadable"
+  }
+ },
+ "vs_detailed_pct": -0.02921164942474297,
+ "vs_fieldmap_pct": -4.933862763863739
+}

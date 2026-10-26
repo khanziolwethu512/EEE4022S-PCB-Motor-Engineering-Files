@@ -1,0 +1,42 @@
+{
+ "currents_A": {
+  "C": -0.86760099999999996, 
+  "B": 0.0031589999999999999, 
+  "A": 0.86444100000000001
+ }, 
+ "attempt": 1, 
+ "started": "2026-10-07 21:13:00", 
+ "open_seconds": 154.2, 
+ "source": "C:\\Users\\Student\\OneDrive - University of Cape Town\\EEE4022S Ansys files\\Motor run\\frozen\\REV0_FINAL_G100_T20_FROZEN.aedt", 
+ "solve_started": "2026-10-07 21:24:59", 
+ "ram_at_solve_start": {
+  "pagefile_total_GB": 18.19, 
+  "free_GB_now": 4.03, 
+  "total_GB": 15.81
+ }, 
+ "stage": "solving (if this is the last status, the PC/AEDT stopped during the solve)", 
+ "cpu_count": null, 
+ "project": "REV0_FULL_SOLVE_ATTEMPT", 
+ "model": {
+  "solids": 45, 
+  "steel": [
+   "RotorSteel"
+  ], 
+  "copper_objects": 27, 
+  "magnets": 16
+ }, 
+ "settings": {
+  "Ipk_A": 1.0, 
+  "max_passes": 2, 
+  "percent_refinement": 20, 
+  "rotor_angle_deg": 0.0, 
+  "motion": false, 
+  "matrix": false
+ }, 
+ "ram": {
+  "pagefile_total_GB": 18.19, 
+  "free_GB_now": 8.02, 
+  "total_GB": 15.81
+ }, 
+ "pc": "EBE-RED-019"
+}

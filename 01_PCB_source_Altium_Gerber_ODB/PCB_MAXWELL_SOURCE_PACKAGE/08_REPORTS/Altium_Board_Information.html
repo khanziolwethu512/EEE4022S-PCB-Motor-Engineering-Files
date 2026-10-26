@@ -1,0 +1,1117 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<style type="text/css">
+		h1, h2, h3, h4, h5, h6 { 
+			font-family : segoe ui;
+			color : black;
+			background-color : #EDE7D9;
+			padding: 0.3em;
+		}
+
+		h1 {
+			font-size: 1.2em;
+		}		
+
+		h2 {
+			font-size: 1.2em;
+		}
+
+		body { 
+			font-family : segoe ui;
+		}
+
+		td, th {  
+			padding: 0.5em;
+			text-align : left;
+		}
+		th { 
+			background-color : #EEEEEE;
+		
+		}
+		th.column1, td.column1 { 
+			width : 50%; 
+		}
+
+        th.column2, td.column2 {
+            width : 25%;
+        }
+
+		table { 
+			width : 100%; 
+            font-size: 0.9em;
+		}
+		.front_matter, .front_matter_column1, .front_matter_column2, .front_matter_column3
+		{
+			left : 0;
+			top : 0;
+			padding: 0em;
+			padding-top : 0.1em;
+			border : 0px solid black;
+			width : 100%;
+			vertical-align: top;
+			text-align: left;
+		}
+
+		.front_matter_column1 {
+			width : 5em;
+			font-weight: bold;
+		}
+
+		.front_matter_column2 {
+			width: 0.1em;
+		}
+
+		.front_matter_column3 {
+			width : auto;
+		}
+
+		.total_column1, .total_column {
+			font-weight : bold;
+		}
+		.total_column1 {
+			text-align : left;
+		}
+		.warning, .error { 
+			color : red;
+			font-weight : bold;
+		}	
+		tr.onmouseout_odd { 
+			background-color : #white;
+		}
+		tr.onmouseout_even { 
+			background-color : #FAFAFA;
+		}
+		tr.onmouseover_odd, tr.onmouseover_even { 
+			background-color : #EEEEEE;
+		} 
+		a:link, a:visited, .q a:link,.q a:active,.q {
+			color: #21489e; 
+		}
+		a:link.callback, a:visited.callback { 
+			color: #21489e;
+		}
+		a:link.customize, a:visited.customize {
+			color: #C0C0C0;
+			position: absolute; 
+			right: 10px;
+		}	
+		p.contents_level1 {
+			font-weight : bold;
+			font-size : 110%;
+			margin : 0.5em;
+		}
+		p.contents_level2 {
+			position : relative;
+			left : 20px;
+			margin : 0.5em;
+		}
+	</style><script type="text/javascript">
+		function coordToMils(coord) {
+			var number = coord / 10000;
+			
+			if (number != number.toFixed(3))
+				number = number.toFixed(3);
+			
+			return number + 'mil'
+		}
+
+		function coordToMM(coord) {
+			var number = 0.0254 * coord / 10000;
+			
+			if (number != number.toFixed(4))
+				number = number.toFixed(4);
+			
+			return number + 'mm'
+		}
+	
+		function convertCoord(coordNode, units) {
+			for (var i = 0; i < coordNode.childNodes.length; i++) {
+				coordNode.removeChild(coordNode.childNodes[i]);		
+			}
+
+			var coord = coordNode.getAttribute('value');
+			if (coord != null) {
+				if (units == 'mm') {	
+					textNode = document.createTextNode(coordToMM(coord));
+					coordNode.appendChild(textNode);
+				} else if (units == 'mil') {
+					textNode = document.createTextNode(coordToMils(coord));		
+					coordNode.appendChild(textNode);	
+				}
+			}
+		}
+	
+		function convertUnits(unitNode, units) {
+			for (var i = 0; i < unitNode.childNodes.length; i++) {
+				unitNode.removeChild(unitNode.childNodes[i]);		
+			}
+		
+			textNode = document.createTextNode(units); 
+			unitNode.appendChild(textNode);
+		}
+	
+		function changeUnits(radio_input, units) {
+			if (radio_input.checked) {
+			
+				var elements = document.getElementsByName('coordinate');
+				if (elements) {
+					for (var i = 0; i < elements.length; i++) {
+						convertCoord(elements[i], units);
+					}
+				}
+	
+				var elements = document.getElementsByName('units');
+				if (elements) {
+					for (var i = 0; i < elements.length; i++) {
+						convertUnits(elements[i], units);
+					}
+				}
+			}
+		}	
+	</script><title>Board Information Report</title>
+</head>
+<body onload="document.getElementById('radio_mm').click()"><img ALT="Altium" src="
+			file://C:\Users\Public\Documents\Altium\ADDevelop\Templates\AD_logo.png
+		"><a href="dxpprocess://Client:SetupPreferences?Server=PCB|PageName=Reports" class="customize"><acronym title="dxpprocess://Client:SetupPreferences?Server=PCB|PageName=Reports">customize</acronym></a><h1>Board Information Report</h1>
+<table class="front_matter">
+<tr class="front_matter">
+<td class="front_matter_column1">Date:</td>
+<td class="front_matter_column2"></td>
+<td class="front_matter_column3">2026/10/02</td>
+</tr>
+<tr class="front_matter">
+<td class="front_matter_column1">Time:</td>
+<td class="front_matter_column2"></td>
+<td class="front_matter_column3">22:14:44</td>
+</tr>
+<tr class="front_matter">
+<td class="front_matter_column1">Elapsed Time:</td>
+<td class="front_matter_column2"></td>
+<td class="front_matter_column3">00:00:01</td>
+</tr>
+<tr class="front_matter">
+<td class="front_matter_column1">Filename:</td>
+<td class="front_matter_column2"></td>
+<td class="front_matter_column3"><a href="file:///D:\Haram\mini_wave-bb_nets_complete.PcbDoc" class="file"><acronym title="D:\Haram\mini_wave-bb_nets_complete.PcbDoc">D:\Haram\mini_wave-bb_nets_complete.PcbDoc</acronym></a></td>
+</tr>
+<tr class="front_matter">
+<td class="front_matter_column1">Units:</td>
+<td class="front_matter_column2"></td>
+<td class="front_matter_column3">
+<form><input type="radio" name="radio_units" id="radio_mm" onclick="changeUnits(this, 'mm')">mm<input type="radio" name="radio_units" id="radio_mil" onclick="changeUnits(this, 'mil')">mils</form>
+</td>
+</tr>
+</table><a name="ID1WPI1UIQP1DUG1NJV5SCH3F3JE1S1LYXCTKD3XMR1TDIMNU1OW2E"><h2>Contents</h2></a><p class="contents_level1"><a href="#ID1WPI1UIQP1DUG1NJV5SCH3F3JE1S1LYXCTKD3XMR1TDIMNU1OW2E">Contents</a></p>
+<p class="contents_level1"><a href="#IDVFG1ZLKUR2YMO1NWUUNIXCAWFGJV13HBFSFMAAINKWRENBJJVDUJ">Board Specification</a></p>
+<p class="contents_level2"><a href="#IDY45GBUTD0M1CI0GGJTHXYH1FEJUUJPSHIGOGN1CV3W5QDQYAF5OG">General<br></a></p>
+<p class="contents_level1"><a href="#IDX54FDBK5TYXJC42ROOV54XEDUIOBD1JFETNVFDJRCGFYY4SE5KYK">Routing</a></p>
+<p class="contents_level2"><a href="#IDIQK0DBBKEYPNCWVHGENXZG3EENABOQIGM3PNVSO0SD1X0ADDIA2H">Routing Information<br></a></p>
+<p class="contents_level1"><a href="#IDQY05GZNK0VOXLRPJGAMVYVEZHJMSST03IUHN0EGXIXY1UACSQD0G">Layer Information</a></p>
+<p class="contents_level2"><a href="#IDVDWELTST4ZYGKBTOVSSAAJXFKLQYMOJZ50D0SRFZANKRSHU35YH">Layer Information<br></a></p>
+<p class="contents_level2"><a href="#IDU3IFZG2BVQYDPGLT4LGEZDBFYJAVBQKRRGWJEVPO3TEE3NSIW5BF">Drill Pairs<br></a></p>
+<p class="contents_level1"><a href="#IDRY0GP5GI353UNDESRQW3B2YX1EJ51KI2MXYMLSL2NR3HJTYC1U3I">Copper Area</a></p>
+<p class="contents_level2"><a href="#IDDRWVFPL3KQTSCMFB00XS1NBQOFOH5CCXSN1XAEC44RF3W1LQJLRM">Copper Area<br></a></p>
+<p class="contents_level1"><a href="#IDDOWAMTG5YYEJF3I5EEPKTAOXYD0CQELPNCLGHLN5JS4NT2YEJKE">Board Holes</a></p>
+<p class="contents_level2"><a href="#IDMJ1B5KC0EQZGUIGZDB3DHT42JLT14NYVMXWEOGNXAXOHWCR5DAI">Non-Plated Hole Size<br></a></p>
+<p class="contents_level2"><a href="#IDPKZRHAFKL2E3ETJIXTGWLCYV1FIJK4FWBTNHWRJSWQ4XOMW10EAF">Plated Hole Size<br></a></p>
+<p class="contents_level1"><a href="#IDSJG4TITLV4JQHTGWYTS3HCTRTN2A1MLJMSKGORFNQJ2XTSA2FSXJ">Board Slots</a></p>
+<p class="contents_level2"><a href="#IDWLPB5BSZUK0ACPU2SRDVZ4HGWGWTK033QFM1MBJA0IYTUM20QXDF">Non-Plated Slot Size<br></a></p>
+<p class="contents_level2"><a href="#ID1U4LPZG4MLV3GGTRGJIZRYPS1B34ACRJVL4UW3HNFGM3TVLYDTQH">Plated Slot Size<br></a></p>
+<p class="contents_level1"><a href="#IDC51TP2X4WS25P20UBME4UOHMEPFD2SNRZT5DVRNTSZE4GKMGFXWK">Board Square Holes</a></p>
+<p class="contents_level2"><a href="#IDUP0KVN4T2XJ2ELCHACCBXOQDWF1HZLG0O2KW1VICTVJVMXIPHCUD">Non-Plated Square Hole Size<br></a></p>
+<p class="contents_level2"><a href="#IDYWOZC2A12FDJPLLH04B1NJA02ODHP4BJVLW4VVUC50PY4FZHMMH">Plated Square Hole Size<br></a></p>
+<p class="contents_level1"><a href="#IDBONTVNJH4IKFCTCZKNSRKWUM5PKGB100AUOURQFT24QUBWW0S4JL">Other</a></p>
+<p class="contents_level2"><a href="#ID25Q4V0DK4ICHK4SUB1JWEBZEZDXIQBHHH10TMTL41BJP33SWCASL">Top Layer Annular Ring Size<br></a></p>
+<p class="contents_level2"><a href="#IDLQ1IPIRQSPGOD02I2GLLMH5EOC5ZB5REXIL1SIFCPCYWHEYQS2FO">Mid Layer Annular Ring Size<br></a></p>
+<p class="contents_level2"><a href="#IDS4TBPZAPXJFOD1UYRCWV04F44HMXUC2CW23O3UOAZVRIYJGMZMNE">Bottom Layer Annular Ring Size<br></a></p>
+<p class="contents_level2"><a href="#IDADFWML4PMIH5MPBHQJ44F40WTEIT1ZJDRVFMMXF1SKSJ0H3WG40C">Pad Solder Mask<br></a></p>
+<p class="contents_level2"><a href="#IDRI41VDBIFGPAOWUYPFGPQHRXEJAT34LAUHDXPMD1OUDXFHTK4MKM">Pad Paste Mask<br></a></p>
+<p class="contents_level2"><a href="#ID35B3XETNPRWCFOJBPUXQN0ADUNGYF134RCYSVHREA4VAOGHH1PJ">Pad Pwr/Gnd Expansion<br></a></p>
+<p class="contents_level2"><a href="#IDS4FVY3WFB1TWGUF1CGN3K3RRGK3RXASKMZAMBNBYYKZF1VIKYO1I">Pad Relief Conductor Width<br></a></p>
+<p class="contents_level2"><a href="#IDPQPMLESERHZFJWGKKW3ZH3D1XEGWDITL2CTNKMOSFHG4KRD3FMAD">Pad Relief Air Gap<br></a></p>
+<p class="contents_level2"><a href="#IDNAYMUCBQTNVUNKYIL4ZWD1KC5KHAD5SBZ2AJP2MRO2A4KQBRCRW">Pad Relief Entries<br></a></p>
+<p class="contents_level2"><a href="#IDBDJWNWOE3IQ2ITQH3D5FUEJZAKBJDX3DXLCHS0J0J1PZHTYSRKBE">Via Solder Mask<br></a></p>
+<p class="contents_level2"><a href="#IDVZ4OKWDVJZYKORMO53OTZ4CFLDHH4MQXDGVL0DEISXOLQWIKJSSM">Via Pwr/Gnd Expansion<br></a></p>
+<p class="contents_level2"><a href="#IDRVE0FVYJEL1BJXVXR0WPVSFETN4QESUFTNISTGIUKRTBNJZVQ4ZO">Track Width<br></a></p>
+<p class="contents_level2"><a href="#ID55JD35CMRWT0BP2T2H5HGYB0RMWGCPPFMGFE2EHGZBSU330GZI0P">Arc Line Width<br></a></p>
+<p class="contents_level2"><a href="#IDOWFROO0DOF5DOSDIBPW2VQZBKDXBSPCVMJJOZKPQSDHWHQC5REVD">Arc Radius<br></a></p>
+<p class="contents_level2"><a href="#ID3M04MDVMRK5VPDKWEDLY303WZPMHL2EIQYSQA3FSYMG0G43AJD5C">Arc Degrees<br></a></p>
+<p class="contents_level2"><a href="#IDXPW51OKPTQ4ONKW3QXP24TXPSJN3YPFW1YS2KNDWNOLRRWZ2RE5E">Net Track Width<br></a></p>
+<p class="contents_level2"><a href="#IDBX1J2CGRVXBSIMDITUEWAE0JLEQDDX5JO5EOWQO45ZYDIKBOGQKB">Net Via Size<br></a></p><br><a name="IDVFG1ZLKUR2YMO1NWUUNIXCAWFGJV13HBFSFMAAINKWRENBJJVDUJ"><h2>Board Specification</h2></a><a name="IDY45GBUTD0M1CI0GGJTHXYH1FEJUUJPSHIGOGN1CV3W5QDQYAF5OG"><table>
+<tr>
+<th style="text-align : left" colspan="2" class="">General</th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1">Board Size</td>
+<td class="column2"><a name="coordinate" value="36714472">93.2548mm
+			</a> &nbsp;x &nbsp;<a name="coordinate" value="36714472">93.2548mm
+			</a></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1">Components on board</td>
+<td class="column2">0</td>
+</tr>
+</table></a><hr color="#EEEEEE"><a href="#top" style="font-size: 0.9em">Back to top</a><br><br><a name="IDX54FDBK5TYXJC42ROOV54XEDUIOBD1JFETNVFDJRCGFYY4SE5KYK"><h2>Routing</h2></a><a name="IDIQK0DBBKEYPNCWVHGENXZG3EENABOQIGM3PNVSO0SD1X0ADDIA2H"><table>
+<tr>
+<th style="text-align : left" colspan="2" class="">Routing Information</th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1">Routing completion</td>
+<td class="column2">-4800.00%</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1">Connections</td>
+<td class="column2">9</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1">Connections routed</td>
+<td class="column2">-432</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1">Connections remaining</td>
+<td class="column2">441</td>
+</tr>
+</table></a><hr color="#EEEEEE"><a href="#top" style="font-size: 0.9em">Back to top</a><br><br><a name="IDQY05GZNK0VOXLRPJGAMVYVEZHJMSST03IUHN0EGXIXY1UACSQD0G"><h2>Layer Information</h2></a><a name="IDVDWELTST4ZYGKBTOVSSAAJXFKLQYMOJZ50D0SRFZANKRSHU35YH"><table>
+<tr>
+<th class="column1">Layer</th>
+<th class="column2">Arcs</th>
+<th class="column3">Pads</th>
+<th class="column4">Vias</th>
+<th class="column5">Tracks</th>
+<th class="column6">Texts</th>
+<th class="column7">Fills</th>
+<th class="column8">Regions</th>
+<th class="column9">ComponentBodies</th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1">Top Layer</td>
+<td class="column2">680</td>
+<td class="column3">6</td>
+<td class="column4">0</td>
+<td class="column5">377</td>
+<td class="column6">0</td>
+<td class="column7">0</td>
+<td class="column8">0</td>
+<td class="column9">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1">Layer 1</td>
+<td class="column2">674</td>
+<td class="column3">0</td>
+<td class="column4">0</td>
+<td class="column5">389</td>
+<td class="column6">0</td>
+<td class="column7">0</td>
+<td class="column8">0</td>
+<td class="column9">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1">Layer 2</td>
+<td class="column2">674</td>
+<td class="column3">0</td>
+<td class="column4">0</td>
+<td class="column5">389</td>
+<td class="column6">0</td>
+<td class="column7">0</td>
+<td class="column8">0</td>
+<td class="column9">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1">Layer 3</td>
+<td class="column2">696</td>
+<td class="column3">0</td>
+<td class="column4">0</td>
+<td class="column5">351</td>
+<td class="column6">0</td>
+<td class="column7">0</td>
+<td class="column8">0</td>
+<td class="column9">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1">Layer 4</td>
+<td class="column2">696</td>
+<td class="column3">0</td>
+<td class="column4">0</td>
+<td class="column5">351</td>
+<td class="column6">0</td>
+<td class="column7">0</td>
+<td class="column8">0</td>
+<td class="column9">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1">Bottom Layer</td>
+<td class="column2">696</td>
+<td class="column3">6</td>
+<td class="column4">0</td>
+<td class="column5">364</td>
+<td class="column6">0</td>
+<td class="column7">0</td>
+<td class="column8">0</td>
+<td class="column9">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1">Mechanical 1</td>
+<td class="column2">13</td>
+<td class="column3">0</td>
+<td class="column4">0</td>
+<td class="column5">12</td>
+<td class="column6">0</td>
+<td class="column7">0</td>
+<td class="column8">0</td>
+<td class="column9">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1">Multi-Layer</td>
+<td class="column2">0</td>
+<td class="column3">12</td>
+<td class="column4">617</td>
+<td class="column5">0</td>
+<td class="column6">0</td>
+<td class="column7">0</td>
+<td class="column8">10</td>
+<td class="column9">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1">Top Paste</td>
+<td class="column2">0</td>
+<td class="column3">0</td>
+<td class="column4">0</td>
+<td class="column5">0</td>
+<td class="column6">0</td>
+<td class="column7">0</td>
+<td class="column8">0</td>
+<td class="column9">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1">Top Overlay</td>
+<td class="column2">0</td>
+<td class="column3">0</td>
+<td class="column4">0</td>
+<td class="column5">0</td>
+<td class="column6">0</td>
+<td class="column7">0</td>
+<td class="column8">0</td>
+<td class="column9">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1">Top Solder</td>
+<td class="column2">0</td>
+<td class="column3">0</td>
+<td class="column4">0</td>
+<td class="column5">0</td>
+<td class="column6">0</td>
+<td class="column7">0</td>
+<td class="column8">0</td>
+<td class="column9">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1">Bottom Solder</td>
+<td class="column2">0</td>
+<td class="column3">0</td>
+<td class="column4">0</td>
+<td class="column5">0</td>
+<td class="column6">0</td>
+<td class="column7">0</td>
+<td class="column8">0</td>
+<td class="column9">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1">Bottom Overlay</td>
+<td class="column2">0</td>
+<td class="column3">0</td>
+<td class="column4">0</td>
+<td class="column5">0</td>
+<td class="column6">0</td>
+<td class="column7">0</td>
+<td class="column8">0</td>
+<td class="column9">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1">Bottom Paste</td>
+<td class="column2">0</td>
+<td class="column3">0</td>
+<td class="column4">0</td>
+<td class="column5">0</td>
+<td class="column6">0</td>
+<td class="column7">0</td>
+<td class="column8">0</td>
+<td class="column9">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1">Drill Guide</td>
+<td class="column2">0</td>
+<td class="column3">0</td>
+<td class="column4">0</td>
+<td class="column5">0</td>
+<td class="column6">0</td>
+<td class="column7">0</td>
+<td class="column8">0</td>
+<td class="column9">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1">Keep-Out Layer</td>
+<td class="column2">0</td>
+<td class="column3">0</td>
+<td class="column4">0</td>
+<td class="column5">0</td>
+<td class="column6">0</td>
+<td class="column7">0</td>
+<td class="column8">0</td>
+<td class="column9">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1">Drill Drawing</td>
+<td class="column2">0</td>
+<td class="column3">0</td>
+<td class="column4">0</td>
+<td class="column5">0</td>
+<td class="column6">0</td>
+<td class="column7">0</td>
+<td class="column8">0</td>
+<td class="column9">0</td>
+</tr>
+<tr>
+<td style="font-weight : bold; text-align : right" class="column1">Total</td>
+<td style="font-weight : bold" class="column2">4129</td>
+<td style="font-weight : bold" class="column3">24</td>
+<td style="font-weight : bold" class="column4">617</td>
+<td style="font-weight : bold" class="column5">2233</td>
+<td style="font-weight : bold" class="column6">0</td>
+<td style="font-weight : bold" class="column7">0</td>
+<td style="font-weight : bold" class="column8">10</td>
+<td style="font-weight : bold" class="column9">0</td>
+</tr>
+</table></a><hr color="#EEEEEE"><a href="#top" style="font-size: 0.9em">Back to top</a><br><br><a name="IDU3IFZG2BVQYDPGLT4LGEZDBFYJAVBQKRRGWJEVPO3TEE3NSIW5BF"><table>
+<tr>
+<th class="column1">Drill Pairs</th>
+<th class="column2">Vias</th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1">Top Layer - Bottom Layer</td>
+<td class="column2">617</td>
+</tr>
+<tr>
+<td style="font-weight : bold; text-align : right" class="column1">Total</td>
+<td style="font-weight : bold" class="column2">617</td>
+</tr>
+</table></a><hr color="#EEEEEE"><a href="#top" style="font-size: 0.9em">Back to top</a><br><br><a name="IDRY0GP5GI353UNDESRQW3B2YX1EJ51KI2MXYMLSL2NR3HJTYC1U3I"><h2>Copper Area</h2></a><a name="IDDRWVFPL3KQTSCMFB00XS1NBQOFOH5CCXSN1XAEC44RF3W1LQJLRM"><table>
+<tr>
+<th class="column1">Layer</th>
+<th class="column2">Sq.In.</th>
+<th class="column3">Sq.MM.</th>
+<th class="column4">Percent of layer</th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1">Top Layer</td>
+<td class="column2">3.859</td>
+<td class="column3">2489.594</td>
+<td class="column4">36%</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1">Layer 1</td>
+<td class="column2">3.668</td>
+<td class="column3">2366.446</td>
+<td class="column4">34%</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1">Layer 2</td>
+<td class="column2">3.668</td>
+<td class="column3">2366.446</td>
+<td class="column4">34%</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1">Layer 3</td>
+<td class="column2">3.716</td>
+<td class="column3">2397.728</td>
+<td class="column4">34%</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1">Layer 4</td>
+<td class="column2">3.716</td>
+<td class="column3">2397.728</td>
+<td class="column4">34%</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1">Bottom Layer</td>
+<td class="column2">3.874</td>
+<td class="column3">2499.468</td>
+<td class="column4">36%</td>
+</tr>
+<tr>
+<td style="font-weight : bold; text-align : right" class="column1">Total</td>
+<td style="font-weight : bold" class="column2">22.501</td>
+<td style="font-weight : bold" class="column3">14517.41</td>
+<td style="font-weight : bold" class="column4"></td>
+</tr>
+</table></a><hr color="#EEEEEE"><a href="#top" style="font-size: 0.9em">Back to top</a><br><br><a name="IDDOWAMTG5YYEJF3I5EEPKTAOXYD0CQELPNCLGHLN5JS4NT2YEJKE"><h2>Board Holes</h2></a><a name="IDMJ1B5KC0EQZGUIGZDB3DHT42JLT14NYVMXWEOGNXAXOHWCR5DAI"><table>
+<tr>
+<th class="column1">Non-Plated Hole Size</th>
+<th class="column2">Pads</th>
+<th class="column3">Vias</th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a name="coordinate" value="1220472">3.1mm
+			</a></td>
+<td class="column2">12</td>
+<td class="column3">0</td>
+</tr>
+<tr>
+<td style="font-weight : bold; text-align : right" class="column1">Total</td>
+<td style="font-weight : bold" class="column2">12</td>
+<td style="font-weight : bold" class="column3">0</td>
+</tr>
+</table></a><hr color="#EEEEEE"><a href="#top" style="font-size: 0.9em">Back to top</a><br><br><a name="IDPKZRHAFKL2E3ETJIXTGWLCYV1FIJK4FWBTNHWRJSWQ4XOMW10EAF"><table>
+<tr>
+<th class="column1">Plated Hole Size</th>
+<th class="column2">Pads</th>
+<th class="column3">Vias</th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a name="coordinate" value="0">0mm
+			</a></td>
+<td class="column2">12</td>
+<td class="column3">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a name="coordinate" value="118110">0.3mm
+			</a></td>
+<td class="column2">0</td>
+<td class="column3">617</td>
+</tr>
+<tr>
+<td style="font-weight : bold; text-align : right" class="column1">Total</td>
+<td style="font-weight : bold" class="column2">12</td>
+<td style="font-weight : bold" class="column3">617</td>
+</tr>
+</table></a><hr color="#EEEEEE"><a href="#top" style="font-size: 0.9em">Back to top</a><br><br><a name="IDSJG4TITLV4JQHTGWYTS3HCTRTN2A1MLJMSKGORFNQJ2XTSA2FSXJ"><h2>Board Slots</h2></a><a name="IDWLPB5BSZUK0ACPU2SRDVZ4HGWGWTK033QFM1MBJA0IYTUM20QXDF"><table>
+<tr>
+<th class="column1">Non-Plated Slot Size / Length</th>
+<th class="column2">Pads</th>
+</tr>
+<tr>
+<td style="font-weight : bold; text-align : right" class="column1">Total</td>
+<td style="font-weight : bold" class="column2">0</td>
+</tr>
+</table></a><hr color="#EEEEEE"><a href="#top" style="font-size: 0.9em">Back to top</a><br><br><a name="ID1U4LPZG4MLV3GGTRGJIZRYPS1B34ACRJVL4UW3HNFGM3TVLYDTQH"><table>
+<tr>
+<th class="column1">Plated Slot Size / Length</th>
+<th class="column2">Pads</th>
+</tr>
+<tr>
+<td style="font-weight : bold; text-align : right" class="column1">Total</td>
+<td style="font-weight : bold" class="column2">0</td>
+</tr>
+</table></a><hr color="#EEEEEE"><a href="#top" style="font-size: 0.9em">Back to top</a><br><br><a name="IDC51TP2X4WS25P20UBME4UOHMEPFD2SNRZT5DVRNTSZE4GKMGFXWK"><h2>Board Square Holes</h2></a><a name="IDUP0KVN4T2XJ2ELCHACCBXOQDWF1HZLG0O2KW1VICTVJVMXIPHCUD"><table>
+<tr>
+<th class="column1">Non-Plated Square Hole Size</th>
+<th class="column2">Pads</th>
+</tr>
+<tr>
+<td style="font-weight : bold; text-align : right" class="column1">Total</td>
+<td style="font-weight : bold" class="column2">0</td>
+</tr>
+</table></a><hr color="#EEEEEE"><a href="#top" style="font-size: 0.9em">Back to top</a><br><br><a name="IDYWOZC2A12FDJPLLH04B1NJA02ODHP4BJVLW4VVUC50PY4FZHMMH"><table>
+<tr>
+<th class="column1">Plated Square Hole Size</th>
+<th class="column2">Pads</th>
+</tr>
+<tr>
+<td style="font-weight : bold; text-align : right" class="column1">Total</td>
+<td style="font-weight : bold" class="column2">0</td>
+</tr>
+</table></a><hr color="#EEEEEE"><a href="#top" style="font-size: 0.9em">Back to top</a><br><br><a name="IDBONTVNJH4IKFCTCZKNSRKWUM5PKGB100AUOURQFT24QUBWW0S4JL"><h2>Other</h2></a><a name="ID25Q4V0DK4ICHK4SUB1JWEBZEZDXIQBHHH10TMTL41BJP33SWCASL"><table>
+<tr>
+<th class="column1">Top Layer Annular Ring Size</th>
+<th class="column2">Count</th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a name="coordinate" value="-1220472">-3.1mm
+			</a></td>
+<td class="column2">12</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a name="coordinate" value="78740">0.2mm
+			</a></td>
+<td class="column2">617</td>
+</tr>
+<tr>
+<td style="font-weight : bold; text-align : right" class="column1">Total</td>
+<td style="font-weight : bold" class="column2">629</td>
+</tr>
+</table></a><hr color="#EEEEEE"><a href="#top" style="font-size: 0.9em">Back to top</a><br><br><a name="IDLQ1IPIRQSPGOD02I2GLLMH5EOC5ZB5REXIL1SIFCPCYWHEYQS2FO"><table>
+<tr>
+<th class="column1">Mid Layer Annular Ring Size</th>
+<th class="column2">Count</th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a name="coordinate" value="-1220472">-3.1mm
+			</a></td>
+<td class="column2">12</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a name="coordinate" value="78740">0.2mm
+			</a></td>
+<td class="column2">617</td>
+</tr>
+<tr>
+<td style="font-weight : bold; text-align : right" class="column1">Total</td>
+<td style="font-weight : bold" class="column2">629</td>
+</tr>
+</table></a><hr color="#EEEEEE"><a href="#top" style="font-size: 0.9em">Back to top</a><br><br><a name="IDS4TBPZAPXJFOD1UYRCWV04F44HMXUC2CW23O3UOAZVRIYJGMZMNE"><table>
+<tr>
+<th class="column1">Bottom Layer Annular Ring Size</th>
+<th class="column2">Count</th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a name="coordinate" value="-1220472">-3.1mm
+			</a></td>
+<td class="column2">12</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a name="coordinate" value="78740">0.2mm
+			</a></td>
+<td class="column2">617</td>
+</tr>
+<tr>
+<td style="font-weight : bold; text-align : right" class="column1">Total</td>
+<td style="font-weight : bold" class="column2">629</td>
+</tr>
+</table></a><hr color="#EEEEEE"><a href="#top" style="font-size: 0.9em">Back to top</a><br><br><a name="IDADFWML4PMIH5MPBHQJ44F40WTEIT1ZJDRVFMMXF1SKSJ0H3WG40C"><table>
+<tr>
+<th class="column1">Pad Solder Mask</th>
+<th class="column2">Count</th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a name="coordinate" value="40000">0.1016mm
+			</a></td>
+<td class="column2">24</td>
+</tr>
+<tr>
+<td style="font-weight : bold; text-align : right" class="column1">Total</td>
+<td style="font-weight : bold" class="column2">24</td>
+</tr>
+</table></a><hr color="#EEEEEE"><a href="#top" style="font-size: 0.9em">Back to top</a><br><br><a name="IDRI41VDBIFGPAOWUYPFGPQHRXEJAT34LAUHDXPMD1OUDXFHTK4MKM"><table>
+<tr>
+<th class="column1">Pad Paste Mask</th>
+<th class="column2">Count</th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a name="coordinate" value="0">0mm
+			</a></td>
+<td class="column2">24</td>
+</tr>
+<tr>
+<td style="font-weight : bold; text-align : right" class="column1">Total</td>
+<td style="font-weight : bold" class="column2">24</td>
+</tr>
+</table></a><hr color="#EEEEEE"><a href="#top" style="font-size: 0.9em">Back to top</a><br><br><a name="ID35B3XETNPRWCFOJBPUXQN0ADUNGYF134RCYSVHREA4VAOGHH1PJ"><table>
+<tr>
+<th class="column1">Pad Pwr/Gnd Expansion</th>
+<th class="column2">Count</th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a name="coordinate" value="200000">0.508mm
+			</a></td>
+<td class="column2">24</td>
+</tr>
+<tr>
+<td style="font-weight : bold; text-align : right" class="column1">Total</td>
+<td style="font-weight : bold" class="column2">24</td>
+</tr>
+</table></a><hr color="#EEEEEE"><a href="#top" style="font-size: 0.9em">Back to top</a><br><br><a name="IDS4FVY3WFB1TWGUF1CGN3K3RRGK3RXASKMZAMBNBYYKZF1VIKYO1I"><table>
+<tr>
+<th class="column1">Pad Relief Conductor Width</th>
+<th class="column2">Count</th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a name="coordinate" value="100000">0.254mm
+			</a></td>
+<td class="column2">24</td>
+</tr>
+<tr>
+<td style="font-weight : bold; text-align : right" class="column1">Total</td>
+<td style="font-weight : bold" class="column2">24</td>
+</tr>
+</table></a><hr color="#EEEEEE"><a href="#top" style="font-size: 0.9em">Back to top</a><br><br><a name="IDPQPMLESERHZFJWGKKW3ZH3D1XEGWDITL2CTNKMOSFHG4KRD3FMAD"><table>
+<tr>
+<th class="column1">Pad Relief Air Gap</th>
+<th class="column2">Count</th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a name="coordinate" value="100000">0.254mm
+			</a></td>
+<td class="column2">24</td>
+</tr>
+<tr>
+<td style="font-weight : bold; text-align : right" class="column1">Total</td>
+<td style="font-weight : bold" class="column2">24</td>
+</tr>
+</table></a><hr color="#EEEEEE"><a href="#top" style="font-size: 0.9em">Back to top</a><br><br><a name="IDNAYMUCBQTNVUNKYIL4ZWD1KC5KHAD5SBZ2AJP2MRO2A4KQBRCRW"><table>
+<tr>
+<th class="column1">Pad Relief Entries</th>
+<th class="column2">Count</th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1">4</td>
+<td class="column2">24</td>
+</tr>
+<tr>
+<td style="font-weight : bold; text-align : right" class="column1">Total</td>
+<td style="font-weight : bold" class="column2">24</td>
+</tr>
+</table></a><hr color="#EEEEEE"><a href="#top" style="font-size: 0.9em">Back to top</a><br><br><a name="IDBDJWNWOE3IQ2ITQH3D5FUEJZAKBJDX3DXLCHS0J0J1PZHTYSRKBE"><table>
+<tr>
+<th class="column1">Via Solder Mask</th>
+<th class="column2">Count</th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a name="coordinate" value="40000">0.1016mm
+			</a></td>
+<td class="column2">617</td>
+</tr>
+<tr>
+<td style="font-weight : bold; text-align : right" class="column1">Total</td>
+<td style="font-weight : bold" class="column2">617</td>
+</tr>
+</table></a><hr color="#EEEEEE"><a href="#top" style="font-size: 0.9em">Back to top</a><br><br><a name="IDVZ4OKWDVJZYKORMO53OTZ4CFLDHH4MQXDGVL0DEISXOLQWIKJSSM"><table>
+<tr>
+<th class="column1">Via Pwr/Gnd Expansion</th>
+<th class="column2">Count</th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a name="coordinate" value="200000">0.508mm
+			</a></td>
+<td class="column2">617</td>
+</tr>
+<tr>
+<td style="font-weight : bold; text-align : right" class="column1">Total</td>
+<td style="font-weight : bold" class="column2">617</td>
+</tr>
+</table></a><hr color="#EEEEEE"><a href="#top" style="font-size: 0.9em">Back to top</a><br><br><a name="IDRVE0FVYJEL1BJXVXR0WPVSFETN4QESUFTNISTGIUKRTBNJZVQ4ZO"><table>
+<tr>
+<th class="column1">Track Width</th>
+<th class="column2">Count</th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a name="coordinate" value="100000">0.254mm
+			</a></td>
+<td class="column2">12</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a name="coordinate" value="196850">0.5mm
+			</a></td>
+<td class="column2">2205</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a name="coordinate" value="787402">2mm
+			</a></td>
+<td class="column2">4</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a name="coordinate" value="984252">2.5mm
+			</a></td>
+<td class="column2">12</td>
+</tr>
+<tr>
+<td style="font-weight : bold; text-align : right" class="column1">Total</td>
+<td style="font-weight : bold" class="column2">2233</td>
+</tr>
+</table></a><hr color="#EEEEEE"><a href="#top" style="font-size: 0.9em">Back to top</a><br><br><a name="ID55JD35CMRWT0BP2T2H5HGYB0RMWGCPPFMGFE2EHGZBSU330GZI0P"><table>
+<tr>
+<th class="column1">Arc Line Width</th>
+<th class="column2">Count</th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a name="coordinate" value="100000">0.254mm
+			</a></td>
+<td class="column2">13</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a name="coordinate" value="196850">0.5mm
+			</a></td>
+<td class="column2">4110</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a name="coordinate" value="787402">2mm
+			</a></td>
+<td class="column2">3</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a name="coordinate" value="984252">2.5mm
+			</a></td>
+<td class="column2">3</td>
+</tr>
+<tr>
+<td style="font-weight : bold; text-align : right" class="column1">Total</td>
+<td style="font-weight : bold" class="column2">4129</td>
+</tr>
+</table></a><hr color="#EEEEEE"><a href="#top" style="font-size: 0.9em">Back to top</a><br><br><a name="IDOWFROO0DOF5DOSDIBPW2VQZBKDXBSPCVMJJOZKPQSDHWHQC5REVD"><table>
+<tr>
+<th class="column1">Arc Radius</th>
+<th class="column2">Count</th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a name="coordinate" value="354331">0.9mm
+			</a></td>
+<td class="column2">144</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a name="coordinate" value="561024">1.425mm
+			</a></td>
+<td class="column2">144</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a name="coordinate" value="808829">2.0544mm
+			</a></td>
+<td class="column2">144</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a name="coordinate" value="836614">2.125mm
+			</a></td>
+<td class="column2">144</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a name="coordinate" value="984252">2.5mm
+			</a></td>
+<td class="column2">144</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a name="coordinate" value="1084420">2.7544mm
+			</a></td>
+<td class="column2">144</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a name="coordinate" value="1150435">2.9221mm
+			</a></td>
+<td class="column2">144</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a name="coordinate" value="1181102">3mm
+			</a></td>
+<td class="column2">156</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a name="coordinate" value="1771654">4.5mm
+			</a></td>
+<td class="column2">144</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a name="coordinate" value="1968504">5mm
+			</a></td>
+<td class="column2">144</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a name="coordinate" value="2362205">6mm
+			</a></td>
+<td class="column2">135</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a name="coordinate" value="2559055">6.5mm
+			</a></td>
+<td class="column2">141</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a name="coordinate" value="4921260">12.5mm
+			</a></td>
+<td class="column2">1</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a name="coordinate" value="5314961">13.5mm
+			</a></td>
+<td class="column2">207</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a name="coordinate" value="5511811">14mm
+			</a></td>
+<td class="column2">207</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a name="coordinate" value="5629921">14.3mm
+			</a></td>
+<td class="column2">144</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a name="coordinate" value="5787402">14.7mm
+			</a></td>
+<td class="column2">285</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a name="coordinate" value="5826772">14.8mm
+			</a></td>
+<td class="column2">144</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a name="coordinate" value="5984252">15.2mm
+			</a></td>
+<td class="column2">285</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a name="coordinate" value="6102362">15.5mm
+			</a></td>
+<td class="column2">144</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a name="coordinate" value="6259843">15.9mm
+			</a></td>
+<td class="column2">276</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a name="coordinate" value="6299213">16mm
+			</a></td>
+<td class="column2">144</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a name="coordinate" value="6456693">16.4mm
+			</a></td>
+<td class="column2">276</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a name="coordinate" value="6574803">16.7mm
+			</a></td>
+<td class="column2">144</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a name="coordinate" value="6771654">17.2mm
+			</a></td>
+<td class="column2">144</td>
+</tr>
+<tr>
+<td style="font-weight : bold; text-align : right" class="column1">Total</td>
+<td style="font-weight : bold" class="column2">4129</td>
+</tr>
+</table></a><hr color="#EEEEEE"><a href="#top" style="font-size: 0.9em">Back to top</a><br><br><a name="ID3M04MDVMRK5VPDKWEDLY303WZPMHL2EIQYSQA3FSYMG0G43AJD5C"><table>
+<tr>
+<th class="column1">Arc Degrees</th>
+<th class="column2">Count</th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1">2</td>
+<td class="column2">78</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1">3</td>
+<td class="column2">150</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1">4</td>
+<td class="column2">636</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1">5</td>
+<td class="column2">510</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1">6</td>
+<td class="column2">144</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1">7</td>
+<td class="column2">63</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1">8</td>
+<td class="column2">324</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1">9</td>
+<td class="column2">63</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1">15</td>
+<td class="column2">216</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1">16</td>
+<td class="column2">216</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1">30</td>
+<td class="column2">12</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1">49</td>
+<td class="column2">144</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1">55</td>
+<td class="column2">144</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1">56</td>
+<td class="column2">144</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1">59</td>
+<td class="column2">279</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1">62</td>
+<td class="column2">135</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1">66</td>
+<td class="column2">144</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1">73</td>
+<td class="column2">3</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1">74</td>
+<td class="column2">144</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1">79</td>
+<td class="column2">144</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1">80</td>
+<td class="column2">144</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1">83</td>
+<td class="column2">288</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1">85</td>
+<td class="column2">3</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1">360</td>
+<td class="column2">1</td>
+</tr>
+<tr>
+<td style="font-weight : bold; text-align : right" class="column1">Total</td>
+<td style="font-weight : bold" class="column2">4129</td>
+</tr>
+</table></a><hr color="#EEEEEE"><a href="#top" style="font-size: 0.9em">Back to top</a><br><br><a name="IDXPW51OKPTQ4ONKW3QXP24TXPSJN3YPFW1YS2KNDWNOLRRWZ2RE5E"><table>
+<tr>
+<th class="column1">Net Track Width</th>
+<th class="column2">Count</th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a name="coordinate" value="100000">0.254mm
+			</a></td>
+<td class="column2">3</td>
+</tr>
+<tr>
+<td style="font-weight : bold; text-align : right" class="column1">Total</td>
+<td style="font-weight : bold" class="column2">3</td>
+</tr>
+</table></a><hr color="#EEEEEE"><a href="#top" style="font-size: 0.9em">Back to top</a><br><br><a name="IDBX1J2CGRVXBSIMDITUEWAE0JLEQDDX5JO5EOWQO45ZYDIKBOGQKB"><table>
+<tr>
+<th class="column1">Net Via Size</th>
+<th class="column2">Count</th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a name="coordinate" value="500000">1.27mm
+			</a></td>
+<td class="column2">3</td>
+</tr>
+<tr>
+<td style="font-weight : bold; text-align : right" class="column1">Total</td>
+<td style="font-weight : bold" class="column2">3</td>
+</tr>
+</table></a><hr color="#EEEEEE"><a href="#top" style="font-size: 0.9em">Back to top</a><br><br></body>
+</html>

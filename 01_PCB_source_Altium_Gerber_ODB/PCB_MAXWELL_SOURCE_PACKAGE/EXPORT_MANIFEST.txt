@@ -1,0 +1,179 @@
+PCB MAXWELL SOURCE PACKAGE - EXPORT MANIFEST
+============================================
+
+Source PcbDoc filename: mini_wave-bb_nets_complete.PcbDoc
+Source SHA256: 82394e31f1e229d65b8c353942e3ba01bee26a9ba69fc68a9732cff1eb4858bb
+Altium version: Altium Designer Develop 26.10.1.6
+Export/package date: 2026-10-02T23:33:49+02:00
+Units: millimetres
+Board dimensions: 93.25475888 x 93.25475888 mm bounding / flat-to-flat; 96.25535957 mm maximum corner-to-corner
+Copper layer count: 6
+Total Altium source thickness including masks: 0.6159246 mm
+
+L1-L6 physical mapping:
+- L1: Top Layer / ODB top_layer / Gerber mini_wave-bb_nets_complete.GTL / copper 0.03556 mm
+- L2: Layer 1 / ODB layer_1 / Gerber mini_wave-bb_nets_complete.G1 / copper 0.0350012 mm
+- L3: Layer 2 / ODB layer_2 / Gerber mini_wave-bb_nets_complete.G2 / copper 0.0350012 mm
+- L4: Layer 3 / ODB layer_3 / Gerber mini_wave-bb_nets_complete.G3 / copper 0.0350012 mm
+- L5: Layer 4 / ODB layer_4 / Gerber mini_wave-bb_nets_complete.G4 / copper 0.0350012 mm
+- L6: Bottom Layer / ODB bottom_layer / Gerber mini_wave-bb_nets_complete.GBL / copper 0.03556 mm
+
+PHASE_A electrical vias: 207
+PHASE_B electrical vias: 205
+PHASE_C electrical vias: 205
+Total electrical vias: 617
+Unassigned electrical vias: 0
+Mechanical NPTH count: 12 (No Net)
+Via OD: 0.5000 mm
+Via drill diameter: 0.3000 mm
+Via layer span: Top Layer to Bottom Layer
+
+Edits made during this session:
+- Source copied to MASTER and timestamped FROZEN files before new reports.
+- Net Status and DRC reports generated; package reports/archives/images created.
+- No source net metadata changed.
+Physical geometry modified: NO
+
+Availability notes:
+- No associated Altium project files were present; the board was a Free Document.
+- IPC-D-356/356A was unavailable in this Altium installation; no synthetic IPC file was created.
+- Complete corrected AEDB directory is included and zipped with its directory structure.
+
+Generated/included files:
+- 01_ALTIUM_SOURCE/SOURCE_PROVENANCE.txt
+- 01_ALTIUM_SOURCE/mini_wave-bb_nets_complete.PcbDoc
+- 01_ALTIUM_SOURCE/mini_wave-bb_nets_complete_FROZEN_20261002_231321.PcbDoc
+- 01_ALTIUM_SOURCE/mini_wave-bb_nets_complete_MASTER.PcbDoc
+- 02_STACKUP/Altium_Layer_Stack.csv
+- 02_STACKUP/Altium_Layer_Stack_Report.txt
+- 02_STACKUP/L1_L6_PHYSICAL_MAPPING.csv
+- 03_GERBERS/PCB.Cam
+- 03_GERBERS/mini_wave-bb_nets_complete-macro.APR_LIB
+- 03_GERBERS/mini_wave-bb_nets_complete.EXTREP
+- 03_GERBERS/mini_wave-bb_nets_complete.G1
+- 03_GERBERS/mini_wave-bb_nets_complete.G2
+- 03_GERBERS/mini_wave-bb_nets_complete.G3
+- 03_GERBERS/mini_wave-bb_nets_complete.G4
+- 03_GERBERS/mini_wave-bb_nets_complete.GBL
+- 03_GERBERS/mini_wave-bb_nets_complete.GBO
+- 03_GERBERS/mini_wave-bb_nets_complete.GBP
+- 03_GERBERS/mini_wave-bb_nets_complete.GBS
+- 03_GERBERS/mini_wave-bb_nets_complete.GM
+- 03_GERBERS/mini_wave-bb_nets_complete.GTL
+- 03_GERBERS/mini_wave-bb_nets_complete.GTO
+- 03_GERBERS/mini_wave-bb_nets_complete.GTP
+- 03_GERBERS/mini_wave-bb_nets_complete.GTS
+- 03_GERBERS/mini_wave-bb_nets_complete.apr
+- 04_DRILLS/Status Report.Txt
+- 04_DRILLS/mini_wave-bb_nets_complete.DRR
+- 04_DRILLS/mini_wave-bb_nets_complete.LDP
+- 04_DRILLS/mini_wave-bb_nets_complete_COMBINED_ORIGINAL.TXT
+- 04_DRILLS/mini_wave-bb_nets_complete_NPTH.TXT
+- 04_DRILLS/mini_wave-bb_nets_complete_PTH.TXT
+- 05_ODBPP/mini_wave-bb_nets_complete.REP
+- 05_ODBPP/mini_wave-bb_nets_complete.tgz
+- 05_ODBPP/mini_wave-bb_nets_complete.zip
+- 05_ODBPP/mini_wave-bb_nets_complete_ODBPP_VERIFIED.zip
+- 05_ODBPP/odb/fonts/standard
+- 05_ODBPP/odb/matrix/matrix
+- 05_ODBPP/odb/misc/attrlist
+- 05_ODBPP/odb/misc/info
+- 05_ODBPP/odb/steps/pcb/attrlist
+- 05_ODBPP/odb/steps/pcb/eda/data
+- 05_ODBPP/odb/steps/pcb/layers/bottom_layer/attrlist
+- 05_ODBPP/odb/steps/pcb/layers/bottom_layer/features
+- 05_ODBPP/odb/steps/pcb/layers/bottom_overlay/attrlist
+- 05_ODBPP/odb/steps/pcb/layers/bottom_overlay/features
+- 05_ODBPP/odb/steps/pcb/layers/bottom_paste/attrlist
+- 05_ODBPP/odb/steps/pcb/layers/bottom_paste/features
+- 05_ODBPP/odb/steps/pcb/layers/bottom_solder/attrlist
+- 05_ODBPP/odb/steps/pcb/layers/bottom_solder/features
+- 05_ODBPP/odb/steps/pcb/layers/dielectric_1/attrlist
+- 05_ODBPP/odb/steps/pcb/layers/dielectric_1/features
+- 05_ODBPP/odb/steps/pcb/layers/dielectric_2/attrlist
+- 05_ODBPP/odb/steps/pcb/layers/dielectric_2/features
+- 05_ODBPP/odb/steps/pcb/layers/dielectric_5/attrlist
+- 05_ODBPP/odb/steps/pcb/layers/dielectric_5/features
+- 05_ODBPP/odb/steps/pcb/layers/dielectric_6/attrlist
+- 05_ODBPP/odb/steps/pcb/layers/dielectric_6/features
+- 05_ODBPP/odb/steps/pcb/layers/dielectric_9/attrlist
+- 05_ODBPP/odb/steps/pcb/layers/dielectric_9/features
+- 05_ODBPP/odb/steps/pcb/layers/drill_non-plated_bottom_layer-top_layer/attrlist
+- 05_ODBPP/odb/steps/pcb/layers/drill_non-plated_bottom_layer-top_layer/features
+- 05_ODBPP/odb/steps/pcb/layers/drill_non-plated_bottom_layer-top_layer/tools
+- 05_ODBPP/odb/steps/pcb/layers/drill_plated_bottom_layer-top_layer/attrlist
+- 05_ODBPP/odb/steps/pcb/layers/drill_plated_bottom_layer-top_layer/features
+- 05_ODBPP/odb/steps/pcb/layers/drill_plated_bottom_layer-top_layer/tools
+- 05_ODBPP/odb/steps/pcb/layers/layer_1/attrlist
+- 05_ODBPP/odb/steps/pcb/layers/layer_1/features
+- 05_ODBPP/odb/steps/pcb/layers/layer_2/attrlist
+- 05_ODBPP/odb/steps/pcb/layers/layer_2/features
+- 05_ODBPP/odb/steps/pcb/layers/layer_3/attrlist
+- 05_ODBPP/odb/steps/pcb/layers/layer_3/features
+- 05_ODBPP/odb/steps/pcb/layers/layer_4/attrlist
+- 05_ODBPP/odb/steps/pcb/layers/layer_4/features
+- 05_ODBPP/odb/steps/pcb/layers/rout/features
+- 05_ODBPP/odb/steps/pcb/layers/rout/tools
+- 05_ODBPP/odb/steps/pcb/layers/top_layer/attrlist
+- 05_ODBPP/odb/steps/pcb/layers/top_layer/features
+- 05_ODBPP/odb/steps/pcb/layers/top_overlay/attrlist
+- 05_ODBPP/odb/steps/pcb/layers/top_overlay/features
+- 05_ODBPP/odb/steps/pcb/layers/top_paste/attrlist
+- 05_ODBPP/odb/steps/pcb/layers/top_paste/features
+- 05_ODBPP/odb/steps/pcb/layers/top_solder/attrlist
+- 05_ODBPP/odb/steps/pcb/layers/top_solder/features
+- 05_ODBPP/odb/steps/pcb/netlists/cadnet/netlist
+- 05_ODBPP/odb/steps/pcb/profile
+- 05_ODBPP/odb/steps/pcb/stephdr
+- 06_AEDB/AEDB_PROVENANCE.txt
+- 06_AEDB/mini_wave-bb_nets_vias_BC_corrected.aedb.zip
+- 06_AEDB/mini_wave-bb_nets_vias_BC_corrected.aedb/edb.def
+- 06_AEDB/mini_wave-bb_nets_vias_BC_corrected.aedb/edb.def+
+- 06_AEDB/mini_wave-bb_nets_vias_BC_corrected.aedb/edb.def.bak
+- 07_NETLISTS/ALL_EXTERNAL_PHASE_PADS.csv
+- 07_NETLISTS/ALL_VIAS_WITH_NETS.csv
+- 07_NETLISTS/Altium_Net_Status.html
+- 07_NETLISTS/Altium_Net_Status.txt
+- 07_NETLISTS/IPC_D_356_NOT_AVAILABLE.txt
+- 07_NETLISTS/ODBPP_CADNET_CONNECTIVITY.txt
+- 07_NETLISTS/ODBPP_EDA_CONNECTIVITY.txt
+- 07_NETLISTS/PHASE_A_NET_REPORT.txt
+- 07_NETLISTS/PHASE_A_VIAS.csv
+- 07_NETLISTS/PHASE_B_NET_REPORT.txt
+- 07_NETLISTS/PHASE_B_VIAS.csv
+- 07_NETLISTS/PHASE_C_NET_REPORT.txt
+- 07_NETLISTS/PHASE_C_VIAS.csv
+- 08_REPORTS/Altium_Board_Information.html
+- 08_REPORTS/Altium_Board_Information.txt
+- 08_REPORTS/Altium_Design_Rule_Check.drc
+- 08_REPORTS/Altium_Design_Rule_Check.html
+- 08_REPORTS/DRC_CONNECTIVITY_SUMMARY.txt
+- 08_REPORTS/SESSION_EDIT_RECORD.txt
+- 09_MECHANICAL/COORDINATE_SYSTEM_REFERENCE.txt
+- 09_MECHANICAL/NPTH_MECHANICAL_HOLE_POSITIONS.csv
+- 09_MECHANICAL/PCB_DIMENSIONS_REPORT.txt
+- 09_MECHANICAL/mini_wave-bb_nets_complete_BOARD_OUTLINE_NATIVE.dxf
+- 09_MECHANICAL/mini_wave-bb_nets_complete_corrected.step
+- 10_REFERENCE_IMAGES/Altium_Layer_Stack_Manager.png
+- 10_REFERENCE_IMAGES/Altium_corrected_board_view.jpg
+- 10_REFERENCE_IMAGES/L1_Top_Layer_ONLY.png
+- 10_REFERENCE_IMAGES/L2_Layer_1_ONLY.png
+- 10_REFERENCE_IMAGES/L3_Layer_2_ONLY.png
+- 10_REFERENCE_IMAGES/L4_Layer_3_ONLY.png
+- 10_REFERENCE_IMAGES/L5_Layer_4_ONLY.png
+- 10_REFERENCE_IMAGES/L6_Bottom_Layer_ONLY.png
+- 10_REFERENCE_IMAGES/PHASE_A_HIGHLIGHT.png
+- 10_REFERENCE_IMAGES/PHASE_B_HIGHLIGHT.png
+- 10_REFERENCE_IMAGES/PHASE_C_HIGHLIGHT.png
+- 11_ORIGINAL_FABRICATION_FILES/ORIGINAL_GITHUB_FABRICATION_SET/mini_wave-bb.G1
+- 11_ORIGINAL_FABRICATION_FILES/ORIGINAL_GITHUB_FABRICATION_SET/mini_wave-bb.G2
+- 11_ORIGINAL_FABRICATION_FILES/ORIGINAL_GITHUB_FABRICATION_SET/mini_wave-bb.G3
+- 11_ORIGINAL_FABRICATION_FILES/ORIGINAL_GITHUB_FABRICATION_SET/mini_wave-bb.G4
+- 11_ORIGINAL_FABRICATION_FILES/ORIGINAL_GITHUB_FABRICATION_SET/mini_wave-bb.GBL
+- 11_ORIGINAL_FABRICATION_FILES/ORIGINAL_GITHUB_FABRICATION_SET/mini_wave-bb.GM
+- 11_ORIGINAL_FABRICATION_FILES/ORIGINAL_GITHUB_FABRICATION_SET/mini_wave-bb.GTL
+- 11_ORIGINAL_FABRICATION_FILES/ORIGINAL_GITHUB_FABRICATION_SET/mini_wave-bb.TXT
+- 11_ORIGINAL_FABRICATION_FILES/ORIGINAL_GITHUB_FABRICATION_SET/original_source.PcbDoc
+- 11_ORIGINAL_FABRICATION_FILES/README.txt
+- EXPORT_MANIFEST.txt
+- SHA256_MANIFEST.csv

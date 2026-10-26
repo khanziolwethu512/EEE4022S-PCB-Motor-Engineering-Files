@@ -1,0 +1,7 @@
+physical_layer,altium,odb,gerber,copper_thickness_mm
+L1,Top Layer,top_layer,mini_wave-bb_nets_complete.GTL,0.03556
+L2,Layer 1,layer_1,mini_wave-bb_nets_complete.G1,0.0350012
+L3,Layer 2,layer_2,mini_wave-bb_nets_complete.G2,0.0350012
+L4,Layer 3,layer_3,mini_wave-bb_nets_complete.G3,0.0350012
+L5,Layer 4,layer_4,mini_wave-bb_nets_complete.G4,0.0350012
+L6,Bottom Layer,bottom_layer,mini_wave-bb_nets_complete.GBL,0.03556

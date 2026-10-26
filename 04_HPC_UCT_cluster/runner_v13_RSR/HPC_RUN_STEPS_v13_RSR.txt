@@ -1,0 +1,88 @@
+R-S-R DESIGN STUDY (v13) - UCT HPC run steps                                                       23 Oct 2026
+======================================================================================================
+R-S-R = one Rev0 stator (5 boards) between two Rev0 rotors. The lower rotor's magnets face the stator from below
+with the SAME magnetisation vector as the upper ones, so the field passes straight through the stator. Original
+geometry: 1.0 mm gaps both sides, 2 mm steel plates, 86/19 mm. Simulation-only design study (not built).
+
+hpc_motor.py in this folder: file sha da450e6ccb1c, code folder code_33a7dc7bdc. It contains every earlier profile
+too, so it replaces the v12 runner.
+
+ALWAYS SUBMIT FROM YOUR HOME FOLDER WITH ~/hpc_motor.py (submitting from /scratch picks up an old copy).
+
+WHAT RUNS
+  Batch A (now, together):
+    FIELDMAP_REV0_HW    method check on the KNOWN Rev0: 12 angles over half a period + the new post-processing
+                        (waveform, eddy from the static field, plate |B|). Must reproduce the archived rotating run:
+                        K1 19.47, E1 1.442 V rms/1000 rpm, THD 5.5 %, ripple 1.26 %, eddy 20.35 mW.   16 cores, ~2-4 h
+                        (ignore its "VALIDATION GATE ... 6.0917 FAIL" line - that old gate value predates the 20 mm runs)
+    FIELDMAP_RSR_P20    R-S-R machine: K, back-EMF waveform/harmonics, ripple, eddy loss, both plates' |B|   16 cores, ~2-4 h
+    DIAG_RSR_B1/B2/B3   detailed boards 1-3 in the R-S-R environment, +/-I (the reference K, like Rev0)      8 cores each, ~3-4 h
+  Batch B (after batch A has finished AND you have cleaned the disk, see C):
+    DIAG_RSR_B4/B5      detailed boards 4-5                                                                  8 cores each, ~3-4 h
+    EQ_RSR_ISWEEP       current sweep 0/1/3 A + armature-only inductance (needs FIELDMAP_RSR_P20 finished)   24 cores, ~5-7 h
+
+A. LAPTOP (Windows CMD) - in the folder where you unzipped this package
+------------------------------------------------------------------------
+pscp hpc_motor.py khnolw003@hpc.uct.ac.za:/home/khnolw003/hpc_motor.py
+
+B. HPC (PuTTY) - batch A
+------------------------
+cd ~
+
+sha256sum hpc_motor.py | cut -c1-12
+# must print da450e6ccb1c
+
+# first finish the v12 clean-up if you have not (frees ~8 GB):
+cd /scratch/khnolw003/pcbmotor_hpc
+tar czf ~/v12_final.tgz --exclude="*.fld" RESULTS_DIAG_REV1S_S2_B1 RESULTS_DIAG_REV1S_S2_B5 RESULTS_FMROT_REV1S_N2000 && rm -rf DIAG_REV1S_S2_B1/aedt DIAG_REV1S_S2_B5/aedt FMROT_REV1S_N2000/aedt
+du -sh .
+# should be around 11 GB
+cd ~
+
+sbatch --ntasks=16 --time=24:00:00 ~/hpc_motor.py --mode lab --motor FIELDMAP_REV0_HW --max-resubmits 1 --allow-no-quota
+sbatch --ntasks=16 --time=24:00:00 ~/hpc_motor.py --mode lab --motor FIELDMAP_RSR_P20 --max-resubmits 1 --allow-no-quota
+sbatch --ntasks=8 --time=12:00:00 ~/hpc_motor.py --mode lab --motor DIAG_RSR_B1 --max-resubmits 0 --allow-no-quota
+sbatch --ntasks=8 --time=12:00:00 ~/hpc_motor.py --mode lab --motor DIAG_RSR_B2 --max-resubmits 0 --allow-no-quota
+sbatch --ntasks=8 --time=12:00:00 ~/hpc_motor.py --mode lab --motor DIAG_RSR_B3 --max-resubmits 0 --allow-no-quota
+
+squeue -u khnolw003
+# write down the five job numbers
+
+C. HPC - when batch A is done: results, clean-up, batch B
+----------------------------------------------------------
+cd /scratch/khnolw003/pcbmotor_hpc
+grep -A12 "MACHINE PHASE_A" RESULTS_FIELDMAP_REV0_HW/fieldmap_summary.txt; grep -A12 "BACK-EMF WAVEFORM" RESULTS_FIELDMAP_REV0_HW/fieldmap_summary.txt
+grep -B2 -A40 "Stator S1" RESULTS_FIELDMAP_RSR_P20/fieldmap_summary.txt
+cat RESULTS_DIAG_RSR_B1/diag_summary.txt RESULTS_DIAG_RSR_B2/diag_summary.txt RESULTS_DIAG_RSR_B3/diag_summary.txt
+# paste all of that to Claude
+
+tar czf ~/rsr_batchA.tgz --exclude="*.fld" RESULTS_FIELDMAP_REV0_HW RESULTS_FIELDMAP_RSR_P20 RESULTS_DIAG_RSR_B1 RESULTS_DIAG_RSR_B2 RESULTS_DIAG_RSR_B3 && rm -rf FIELDMAP_REV0_HW/aedt DIAG_RSR_B1/aedt DIAG_RSR_B2/aedt DIAG_RSR_B3/aedt
+du -sh .
+# keep FIELDMAP_RSR_P20 for now (EQ reads its results; its aedt folder can go after batch B)
+cd ~
+
+sbatch --ntasks=8 --time=12:00:00 ~/hpc_motor.py --mode lab --motor DIAG_RSR_B4 --max-resubmits 0 --allow-no-quota
+sbatch --ntasks=8 --time=12:00:00 ~/hpc_motor.py --mode lab --motor DIAG_RSR_B5 --max-resubmits 0 --allow-no-quota
+sbatch --ntasks=24 --time=24:00:00 ~/hpc_motor.py --mode lab --motor EQ_RSR_ISWEEP --max-resubmits 1 --allow-no-quota
+
+D. When batch B is done
+-----------------------
+cat /scratch/khnolw003/pcbmotor_hpc/RESULTS_DIAG_RSR_B4/diag_summary.txt /scratch/khnolw003/pcbmotor_hpc/RESULTS_DIAG_RSR_B5/diag_summary.txt
+cat /scratch/khnolw003/pcbmotor_hpc/RESULTS_EQ_RSR_ISWEEP/eq_isweep_summary.txt
+# paste to Claude; then pack and clean as in C
+
+E. LAB PC (optional, about half a day): Icepak R-S-R, same method as Rev0 / Rev1-S RUN1
+--------------------------------------------------------------------------------------
+Copy Icepak_RSR\REV1_ICEPAK_BUILD.py and run_REV1_ICEPAK_STEADY.py over the ones in your Thermal folder (they still
+do Rev1S / Rev1D / Rev2S exactly as before), then on the lab PC:
+    python REV1_ICEPAK_BUILD.py RSR
+    python run_REV1_ICEPAK_STEADY.py RSR
+Send Claude RSR_ICEPAK_STEADY_RUN1_summary.csv (or the _log.txt).
+
+ACCEPTANCE (fixed before the runs)
+----------------------------------
+FIELDMAP_REV0_HW vs the archived FMROT_REV0 (job 1500352): K1 within 0.5 %, E1/1000 rpm within 0.5 %, H3 within 0.3
+  points, ripple within 0.2 points, eddy within 5 %. Pass -> the static post-processing is valid for R-S-R.
+DIAG_RSR_B*: copper (+I - -I)/2 vs rotor virtual work within 3 %; board psi within 1 deg of each other.
+R-S-R machine K: the detailed-board sum is the reference; it should land within ~1 % of the independent analytical
+  sheet-current prediction, and the field map should read ~2-6 % above it (the known centre-line routing effect).

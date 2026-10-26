@@ -1,0 +1,64 @@
+[REV0 FIELDMAP_REV0    0.0s] Field-only full-motor model FIELDMAP_REV0_P20 (Rev0), 8 angles, modules from C:\Users\Student\OneDrive - University of Cape Town\EEE4022S Ansys files\Motor run\rev0_v9, solving in C:\Users\Student\Rev0_work
+[REV0 FIELDMAP_REV0    1.7s] Design solution type reported by AEDT: Magnetostatic
+[REV0 FIELDMAP_REV0    1.8s] Project FIELDMAP_REV0_P20 / design Rev0 (Magnetostatic)
+[REV0 FIELDMAP_REV0    1.8s] ASSUMPTION: Stack-up mode 'scaled' - Altium dielectric ratios scaled to 1.000 mm copper+dielectric; NOT the JLCPCB stack-up
+[REV0 FIELDMAP_REV0    1.8s] ASSUMPTION: Solder mask 0.01016 mm each face (source stack-up); board pitch 1.02032 mm
+[REV0 FIELDMAP_REV0    1.8s] ASSUMPTION: Vias = solid 0.30 mm copper (8-sided): fine for conduction/field, low for final resistance
+[REV0 FIELDMAP_REV0    1.8s] ASSUMPTION: Air gap 1.000 mm measured from PCB1 top solder-mask surface to magnet face
+[REV0 FIELDMAP_REV0    1.8s] ASSUMPTION: FR-4 and solder mask modelled as air (mu_r = 1, non-conductive either way); board geometry, pitch and air gap unchanged
+[REV0 FIELDMAP_REV0    1.8s] ASSUMPTION: Inductance matrix not computed (lab-PC freeze at 'Start Matrix')
+[REV0 FIELDMAP_REV0    1.8s] ASSUMPTION: Shaft steel_1010, 19.0 mm dia, rotating; simplified EM representation: rotor side only (band floor to 5.0 mm beyond back iron); section through the stator bore omitted; NOT the physical shaft length; shaft + back iron united as one steel body
+[REV0 FIELDMAP_REV0    1.8s] ASSUMPTION: Field-only full-motor model (Rev0): magnets + steel + air solved in Maxwell, NO PCB copper (mu_r = 1, no current -> no effect on the magnet field); B sampled on the ODB++ trace centre-lines of every board; torque by Lorentz integration; armature reaction and copper eddy effects neglected
+[REV0 FIELDMAP_REV0    1.8s] FIELD-ONLY FULL-MOTOR MODEL Rev0: no PCB copper; B sampled on 5 boards x 3 phases of trace centre-lines
+[REV0 FIELDMAP_REV0    4.0s] Rotor steel: disc (bore not cut) + overlapping 19 mm shaft united as RotorSteel (EM Boolean simplification; same steel volume as disc-with-bore + shaft)
+[REV0 FIELDMAP_REV0    4.0s] Rotor: 16 magnets r 18.0-38.0 mm, z 1.5102-3.5102 (gap 1.000 mm from stator surface z=0.51016); back iron OD 86.0 / ID 19.0 x 2.0 mm; shaft 19.0 mm steel_1010
+[REV0 FIELDMAP_REV0    4.3s] Stator field zone S1Zone: r 13.5-47.5 mm, z -4.89144..1.51016 (no copper; B sampled on the trace paths)
+[REV0 FIELDMAP_REV0    4.3s] Axial level S1_bottom              z =  -4.59144 mm
+[REV0 FIELDMAP_REV0    4.3s] Axial level S1_top                 z =   0.51016 mm
+[REV0 FIELDMAP_REV0    4.3s] Axial level R1_magnet_face         z =   1.51016 mm
+[REV0 FIELDMAP_REV0    4.3s] Rotor position: 16 magnets rotated about +Z by rot_angle
+[REV0 FIELDMAP_REV0    4.4s] Mesh: stator zones max 0.80 mm (at most 500000 elements), magnets max 2.00 mm
+[REV0 FIELDMAP_REV0    4.4s] Magnetostatic setup: 4 passes, 20% refinement, inductance matrix OFF
+[REV0 FIELDMAP_REV0    4.6s] AEDT Validation Check returned True
+[REV0 FIELDMAP_REV0    5.1s] Trace sample points: 180775 (track pieces + via steps, 1 stator(s) x 5 boards x 3 phases)
+[REV0 FIELDMAP_REV0    5.2s] Angle rot_angle = 0 deg ... solving (field only)
+[REV0 FIELDMAP_REV0   48.7s] Field export variant 0: echoed points do not match the requested ones
+[REV0 FIELDMAP_REV0   48.7s] Field export variant 1 accepted (points echoed in mm; |B|max of the probe 0.224 T)
+[REV0 FIELDMAP_REV0   53.2s] Angle 0 deg done in 0.8 min: S1 board 1 phase A k = +5.5861 mWb/rad (detailed FEM at 0 deg: +5.317)
+[REV0 FIELDMAP_REV0   53.4s] Angle rot_angle = 5.625 deg ... solving (field only)
+[REV0 FIELDMAP_REV0  100.1s] Angle 5.625 deg done in 0.8 min: S1 board 1 phase A k = +1.1017 mWb/rad (detailed FEM at 0 deg: +5.317)
+[REV0 FIELDMAP_REV0  100.3s] Angle rot_angle = 11.25 deg ... solving (field only)
+[REV0 FIELDMAP_REV0  148.2s] Angle 11.25 deg done in 0.8 min: S1 board 1 phase A k = -2.5109 mWb/rad (detailed FEM at 0 deg: +5.317)
+[REV0 FIELDMAP_REV0  148.3s] Angle rot_angle = 16.875 deg ... solving (field only)
+[REV0 FIELDMAP_REV0  196.6s] Angle 16.875 deg done in 0.8 min: S1 board 1 phase A k = -6.5741 mWb/rad (detailed FEM at 0 deg: +5.317)
+[REV0 FIELDMAP_REV0  196.8s] Angle rot_angle = 22.5 deg ... solving (field only)
+[REV0 FIELDMAP_REV0  243.2s] Angle 22.5 deg done in 0.8 min: S1 board 1 phase A k = -5.5907 mWb/rad (detailed FEM at 0 deg: +5.317)
+[REV0 FIELDMAP_REV0  243.3s] Angle rot_angle = 28.125 deg ... solving (field only)
+[REV0 FIELDMAP_REV0  291.6s] Angle 28.125 deg done in 0.8 min: S1 board 1 phase A k = -1.0904 mWb/rad (detailed FEM at 0 deg: +5.317)
+[REV0 FIELDMAP_REV0  291.8s] Angle rot_angle = 33.75 deg ... solving (field only)
+[REV0 FIELDMAP_REV0  339.8s] Angle 33.75 deg done in 0.8 min: S1 board 1 phase A k = +2.5256 mWb/rad (detailed FEM at 0 deg: +5.317)
+[REV0 FIELDMAP_REV0  340.0s] Angle rot_angle = 39.375 deg ... solving (field only)
+[REV0 FIELDMAP_REV0  388.6s] Angle 39.375 deg done in 0.8 min: S1 board 1 phase A k = +6.5879 mWb/rad (detailed FEM at 0 deg: +5.317)
+[REV0 FIELDMAP_REV0  388.6s] FIELD-ONLY FEM + TRACE-RESOLVED WINDING POST-PROCESSING - FIELDMAP_REV0_P20 (Rev0)
+[REV0 FIELDMAP_REV0  388.6s] Rotor angles (deg mech): 0, 5.625, 11.25, 16.875, 22.5, 28.125, 33.75, 39.375; k = dLambda/dtheta = -T_copper/I per phase, 1 A into the L1 terminal
+[REV0 FIELDMAP_REV0  388.6s] Gap 1.000 mm, R2 / R1 steel 2.00 / 2.00 mm, zone mesh 0.80 mm, 4 passes
+[REV0 FIELDMAP_REV0  388.7s] 
+[REV0 FIELDMAP_REV0  388.7s] Stator S1 (z offset 0.00000 mm):
+[REV0 FIELDMAP_REV0  388.7s]   board 1 PHASE_A: K1 = 6.3697 mN.m/A, psi = -30.14 deg, H3/H1 = 10.8 %; single-sided distance law at 1.000 mm: 6.1006 (+4.41 %)
+[REV0 FIELDMAP_REV0  388.7s]   board 2 PHASE_A: K1 = 4.7962 mN.m/A, psi = -30.07 deg, H3/H1 = 5.7 %; single-sided distance law at 2.020 mm: 4.4778 (+7.11 %)
+[REV0 FIELDMAP_REV0  388.7s]   board 3 PHASE_A: K1 = 3.5881 mN.m/A, psi = -29.99 deg, H3/H1 = 3.2 %; single-sided distance law at 3.041 mm: 3.2867 (+9.17 %)
+[REV0 FIELDMAP_REV0  388.7s]   board 4 PHASE_A: K1 = 2.7268 mN.m/A, psi = -30.04 deg, H3/H1 = 2.2 %; single-sided distance law at 4.061 mm: 2.4124 (+13.04 %)
+[REV0 FIELDMAP_REV0  388.7s]   board 5 PHASE_A: K1 = 2.0154 mN.m/A, psi = -29.94 deg, H3/H1 = 1.1 %; single-sided distance law at 5.081 mm: 1.7707 (+13.82 %)
+[REV0 FIELDMAP_REV0  388.8s]   STACK S1 PHASE_A: K = 19.496 mN.m/A, psi = -30.06 deg, H3/H1 = 5.9 %
+[REV0 FIELDMAP_REV0  388.8s]   STACK S1 PHASE_B: K = 19.453 mN.m/A, psi = +90.04 deg, H3/H1 = 4.9 %
+[REV0 FIELDMAP_REV0  388.8s]   STACK S1 PHASE_C: K = 19.491 mN.m/A, psi = -149.90 deg, H3/H1 = 5.9 %
+[REV0 FIELDMAP_REV0  388.8s] 
+[REV0 FIELDMAP_REV0  388.8s] MACHINE PHASE_A: K = 19.496 mN.m/A, psi -30.06 deg, H3/H1 5.9 %
+[REV0 FIELDMAP_REV0  388.8s] MACHINE PHASE_B: K = 19.453 mN.m/A, psi +90.04 deg, H3/H1 4.9 %
+[REV0 FIELDMAP_REV0  388.8s] MACHINE PHASE_C: K = 19.491 mN.m/A, psi -149.90 deg, H3/H1 5.9 %
+[REV0 FIELDMAP_REV0  388.9s] 
+[REV0 FIELDMAP_REV0  388.9s] Machine (phase A): T_ideal = 29.2 mN.m per A_pk (1.5 K), E1 = 1.444 V rms at 1000 rpm, R_phase = 1.389 ohm, Km = 0.0203 N.m/sqrt(W)
+[REV0 FIELDMAP_REV0  388.9s] 
+[REV0 FIELDMAP_REV0  388.9s] VALIDATION GATE (S1 board 1 vs detailed single-board FEM 6.0917 mN.m/A, -30.18 deg): FAIL (K1 +4.56 %, psi +0.04 deg; limits 2 % / 1 deg)
+[REV0 FIELDMAP_REV0  388.9s] 
+[REV0 FIELDMAP_REV0  388.9s] Neglected: armature reaction, copper eddy/skin/proximity effects, B averaged over the track cross-section (centre-line sampling). R_phase uses the Gate-1 FEM value 0.2777 ohm per board-phase.

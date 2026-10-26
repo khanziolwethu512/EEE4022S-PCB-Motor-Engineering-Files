@@ -1,0 +1,44 @@
+{
+ "done": {
+  "0|1": {
+   "I": 1.0, 
+   "finished": "2026-10-08 03:35:45", 
+   "minutes": 18.1, 
+   "theta": 0.0, 
+   "values_SI": {
+    "Torque_Cu.Torque": -0.0015715719056075199, 
+    "Torque_Rotor.Torque": 0.0014852658292156999
+   }
+  }, 
+  "11.25|1": {
+   "I": 1.0, 
+   "finished": "2026-10-08 04:10:47", 
+   "minutes": 16.83, 
+   "theta": 11.25, 
+   "values_SI": {
+    "Torque_Cu.Torque": 0.00087003746251799899, 
+    "Torque_Rotor.Torque": -0.00084384234028868496
+   }
+  }, 
+  "16.875|1": {
+   "I": 1.0, 
+   "finished": "2026-10-08 04:30:05", 
+   "minutes": 18.67, 
+   "theta": 16.875, 
+   "values_SI": {
+    "Torque_Cu.Torque": 0.0017796574944735899, 
+    "Torque_Rotor.Torque": -0.0020457684743482099
+   }
+  }, 
+  "5.625|1": {
+   "I": 1.0, 
+   "finished": "2026-10-08 03:53:45", 
+   "minutes": 17.38, 
+   "theta": 5.625, 
+   "values_SI": {
+    "Torque_Cu.Torque": -0.000442656927791472, 
+    "Torque_Rotor.Torque": 0.0008048516108075921
+   }
+  }
+ }
+}

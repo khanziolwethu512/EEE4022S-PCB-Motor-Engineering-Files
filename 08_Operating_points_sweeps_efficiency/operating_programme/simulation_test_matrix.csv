@@ -1,0 +1,17 @@
+machine,test_id,inputs,method,objective,priority,status
+Rev0,V1,1000 rpm; Ipk 1 A; original 1 mm gap,existing FEM cross-check,Confirm torque and EMF coefficients and phase polarity,P0,pending or verify archived output
+Rev0,V2,Ipk +/-1 A; select two angles,static detailed FEM,Torque sign and numerical offset cancellation,P0,pending or verify archived output
+Rev0,V3,single-board B1/B5 + sheet current,reuse completed diagnostic,Preserve resolved 5% current-routing explanation,P0,pending or verify archived output
+Rev0,C1,Ipk 0;0.25;0.5;0.75;1;1.5;2;3 A,reuse FEM current sweep + targeted check,Torque linearity and armature reaction (not current ratings),P1,pending or verify archived output
+Rev0,S1,rpm 250;500;750;1000;1500;2000;3000;4000,1000 rpm FEM + independent 500/2000 rpm verification,EMF scaling; harmonic consistency; eddy-loss assumption,P1,pending or verify archived output
+Rev0,E1,Vdc 6;9;12;15;18;24 V,dq+SVPWM analytical sweep,Voltage-limited operating range; currents and modulation margin,P1,pending or verify archived output
+Rev0,T1,Ta 25/30 C; R measured; winding limit 60 C; realistic cooling scenarios,Icepak revised heat + sensitivity,Thermally limited current under stated boundary conditions,P0,pending or verify archived output
+Rev0,F1,speed-current operating grid under voltage and thermal limits,postprocessing using verified parameters,EM torque-speed and electromagnetic-efficiency envelopes,P1,pending or verify archived output
+Rev1-S,V1,1000 rpm; Ipk 1 A; original 1 mm gap,existing FEM cross-check,Confirm torque and EMF coefficients and phase polarity,P0,pending or verify archived output
+Rev1-S,V2,Ipk +/-1 A; select two angles,static detailed FEM,Torque sign and numerical offset cancellation,P0,pending or verify archived output
+Rev1-S,V3,single-board B1/B5 + sheet current,reuse completed diagnostic,Preserve resolved 5% current-routing explanation,P0,pending or verify archived output
+Rev1-S,C1,Ipk 0;0.25;0.5;0.75;1;1.5;2;3 A,reuse FEM current sweep + targeted check,Torque linearity and armature reaction (not current ratings),P1,pending or verify archived output
+Rev1-S,S1,rpm 250;500;750;1000;1500;2000;3000;4000,1000 rpm FEM + independent 500/2000 rpm verification,EMF scaling; harmonic consistency; eddy-loss assumption,P1,pending or verify archived output
+Rev1-S,E1,Vdc 6;9;12;15;18;24 V,dq+SVPWM analytical sweep,Voltage-limited operating range; currents and modulation margin,P1,pending or verify archived output
+Rev1-S,T1,Ta 25/30 C; R measured; winding limit 60 C; realistic cooling scenarios,Icepak revised heat + sensitivity,Thermally limited current under stated boundary conditions,P0,pending or verify archived output
+Rev1-S,F1,speed-current operating grid under voltage and thermal limits,postprocessing using verified parameters,EM torque-speed and electromagnetic-efficiency envelopes,P1,pending or verify archived output

@@ -1,0 +1,12 @@
+Output: NC Drill Files
+Type  : NC Drill
+From  : Project [Free Documents]
+   Generated File[mini_wave-bb_nets_complete.TXT]
+   Generated File[mini_wave-bb_nets_complete.LDP]
+   Generated File[mini_wave-bb_nets_complete.DRR]
+
+
+Files Generated   : 3
+Documents Printed : 0
+
+Finished Output Generation At 22:09:13 On 2026/10/02

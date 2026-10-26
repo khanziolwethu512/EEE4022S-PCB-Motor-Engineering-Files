@@ -1,0 +1,36 @@
+{
+ "boards_per_stator": 5, 
+ "rotor_angle_variable": "rot_angle", 
+ "air_gap_mm": 1.0, 
+ "frozen_project": "C:\\Users\\Student\\Rev0_work\\REV0_FINAL_G100_T20_FROZEN.aedt", 
+ "profile": "REV0_FINAL_BUILD", 
+ "axial_levels_mm": {
+  "R1_magnet_face": 1.51016, 
+  "S1_bottom_surface": -4.5914399999999995, 
+  "R1_backiron_top": 5.51016, 
+  "S1_top_surface": 0.51016000000000006
+ }, 
+ "magnet_centre_r_mm": 28.0, 
+ "pitch_mm": 1.02032, 
+ "connection": "per phase S1 (5 boards series)", 
+ "assumptions": [
+  "Stack-up mode 'scaled' - Altium dielectric ratios scaled to 1.000 mm copper+dielectric; NOT the JLCPCB stack-up", 
+  "Solder mask 0.01016 mm each face (source stack-up); board pitch 1.02032 mm", 
+  "Vias = solid 0.30 mm copper (8-sided): fine for conduction/field, low for final resistance", 
+  "Air gap 1.000 mm measured from PCB1 top solder-mask surface to magnet face", 
+  "FR-4 and solder mask modelled as air (mu_r = 1, non-conductive either way); board geometry, pitch and air gap unchanged", 
+  "Inductance matrix not computed (lab-PC freeze at 'Start Matrix')", 
+  "Shaft steel_1010, 19.0 mm dia, rotating; simplified EM representation: rotor side only (band floor to 5.0 mm beyond back iron); section through the stator bore omitted; NOT the physical shaft length; shaft + back iron united as one steel body", 
+  "5 identical boards, same orientation, touching mask-to-mask (pitch 1.02032 mm); each phase a 5-board series string: 1 x 1 mm copper bridges at the rim terminal spanning the 0.02032 mm mask-to-mask gap and touching board k L6 Out / board k+1 L1 In pad faces (represents the edge solder joint; boards are separate touching conductors, not one united solid); external raised leads only on the string ends; star point NOT connected (six ends exposed)"
+ ], 
+ "topology": "S1-R1", 
+ "back_iron_mm": 2.0, 
+ "stages": 1, 
+ "current_variables": [
+  "I_A", 
+  "I_B", 
+  "I_C"
+ ], 
+ "source_stator": "C:\\Users\\Student\\OneDrive - University of Cape Town\\EEE4022S Ansys files\\Motor run\\frozen\\REV0_STATOR_FROZEN.aedt", 
+ "star_point": "open"
+}

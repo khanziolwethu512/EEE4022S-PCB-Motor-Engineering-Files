@@ -1,0 +1,1 @@
+FMROT_REV1S_SHORT FMROT finished (6 steps); gate {'pass_short': True, 'pointwise_max_pct_of_K1': 1.509308763079487}
